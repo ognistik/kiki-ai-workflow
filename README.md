@@ -100,6 +100,7 @@ Select text and trigger your hotkey for Alfred's Universal Actions. Search for "
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot06.jpg">
 </p>
+
 *NOTE: the "Send to Chat" option won't present you with Alfred's bar, essentially being the only action that will always replace your selected text.*
 
 ---
@@ -146,6 +147,7 @@ Here are a few things to keep in mind:
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot07.jpg">
 </p>
+
 *Note: When you resume chats using Alfred's Universal Action, your previous messages and system role will be retained, but all other settings will be based on Kiki's default configuration. For maximum flexibility, it is recommended to use the Markdown Chat feature.*
 
 ---
@@ -181,6 +183,7 @@ If your Mac automatically joins the hyphens when typing them as in the image, yo
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot10.jpg">
 </p>
+
 *My recommendation is that you either setup your notes you start with the header already there, or that you create a snippet within Alfred to insert the header for you.* 
 
 **To make the most of the Markdown Chat feature, it's important to understand how Kiki prioritizes different formatting within your text:**
@@ -232,6 +235,7 @@ If your markdown text editor allows you to include media and files on your notes
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot15.jpg">
 </p>
+
 *Note: As a helpful tip, you can save time by setting your most frequently used header parameter combinations as Alfred snippets.*
 
 ---
@@ -298,7 +302,8 @@ There is one external trigger which can replace a lot of your hotkeys, universal
   <img width="600" src="Kiki/assets/images/screenshot19.jpg">
 </p>
 6. By using these arguments, you are telling Kiki to skip the menu, directly grab the text from since the last line break, replace the selected text (as if using the modifiers from option 4), and run the text preset "emojify." If you want the result in a dialog instead of pasted in the frontmost window, you would use "direct,snippet,1,emojify" instead. 
-7. Connect the snippet block to your script block, and now you have a preset-specific trigger! Test it in your text editor. 
+7. Connect the snippet block to your script block, and now you have a preset-specific trigger! Test it in your text editor.
+
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot18.jpg">
 </p>
