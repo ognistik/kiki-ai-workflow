@@ -23,7 +23,7 @@
 - [ADVANCED](#advanced)
   - [Markdown Chat](#markdown-chat)
   - [Markdown Chat Presets](#markdown-chat-presets)
-  - [Resume Conversations from within a Markdown Chat](#resume-conversations-from-within-a-markdown-chat)
+  - [Resume Chats from within a Markdown Chat](#resume-chats-from-within-a-markdown-chat)
 - [FOR AUTOMATION NINJAS](#for-automation-ninjas)
   - [The All-in-One Trigger](#the-all-in-one-trigger)
   - [Preset-Specific Triggers](#preset-specific-triggers)
@@ -258,7 +258,7 @@ Oh, and remember when we talked about custom text presets? You can also use most
 
 *Note: Notice that you cannot directly set the context limit as a parameter when creating text presets. Instead, you need to define this within the workflow configuration. You can always override this setting when triggering a text preset by holding down the CTRL key, or by using the parameter specified in the header of a Markdown Chat.*
 
-### Resume Conversations from within a Markdown Chat
+### Resume Chats from within a Markdown Chat
 If your markdown text editor allows you to include media and files on your notes, you can use Alfred's Universal Actions to trigger "Kiki Resume Chat" on an attached context file. To resume your chat within your Markdown Chat instead of a dialog, hold the OPT modifier key while selecting the option. Kiki will then read the conversation settings from your note header.
 
 <p align="center">
