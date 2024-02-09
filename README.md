@@ -74,6 +74,7 @@ Kiki is powerful, flexible, and offers extensive customization options. It’s e
   <img width="600" src="Kiki/assets/images/screenshot04.jpg">
 </p>
 
+---
 ### Tips
 * In a chat, text preset, or even in the popup dialogs, you can **use the contents of your clipboard with the placeholder** set during configuration.
 * Alfred's command bar does not support multi-line input (it does support multi-line pasting). However, **if you need to enter a line break in your chat through dialogs, press OPT + RETURN.**
@@ -81,6 +82,7 @@ Kiki is powerful, flexible, and offers extensive customization options. It’s e
 * Accidentally closed a dialog? **You can resume your last chat** either from the Kiki options menu, or by pressing and holding CTRL when initiating a chat with the "kc" keyword.
 * For a convenient way to initiate a simple and quick chat, **you can add Kiki as a fallback search within Alfred.** This allows you to start a chat without the need to type a keyword. To setup Kiki as a Fallback search in Alfred go to Features > Default Results > Setup fallback results (all the way to the bottom). Look for workflow trigger. Keep in mind that using this method means you won't have access to modifier options. 
 
+---
 ### Modifiers
 When using Kiki, you can have more options in your interactions by holding down different modifiers while initiating a chat or preset from Alfred's command bar. Here's a simple breakdown of what each modifier does:
 <p align="center">
@@ -92,6 +94,7 @@ When using Kiki, you can have more options in your interactions by holding down 
 - **SHIFT:** This modifier triggers Kiki to reply in a dialog. It is the default way Kiki answers chats or presets initiated from Alfred's command bar. As we will learn soon, this "default" may change.
 - **FN:** Holding FN allows you to get Kiki's answer below your selected text. This option is only available when using Kiki on selected text through a universal action, hotkey, snippet, or external trigger.
 
+---
 ### Universal Actions on Text
 Select text and trigger your hotkey for Alfred's Universal Actions. Search for "Kiki" to be presented with some options for what to do with the selected text. In this mode, Kiki will automatically paste the result. If you want to customize this behavior, you can do so using modifiers once Alfred's command bar appears, as explained above. 
 <p align="center">
@@ -99,6 +102,7 @@ Select text and trigger your hotkey for Alfred's Universal Actions. Search for "
 </p>
 *NOTE: the "Send to Chat" option won't present you with Alfred's bar, essentially being the only action that will always replace your selected text.*
 
+---
 ### Custom Triggers
 Kiki provides various options for triggering chats, presets, actions, or menus, in addition to using Alfred keywords. You can zoom out with CMD & “-“ in the workflow editor to see them clearly. These options are color-coded as follows:
 * **Yellow-colored hotkeys** are the most basic and perform the same actions as the Kiki keywords.
@@ -120,6 +124,7 @@ The chat feature is quick and convenient, but you can save even more time by usi
 
 *Note: We will talk more settings for presets in the advanced section, when we talk about presets for Mardown chat.*
 
+---
 ### Resuming Chats from Context Files
 
 **Kiki is designed to handle one chat at a time.** When you start a new chat, the previous context file is replaced, unless you specify otherwise. However, you can still pause a chat and resume it later, allowing for multiple conversations.
@@ -245,6 +250,7 @@ The simplest external triggers in Kiki are "kikiWorkflow" and "kikiChat". These 
 - filesOpenContext: This will open your current context file in your system's default JSON file editor.
 - filesRevealPath: This will reveal your Kiki data directory in Finder.
 
+---
 ### The All-in-One Trigger
 There is one external trigger which can replace a lot of your hotkeys, universal action triggers, snippet triggers, and it can even replace the use of Alfred’s command bar for text presets. This is the “kikiActions” trigger.
 
@@ -280,6 +286,7 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 15. **Command + Control + Shift.** Continue in dialog, do not reset context, and use the alternative chat model.
 16. **Command + Control + FN.** Insert below, do not reset context, and use the alternative chat model.
 
+---
 ### Preset-Specific Triggers
 **To make it easier to understand how to use the "kikiActions" trigger, let's create a snippet that allows us to trigger one of our text presets from outside Kiki's workflow.** This is useful because if you add more snippets or hotkeys within Kiki, they may be replaced if there is an update for the workflow.
 1. Open the Alfred workflow editor and click the "+" button in the bottom bar. Select "Blank Workflow" and give it a name. Click "Create."
@@ -296,8 +303,10 @@ There is one external trigger which can replace a lot of your hotkeys, universal
   <img width="600" src="Kiki/assets/images/screenshot18.jpg">
 </p>
 
+---
 ### My Karabiner Setup for Kiki
 The "kikiActions" trigger provides endless possibilities when combined with custom text presets. To run Kiki, I personally use [Karabiner-Elements](https://karabiner-elements.pqrs.org/) the most. Karabiner is a powerful tool that allows you to remap and customize your keyboard, enabling you to trigger scripts, open apps, and more. I have set up a virtual layer on my keyboard specifically for Kiki where. If you're familiar with Karabiner and [Goku](https://github.com/yqrashawn/GokuRakuJoudo), you can refer to my EDN file configuration [here](https://github.com/afadingthought/dotfiles/blob/main/karabiner/karabiner.edn).
+
 ---
 ## FAQ & LIMITATIONS
 
