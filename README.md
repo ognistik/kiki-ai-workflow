@@ -1,6 +1,7 @@
 # Kiki
 #### AI-Powered Chat & Text Tools
 ![](Kiki/assets/images/kiki.png)
+<img align="right" width="100" height="100" src="Kiki/assets/images/kiki.png">
 ## INTRODUCTION
 Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models. It is specifically designed with the following features in mind:
 
