@@ -5634,7 +5634,7 @@ resultString;</string>
 	</array>
 	<key>readme</key>
 	<string># Kiki
-#### AI-Powered Chat &amp; Text Tools
+**AI-Powered Chat &amp; Text Tools**
 ![](assets/images/kiki.png)
 ## INTRODUCTION
 Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models. It is specifically designed with the following features in mind:
@@ -5820,7 +5820,7 @@ Oh, and remember when we talked about custom text presets? You can also use most
 
 *Note: Notice that you cannot directly set the context limit as a parameter when creating text presets. Instead, you need to define this within the workflow configuration. You can always override this setting when triggering a text preset by holding down the CTRL key, or by using the parameter specified in the header of a Markdown Chat.*
 
-**Resume Conversations from within a Markdown Chat**
+**Resume Chats from within a Markdown Chat**
 If your markdown text editor allows you to include media and files on your notes, you can use Alfred's Universal Actions to trigger "Kiki Resume Chat" on an attached context file. To resume your chat within your Markdown Chat instead of a dialog, hold the OPT modifier key while selecting the option. Kiki will then read the conversation settings from your note header.
 
 ![](assets/images/screenshot15.jpg)
@@ -5906,7 +5906,7 @@ The waiting placeholder is useful to prevent clicking around while waiting for a
 If you find that your response is being cut off, it is likely due to your Max Tokens setting. To avoid this issue, it is recommended to set the Max Tokens value to 0. However, if you have already set it to a different value, you can try increasing it. Additionally, there is a length limit for Kiki's dialogs. If you are having a lengthy conversation with long answers and want to avoid hitting this limit, it is suggested to use the Markdown Chat feature.
 
 **My snippet requests seem to send the text from my clipboard instead of the one indicated by my snippet.**
-If this happens, it's likely due to the delay required for your system to copy text to the clipboard. You can change this setting in Kiki's configuration. A delay of 0.5 should work for most cases, but if you're experiencing this issue, you may need to increase it slightly. Conversely, you can lower the delay to make Kiki feel more responsive. I have my delay set at 0.3.
+If this happens, first of all check that the keyboard shortcut for CTRL + SHIFT + A works by itself. It should select the text up to your previous linebreak, but if it's not happening it means your host app is not compatible with this feature. If the selection alone works and you have this issue it's likely due to the delay required for your system to copy text to the clipboard. You can change this setting in Kiki's configuration. A delay of 0.5 should work for most cases, but if you're experiencing this issue, you may need to increase it slightly. Conversely, you can lower the delay to make Kiki feel more responsive. I have my delay set at 0.3.
 
 ---
 ## CLOSING
@@ -7439,8 +7439,10 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<string>topP</string>
 		</dict>
 	</array>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string></string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://afadingthought.substack.com</string>
 </dict>
