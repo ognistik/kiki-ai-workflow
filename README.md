@@ -1,7 +1,8 @@
 # Kiki
 #### AI-Powered Chat & Text Tools
-![](Kiki/assets/images/kiki.png)
-<img align="right" width="100" height="100" src="Kiki/assets/images/kiki.png">
+<p align="center">
+  <img src="Kiki/assets/images/kiki.png">
+</p>
 ## INTRODUCTION
 Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models. It is specifically designed with the following features in mind:
 
@@ -17,8 +18,9 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 
 6. **Markdown Chat:** Enjoy the convenience of making AI requests directly in your preferred markdown text editor. Customize the chat settings through presets included on the header of your notes according to your preferences.
 
-![](Kiki/assets/images/screenshot01.jpg)
-
+<p align="center">
+  <img width="460" height="300" src="Kiki/assets/images/screenshot01.jpg">
+</p>
 ---
 ## REQUIREMENTS
 * [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) API Tokens with existing credits or payment setup.
@@ -27,8 +29,10 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 **OPTIONAL.** To utilize the Markdown Chat feature, ensure that your text editor copies selected text as markdown, rather than as formatted rich text.
 
 *Note: ‘Jq’ is necessary for Kiki to correctly format requests through OpenAI or OpenRouter APIs. In Terminal, simply run `brew install jq`. If you do not have [Homebrew](https://brew.sh/) in your system, you may need to install that first in order to install ‘jq’.*
+
 ---
 ## SETUP
+
 **The workflow’s configuration was prepared so that you:**
 1. Enter either an OpenRouter or OpenAI API Token.
 2. If you plan to use OpenRouter exclusively, remember to change the default Model to an Open Router model.
