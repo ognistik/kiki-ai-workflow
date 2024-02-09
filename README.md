@@ -4,6 +4,9 @@
   <img src="Kiki/assets/images/kiki.png">
 </p>
 
+---
+
+## TABLE OF CONTENTS
 - [INTRODUCTION](#introduction)
 - [REQUIREMENTS](#requirements)
 - [SETUP](#setup)
@@ -27,6 +30,8 @@
   - [My Karabiner Setup for Kiki](#my-karabiner-setup-for-kiki)
 - [FAQ \& LIMITATIONS](#faq--limitations)
 - [CLOSING](#closing)
+
+---
 
 ## INTRODUCTION
 Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models. It is specifically designed with the following features in mind:
