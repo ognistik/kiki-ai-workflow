@@ -19,9 +19,11 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 6. **Markdown Chat:** Enjoy the convenience of making AI requests directly in your preferred markdown text editor. Customize the chat settings through presets included on the header of your notes according to your preferences.
 
 <p align="center">
-  <img width="460" height="300" src="Kiki/assets/images/screenshot01.jpg">
+  <img width="600" src="Kiki/assets/images/screenshot01.jpg">
 </p>
+
 ---
+
 ## REQUIREMENTS
 * [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) API Tokens with existing credits or payment setup.
 * [Jq](https://formulae.brew.sh/formula/jq)
@@ -31,6 +33,7 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 *Note: ‘Jq’ is necessary for Kiki to correctly format requests through OpenAI or OpenRouter APIs. In Terminal, simply run `brew install jq`. If you do not have [Homebrew](https://brew.sh/) in your system, you may need to install that first in order to install ‘jq’.*
 
 ---
+
 ## SETUP
 
 **The workflow’s configuration was prepared so that you:**
