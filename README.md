@@ -1,7 +1,9 @@
 <h1 align="center">Kiki</h1>
 <p align="center"><strong>AI-Powered Chat & Text Tools</strong></p>
 <p align="center">
-  <img src="Kiki/assets/images/kiki.png">
+    <a href="https://youtu.be/fB0YwMdkumQ">
+    <img width="600" src="Kiki/assets/images/videoplay.jpg">
+  </a>
 </p>
 
 ---
