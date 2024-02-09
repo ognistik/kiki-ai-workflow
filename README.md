@@ -1,5 +1,5 @@
-# Kiki
-#### AI-Powered Chat & Text Tools
+<h1 align="center">Kiki</h1>
+<h4 align="center">AI-Powered Chat & Text Tools</h4>
 <p align="center">
   <img src="Kiki/assets/images/kiki.png">
 </p>
@@ -49,23 +49,33 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 4. **MD Chat Pattern ID.** If you use a text editor that supports Markdown, you may need to change this to another character. For example, I use [Bear](https://bear.app/), which supports organization through tags, so my Pattern ID is "#". The purpose of this setting will become clearer as you read through this documentation.
 
 All the other options allow you to further customize Kiki according to your personal needs. However, the default settings should suffice for most use cases. If you ever need to reconfigure the workflow, simply right-click on the workflow's name in Alfred and select "Configure...".
+
 ---
+
 ## HOW TO
 Kiki is powerful, flexible, and offers extensive customization options. It’s easy to get lost with everything it can do. To simplify this guide, I will categorize its features and modes of use into basic, intermediate, and advanced levels. If you find that the basic level meets your requirements, there's no need to feel overwhelmed by all the additional options. 
+
 ---
+
 ## BASIC
 ### Keywords
 * **The "kc" (or Kiki chat) keyword allows you to start a chat session.** Simply type the keyword followed by a space, and you can begin typing your message.
 
-![](Kiki/assets/images/screenshot02.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot02.jpg">
+</p>
 
 * **The "ko" (or Kiki options) keyword provides a menu of actions you can perform on your Kiki data files. T**his menu will automatically populate after you have engaged in at least one chat. Press and hold the CMD key while selecting any option to reveal your data directory. Additionally, you can tap the SHIFT key to quickly preview the file associated with the selected action.
 
-![](Kiki/assets/images/screenshot03.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot03.jpg">
+</p>
 
 * **The "kt" (or Kiki text) keyword presents you with text presets.** Once you choose a preset, you can enter the text you want to use. Kiki comes with a few basic presets, but we will explore how to create custom presets in the "intermediate" section of this guide.
 
-![](Kiki/assets/images/screenshot04.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot04.jpg">
+</p>
 
 ### Tips
 * In a chat, text preset, or even in the popup dialogs, you can **use the contents of your clipboard with the placeholder** set during configuration.
