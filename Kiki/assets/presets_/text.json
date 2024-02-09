@@ -1,0 +1,12 @@
+[
+  {
+    "id": "professional",
+    "theTitle": "Change Tone to Professional",
+    "thePrompt": "Change the tone of the text I give you to professional. Do not include any comments or quotation marks on the task you performed. Here is the text: \n[[txt]]"
+  },
+  {
+    "id": "translateEn",
+    "theTitle": "Translate to English",
+    "thePrompt": "Translate the following into conversational English. Do not include any comments or quotation marks on the task you performed:\n[[txt]]"
+  }
+]

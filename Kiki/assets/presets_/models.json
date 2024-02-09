@@ -1,0 +1,14 @@
+[
+  {
+    "id": "M_4",
+    "theModel": "gpt-4-turbo-preview"
+  },
+  {
+    "id": "M_DOLPHIN",
+    "theModel": "cognitivecomputations/dolphin-mixtral-8x7b"
+  },
+  {
+    "id": "M_MYTHO",
+    "theModel": "gryphe/mythomax-l2-13b"
+  }
+]

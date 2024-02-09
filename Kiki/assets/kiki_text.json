@@ -1,0 +1,17 @@
+[
+  {
+    "id": "fixGrammar",
+    "theTitle": "Fix Grammar",
+    "thePrompt": "Fix the grammar and spelling of the following text. Do not include any comments on the task you performed, just give me the clean text without any additional commentary and without quotation marks:\n[[txt]]"
+  },
+  {
+    "id": "emojify",
+    "theTitle": "Emojify",
+    "thePrompt": "Add multiple emojis to spike up what I wrote. IMPORTANT: do not remove my text. Do not include any comments or quotation marks on the task you performed:\n[[txt]]"
+  },
+  {
+    "id": "simplify",
+    "theTitle": "Simplify",
+    "thePrompt": "I want you to act as a text simplification tool. Please take the text I provide and simplify, reword, and summarize it using easy-to-understand and clear language. Avoid technical terms and jargon while ensuring the information remains accurate and informative. Please respond in the same language as the given text. Do not translate unless indicated. Be concise and answer in the same person's voice as the given text. I need a short and to-the-point, answer. Get to the core idea and don't put it inside quotations. Simplify this:\n[[txt]]"
+  }
+]
