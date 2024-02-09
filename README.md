@@ -24,7 +24,6 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 </p>
 
 ---
-
 ## REQUIREMENTS
 * [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) API Tokens with existing credits or payment setup.
 * [Jq](https://formulae.brew.sh/formula/jq)
@@ -34,7 +33,6 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 *Note: ‘Jq’ is necessary for Kiki to correctly format requests through OpenAI or OpenRouter APIs. In Terminal, simply run `brew install jq`. If you do not have [Homebrew](https://brew.sh/) in your system, you may need to install that first in order to install ‘jq’.*
 
 ---
-
 ## SETUP
 
 **The workflow’s configuration was prepared so that you:**
@@ -52,12 +50,10 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 All the other options allow you to further customize Kiki according to your personal needs. However, the default settings should suffice for most use cases. If you ever need to reconfigure the workflow, simply right-click on the workflow's name in Alfred and select "Configure...".
 
 ---
-
 ## HOW TO
 Kiki is powerful, flexible, and offers extensive customization options. It’s easy to get lost with everything it can do. To simplify this guide, I will categorize its features and modes of use into basic, intermediate, and advanced levels. If you find that the basic level meets your requirements, there's no need to feel overwhelmed by all the additional options. 
 
 ---
-
 ## BASIC
 ### Keywords
 * **The "kc" (or Kiki chat) keyword allows you to start a chat session.** Simply type the keyword followed by a space, and you can begin typing your message.
@@ -87,7 +83,9 @@ Kiki is powerful, flexible, and offers extensive customization options. It’s e
 
 ### Modifiers
 When using Kiki, you can have more options in your interactions by holding down different modifiers while initiating a chat or preset from Alfred's command bar. Here's a simple breakdown of what each modifier does:
-![](Kiki/assets/images/screenshot05.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot05.jpg">
+</p>
 - **CMD:** This allows you to use an alternative model and, if configured, an alternative system role.
 - **OPT:** By holding OPT, you can paste the response directly into your frontmost window instead of displaying it in a dialog.
 - **CTRL:** When using CTRL, the existing context file will not be reset. Keep in mind that if the number of existing messages in the file exceeds the threshold set in the workflow's configuration, the oldest message will be removed.
@@ -96,7 +94,9 @@ When using Kiki, you can have more options in your interactions by holding down 
 
 ### Universal Actions on Text
 Select text and trigger your hotkey for Alfred's Universal Actions. Search for "Kiki" to be presented with some options for what to do with the selected text. In this mode, Kiki will automatically paste the result. If you want to customize this behavior, you can do so using modifiers once Alfred's command bar appears, as explained above. 
-![](Kiki/assets/images/screenshot06.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot06.jpg">
+</p>
 *NOTE: the "Send to Chat" option won't present you with Alfred's bar, essentially being the only action that will always replace your selected text.*
 
 ### Custom Triggers
@@ -138,8 +138,11 @@ Here are a few things to keep in mind:
   - CTRL to continue auto-saving the conversation to your context file.
   - OPT to resume your chat from within the Markdown Chat feature. Do not use this modifier until you learn how this feature works.
 
-![](Kiki/assets/images/screenshot07.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot07.jpg">
+</p>
 *Note: When you resume chats using Alfred's Universal Action, your previous messages and system role will be retained, but all other settings will be based on Kiki's default configuration. For maximum flexibility, it is recommended to use the Markdown Chat feature.*
+
 ---
 ## ADVANCED
 ### Markdown Chat
@@ -160,13 +163,19 @@ There are three ways to trigger a Markdown Chat request. Remember these are colo
 **Correct Formatting**
 Before triggering your Markdown Chat, let's look at how you should format your note for it to work properly. 
 
-![](Kiki/assets/images/screenshot08.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot08.jpg">
+</p>
 
 If your Mac automatically joins the hyphens when typing them as in the image, you can work around this by adding a space between them, like `- - -`, or by using three asterisks `***`. Your markdown text editor should still recognize these as line separators. Once you initiate the Markdown Chat, **Kiki will automatically add the "USER" heading text to indicate that the context has been reset.**
 
-![](Kiki/assets/images/screenshot09.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot09.jpg">
+</p>
 
-![](Kiki/assets/images/screenshot10.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot10.jpg">
+</p>
 *My recommendation is that you either setup your notes you start with the header already there, or that you create a snippet within Alfred to insert the header for you.* 
 
 **To make the most of the Markdown Chat feature, it's important to understand how Kiki prioritizes different formatting within your text:**
@@ -177,11 +186,15 @@ If your Mac automatically joins the hyphens when typing them as in the image, yo
 
 Knowing this, you can start a conversation from within Alfred’s command bar where you get the response in a dialog…
 
-![](Kiki/assets/images/screenshot11.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot11.jpg">
+</p>
 
 And simply continue with a Markdown Chat in a completely blank note, or after inserting a double line separator.
 
-![](Kiki/assets/images/screenshot12.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot12.jpg">
+</p>
 
 But there’s more! You can use presets to configure the settings in which the Markdown Chat will prepare your AI Request. 
 
@@ -197,26 +210,34 @@ Kiki will recognize presets or commands for your conversation within the header 
 * O_<number>: sets the top P value. The value must be between 0 and 1.
 
 For example, I used this a lot during the creation of Kiki:
-![](Kiki/assets/images/screenshot13.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot13.jpg">
+</p>
 
 Oh, and remember when we talked about custom text presets? You can also use most of these parameters there! 
-![](Kiki/assets/images/screenshot14.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot14.jpg">
+</p>
 
 *Note: Notice that you cannot directly set the context limit as a parameter when creating text presets. Instead, you need to define this within the workflow configuration. You can always override this setting when triggering a text preset by holding down the CTRL key, or by using the parameter specified in the header of a Markdown Chat.*
 
 **Resume Conversations from within a Markdown Chat**
 If your markdown text editor allows you to include media and files on your notes, you can use Alfred's Universal Actions to trigger "Kiki Resume Chat" on an attached context file. To resume your chat within your Markdown Chat instead of a dialog, hold the OPT modifier key while selecting the option. Kiki will then read the conversation settings from your note header.
 
-![](Kiki/assets/images/screenshot15.jpg)
-
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot15.jpg">
+</p>
 *Note: As a helpful tip, you can save time by setting your most frequently used header parameter combinations as Alfred snippets.*
+
 ---
 ## FOR AUTOMATION NINJAS
 In Kiki, there is a feature that can greatly enhance efficiency and productivity for users who want to make the most out of their system. This feature involves external triggers, which can be activated using AppleScript or Alfred's URL handler. By utilizing these triggers, you can access almost all of Kiki's functions from other third-party apps that can run Applescripts or even from other workflows.
 
 The simplest external triggers in Kiki are "kikiWorkflow" and "kikiChat". These triggers do not require any arguments and will open the main Kiki Options or Kiki Chat respectively. There’s also "kikiMD", which is used to trigger a Markdown Chat. If you navigate to the far right in the workflow editor, you will find the external trigger "kikiFiles". By sending one of the following arguments to this trigger, you can bypass the Kiki Options menu and directly perform specific actions:
 
-![](Kiki/assets/images/screenshot16.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot16.jpg">
+</p>
 
 - filesCopyResponse: This will copy the latest response from Kiki to your clipboard.
 - filesCopyContext: This will copy the current context file to your specified path.
@@ -227,7 +248,9 @@ The simplest external triggers in Kiki are "kikiWorkflow" and "kikiChat". These 
 ### The All-in-One Trigger
 There is one external trigger which can replace a lot of your hotkeys, universal action triggers, snippet triggers, and it can even replace the use of Alfred’s command bar for text presets. This is the “kikiActions” trigger.
 
-![](Kiki/assets/images/screenshot17.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot17.jpg">
+</p>
 
 **The All-in-One Trigger in Kiki receives four arguments, which should be entered without spaces and separated by commas.** Let's break down what each argument means:
 
@@ -264,10 +287,14 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 3. Go back to Kiki and double-click on the "kikiActions" external trigger. Copy all the text in the Sample Code area.
 4. Return to your newly created workflow and right-click on the canvas. Select "Actions," then "Run Script." In the "Language" dropdown, choose the option with AppleScript.
 5. Paste the code you copied into the Script area. Replace "text" with your desired arguments. For example, you can use "direct,snippet,4,emojify." "Emojify" is one of the text presets and snippets already included, but you can replace it with the ID of your custom preset.
-![](Kiki/assets/images/screenshot19.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot19.jpg">
+</p>
 6. By using these arguments, you are telling Kiki to skip the menu, directly grab the text from since the last line break, replace the selected text (as if using the modifiers from option 4), and run the text preset "emojify." If you want the result in a dialog instead of pasted in the frontmost window, you would use "direct,snippet,1,emojify" instead. 
 7. Connect the snippet block to your script block, and now you have a preset-specific trigger! Test it in your text editor. 
-![](Kiki/assets/images/screenshot18.jpg)
+<p align="center">
+  <img width="600" src="Kiki/assets/images/screenshot18.jpg">
+</p>
 
 ### My Karabiner Setup for Kiki
 The "kikiActions" trigger provides endless possibilities when combined with custom text presets. To run Kiki, I personally use [Karabiner-Elements](https://karabiner-elements.pqrs.org/) the most. Karabiner is a powerful tool that allows you to remap and customize your keyboard, enabling you to trigger scripts, open apps, and more. I have set up a virtual layer on my keyboard specifically for Kiki where. If you're familiar with Karabiner and [Goku](https://github.com/yqrashawn/GokuRakuJoudo), you can refer to my EDN file configuration [here](https://github.com/afadingthought/dotfiles/blob/main/karabiner/karabiner.edn).
