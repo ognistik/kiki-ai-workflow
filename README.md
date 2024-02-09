@@ -4,6 +4,30 @@
   <img src="Kiki/assets/images/kiki.png">
 </p>
 
+- [INTRODUCTION](#introduction)
+- [REQUIREMENTS](#requirements)
+- [SETUP](#setup)
+- [HOW TO](#how-to)
+- [BASIC](#basic)
+  - [Keywords](#keywords)
+  - [Tips](#tips)
+  - [Modifiers](#modifiers)
+  - [Universal Actions on Text](#universal-actions-on-text)
+  - [Custom Triggers](#custom-triggers)
+- [INTERMEDIATE](#intermediate)
+  - [Custom Presets](#custom-presets)
+  - [Resuming Chats from Context Files](#resuming-chats-from-context-files)
+- [ADVANCED](#advanced)
+  - [Markdown Chat](#markdown-chat)
+  - [Markdown Chat Presets](#markdown-chat-presets)
+  - [Resume Conversations from within a Markdown Chat](#resume-conversations-from-within-a-markdown-chat)
+- [FOR AUTOMATION NINJAS](#for-automation-ninjas)
+  - [The All-in-One Trigger](#the-all-in-one-trigger)
+  - [Preset-Specific Triggers](#preset-specific-triggers)
+  - [My Karabiner Setup for Kiki](#my-karabiner-setup-for-kiki)
+- [FAQ \& LIMITATIONS](#faq--limitations)
+- [CLOSING](#closing)
+
 ## INTRODUCTION
 Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models. It is specifically designed with the following features in mind:
 
