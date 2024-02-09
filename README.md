@@ -206,7 +206,7 @@ And simply continue with a Markdown Chat in a completely blank note, or after in
 
 But there’s more! You can use presets to configure the settings in which the Markdown Chat will prepare your AI Request. 
 
-**Markdown Chat Presets**
+### Markdown Chat Presets
 Kiki will recognize presets or commands for your conversation within the header of your note. These will override the default settings in Kiki's workflow. **To trigger these presets and commands, they must be preceded by a whitespace and include the correct identifier.** Here are the available options:
 * M_<id>: sets the model to be used. Models are read from the models.json file in your presets folder. The model ID must include "M_".
 * S_<id>: sets the system role or persona to be used. You can define your own system roles in the systems.json file in your presets folder. The system ID must include "S_".
@@ -229,7 +229,7 @@ Oh, and remember when we talked about custom text presets? You can also use most
 
 *Note: Notice that you cannot directly set the context limit as a parameter when creating text presets. Instead, you need to define this within the workflow configuration. You can always override this setting when triggering a text preset by holding down the CTRL key, or by using the parameter specified in the header of a Markdown Chat.*
 
-**Resume Conversations from within a Markdown Chat**
+### Resume Conversations from within a Markdown Chat
 If your markdown text editor allows you to include media and files on your notes, you can use Alfred's Universal Actions to trigger "Kiki Resume Chat" on an attached context file. To resume your chat within your Markdown Chat instead of a dialog, hold the OPT modifier key while selecting the option. Kiki will then read the conversation settings from your note header.
 
 <p align="center">
