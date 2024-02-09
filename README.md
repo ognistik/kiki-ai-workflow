@@ -1,5 +1,5 @@
 <h1 align="center">Kiki</h1>
-<h4 align="center">AI-Powered Chat & Text Tools</h4>
+<p align="center"><strong>AI-Powered Chat & Text Tools</strong></p>
 <p align="center">
   <img src="Kiki/assets/images/kiki.png">
 </p>
@@ -326,7 +326,7 @@ The waiting placeholder is useful to prevent clicking around while waiting for a
 If you find that your response is being cut off, it is likely due to your Max Tokens setting. To avoid this issue, it is recommended to set the Max Tokens value to 0. However, if you have already set it to a different value, you can try increasing it. Additionally, there is a length limit for Kiki's dialogs. If you are having a lengthy conversation with long answers and want to avoid hitting this limit, it is suggested to use the Markdown Chat feature.
 
 **My snippet requests seem to send the text from my clipboard instead of the one indicated by my snippet.**
-If this happens, it's likely due to the delay required for your system to copy text to the clipboard. You can change this setting in Kiki's configuration. A delay of 0.5 should work for most cases, but if you're experiencing this issue, you may need to increase it slightly. Conversely, you can lower the delay to make Kiki feel more responsive. I have my delay set at 0.3.
+If this happens, first of all check that the keyboard shortcut for CTRL + SHIFT + A works by itself. It should select the text up to your previous linebreak, but if it's not happening it means your host app is not compatible with this feature. If the selection alone works and you have this issue it's likely due to the delay required for your system to copy text to the clipboard. You can change this setting in Kiki's configuration. A delay of 0.5 should work for most cases, but if you're experiencing this issue, you may need to increase it slightly. Conversely, you can lower the delay to make Kiki feel more responsive. I have my delay set at 0.3.
 
 ---
 ## CLOSING
