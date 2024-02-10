@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.kiki.ai</string>
-	<key>category</key>
-	<string>Productivity</string>
 	<key>connections</key>
 	<dict>
 		<key>00950F78-F08C-4BF6-9961-81EDF763B445</key>
@@ -3118,8 +3116,6 @@ return AllText</string>
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -3194,8 +3190,6 @@ end tell</string>
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -4216,8 +4210,6 @@ osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -4549,8 +4541,6 @@ resultString;</string>
 				<integer>0</integer>
 				<key>hotmod</key>
 				<integer>0</integer>
-				<key>hotstring</key>
-				<string></string>
 				<key>leftcursor</key>
 				<false/>
 				<key>modsmode</key>
@@ -4998,9 +4988,9 @@ resultString;</string>
 				<key>variables</key>
 				<dict>
 					<key>kikiSplit1</key>
-					<string>direct</string>
-					<key>kikiSplit2</key>
 					<string>menu</string>
+					<key>kikiSplit2</key>
+					<string>incoming</string>
 					<key>kikiSplit3</key>
 					<string>4</string>
 					<key>kikiSplit4</key>
@@ -5159,7 +5149,7 @@ resultString;</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>keyword</key>
-				<string>kit</string>
+				<string>kt</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -5318,7 +5308,7 @@ resultString;</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>keyword</key>
-				<string>kic</string>
+				<string>kc</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -5469,7 +5459,7 @@ resultString;</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>keyword</key>
-				<string>kip</string>
+				<string>kp</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -5511,8 +5501,6 @@ resultString;</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
-				<key>keyword</key>
-				<string>kig</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -5554,8 +5542,6 @@ resultString;</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
-				<key>keyword</key>
-				<string>kie</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -7442,7 +7428,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.0.1</string>
 	<key>webaddress</key>
 	<string>https://afadingthought.substack.com</string>
 </dict>
