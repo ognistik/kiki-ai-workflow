@@ -2020,7 +2020,7 @@ elif [[ "$1" == "filesResetLogs" ]]; then
 	# Check the user's choice
 	if [ $? -eq 0 ]; then
     		# User chose to delete
-    		find "${kiki_data}" -type f ! -path "${kiki_data}/user_assets/*" -delete
+		find "${kiki_data}" -type f ! -regex "${kiki_data}/preset.*" -delete
     		osascript -e 'display dialog "Everything has been cleared." buttons {"OK"} default button "OK"' &gt;/dev/null 2&gt;&amp;1
 	fi
 elif [[ "$1" == "filesOpenContext" ]]; then
@@ -5149,7 +5149,7 @@ resultString;</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>keyword</key>
-				<string>kt</string>
+				<string>kit</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -5308,7 +5308,7 @@ resultString;</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>keyword</key>
-				<string>kc</string>
+				<string>kic</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -5459,7 +5459,7 @@ resultString;</string>
 				<key>focusedappvariablename</key>
 				<string></string>
 				<key>keyword</key>
-				<string>kp</string>
+				<string>kip</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -5501,6 +5501,8 @@ resultString;</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
+				<key>keyword</key>
+				<string>kig</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -5542,6 +5544,8 @@ resultString;</string>
 				<false/>
 				<key>focusedappvariablename</key>
 				<string></string>
+				<key>keyword</key>
+				<string>kie</string>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.trigger.snippet</string>
@@ -7428,7 +7432,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.1</string>
+	<string>1.0.2</string>
 	<key>webaddress</key>
 	<string>https://afadingthought.substack.com</string>
 </dict>
