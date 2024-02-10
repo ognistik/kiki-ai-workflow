@@ -116,9 +116,11 @@ Kiki is powerful, flexible, and offers extensive customization options. It’s e
 ---
 ### Modifiers
 When using Kiki, you can have more options in your interactions by holding down different modifiers while initiating a chat or preset from Alfred's command bar. Here's a simple breakdown of what each modifier does:
+
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot05.jpg">
 </p>
+
 - **CMD:** This allows you to use an alternative model and, if configured, an alternative system role.
 - **OPT:** By holding OPT, you can paste the response directly into your frontmost window instead of displaying it in a dialog.
 - **CTRL:** When using CTRL, the existing context file will not be reset. Keep in mind that if the number of existing messages in the file exceeds the threshold set in the workflow's configuration, the oldest message will be removed.
