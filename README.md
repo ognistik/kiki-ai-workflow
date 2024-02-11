@@ -156,7 +156,7 @@ The chat feature is quick and convenient, but you can save even more time by usi
 5. **JSON is very flexible with special characters,** but if you want to include a `"` quotation mark in your prompts, you need to escape it by adding a `\` before it. It's best to avoid using slashes `/` and backslashes `\` in your prompts unless you are familiar with their specific usage in JSON format. For instance, I use `\n` to indicate a line break. Additionally, keep in mind that the placeholder `[[txt]]` will be replaced with your actual input when using your preset.
 6. **If you're unsure about your formatting or if a preset isn't appearing in your list, you can ask Kiki to fix any JSON formatting issues for you 😀️**. 
 
-*Note: We will talk more settings for presets in the advanced section, when we talk about presets for Mardown chat.*
+*Note: We will talk more settings for presets in the advanced section, when we talk about presets for Markdown chat.*
 
 ---
 ### Resuming Chats from Context Files
