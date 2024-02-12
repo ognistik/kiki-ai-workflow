@@ -137,10 +137,12 @@ function handleKikiCopy() {
         simulateKeystroke('c', { using: 'command down' });
         delay(delayClipboard);
         theText = copyFromClipboard();
+    } else if (kikiCopy === 'incoming') {
+        theText = copyFromClipboard();
     }
 }
 
-if (theText === '' && kikiCopy !== 'custom' && kikiCopy !== '-') {
+if (theText === '' && kikiCopy !== 'custom' && kikiCopy !== '-') { // When will it be -?
     handleKikiCopy();
 }
 
