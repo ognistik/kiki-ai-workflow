@@ -299,9 +299,10 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 **The All-in-One Trigger in Kiki receives four arguments, which should be entered without spaces and separated by commas.** Let's break down what each argument means:
 
 1. **The first argument can be either "menu" or "direct."** This determines whether the user will be directed to the Kiki Text Presets menu or if a specific preset will be processed directly.
-2. **The second argument can be "copy," "snippet," or "custom."** 
+2. **The second argument can be "copy," "snippet," "incoming," or "custom."** 
    - If "copy" is chosen, it assumes that the user has selected text and wants to run it through the text presets menu or process it with a preset. If you use “copy” and there’s no text selected, Kiki will use whatever there is already in your clipboard 😉.
    - Using "snippet" triggers the CTRL + SHIFT + A shortcut, which selects text up to the previous line break. The selected text is then run through the text presets menu or directly processed with a preset.
+   - If the second argument is defined as "incoming," Kiki will grab the user's current clipboard content and will use it as the input for the workflow. This option is particularly useful for users to create their own Universal Actions to directly trigger their own custom presets (Alfred's Universal Actions place whatever text is selected on user's clipboard).
    - Choosing "custom" means that no input is required initially. The user will be presented with Alfred's command bar to type an input something for either the text presets menu or an already-selected preset.
 3. **The third argument must be a number from the list of modifiers below.** This argument simulates a modifier or modifier combinations within Alfred's command bar. By using this, you can skip the command bar entirely and still have control over the multiple processing options available with Kiki.
 4. **The fourth argument refers is the ID of your text preset.** This argument is optional and must only be included if the first argument is "direct.”
