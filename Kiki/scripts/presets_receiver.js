@@ -11,6 +11,7 @@ ObjC.import('AppKit');
 function run(argv) {
     const kikiMenu = $.getenv('kikiSplit1');
     const delayClipboard = $.getenv('_delayClipboard');
+    const snippetKeys = $.getenv('snippetKeys');
     const kikiMods = parseInt($.getenv('kikiSplit3'), 10);
     var fromAlfred = $.getenv('kiki_data');
     const dataPath = fromAlfred;
@@ -115,6 +116,11 @@ function simulateKeystroke(keys, options) {
     systemEvents.keystroke(keys, options);
 }
 
+function simulateKeyCode(keyCode, options) {
+    const systemEvents = Application('System Events');
+    systemEvents.keyCode(keyCode, options);
+}
+
 function copyFromClipboard() {
     return $.NSPasteboard.generalPasteboard.stringForType($.NSPasteboardTypeString).js;
 }
@@ -130,8 +136,13 @@ function handleKikiCopy() {
         delay(delayClipboard); // Adjust delay as needed
         theText = copyFromClipboard();
     } else if (kikiCopy === 'snippet') {
-        // Simulate CTRL+SHIFT+A to select a snippet (customize as needed)
-        simulateKeystroke('a', { using: ['control down', 'shift down'] });
+        // Simulate CTRL+SHIFT+A to select a snippet
+        if (snippetKeys === 'ctrl') {
+            simulateKeystroke('a', { using: ['control down', 'shift down'] });    
+        } else if (snippetKeys === 'opt') {
+            // Simulate UP + OPT + SHIFT
+            simulateKeyCode(126, { using: ['option down', 'shift down'] });
+        }
         delay(delayClipboard);
         // Then copy
         simulateKeystroke('c', { using: 'command down' });

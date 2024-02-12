@@ -5725,7 +5725,7 @@ Select text and trigger your hotkey for Alfred's Universal Actions. Search for "
 Kiki provides various options for triggering chats, presets, actions, or menus, in addition to using Alfred keywords. You can zoom out with CMD &amp; “-“ in the workflow editor to see them clearly. These options are color-coded as follows:
 * **Yellow-colored hotkeys** are the most basic and perform the same actions as the Kiki keywords.
 * **Green-colored hotkey**s work on selected text, serving as shortcuts to the options available as Universal Actions.
-* **Orange-colored snippets** simulate the "CTRL + SHIFT + A" keyboard shortcut to select text up to the previous line break. **IMPORTANT: while most text editing apps receive and interpret this shortcut, it does not work in every app. It’s a good idea to test first.** The snippets in Kiki will send the selected text to one of the options available as Universal Actions. **With snippets, along with the same options found in Universal Actions, you can also directly process text presets and automatically paste the results.** It’s a fantastic way to use Kiki inline, without loosing focus on what you are typing. More information about this and how to create your own can be found in the Advanced section.
+* **Orange-colored snippets** simulate the "CTRL + SHIFT + A" OR "OPT + SHIFT + UP" keyboard shortcut to select text up to the previous line break. **IMPORTANT: while most text editing apps receive and interpret the OPT shortcut, it does not work everywhere, that is why I am giving you the option to set this up as you prefer in the configuration. It’s a good idea to test first and choose the option that will be compatible with the app you plan to use snippets most.** The snippets in Kiki will send the selected text to one of the options available as Universal Actions. **With snippets, along with the same options found in Universal Actions, you can also directly process text presets and automatically paste the results.** It’s a fantastic way to use Kiki inline, without loosing focus on what you are typing. More information about this and how to create your own can be found in the Advanced section.
 * **Blue-colored triggers** offer powerful ways to communicate with Kiki from outside the workflow or from within third-party apps. More information about this in the Advanced section.
 * **Violet-colored triggers** are used for the Markdown Chat feature. It is recommended to avoid setting these up or using them until you understand how this feature works.
 
@@ -5745,7 +5745,7 @@ The chat feature is quick and convenient, but you can save even more time by usi
 ---
 ### Resuming Chats from Context Files
 
-**Kiki is designed to handle one chat at a time.** When you start a new chat, the previous context file is replaced, unless you specify otherwise. However, you can still pause a chat and resume it later, allowing for multiple conversations.
+**Kiki is designed to handle one chat at a time.** It is also designed to only store previous conversations temporarily. When you start a new chat, the previous context file is replaced, unless you specify otherwise. However, you can still pause a chat and resume it later, allowing for multiple conversations.
 
 For example, let's say you're chatting with Kiki and you need to pause to perform a different request. You can create a copy of the context file to continue the chat later. Or, if you're working on multiple projects with Kiki's assistance, you can save the context file before taking a break. This way, you won't lose any progress when you come back to it.
 
@@ -7356,6 +7356,32 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>config</key>
 			<dict>
 				<key>default</key>
+				<string>ctrl</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>CTRL + SHIFT + A</string>
+						<string>ctrl</string>
+					</array>
+					<array>
+						<string>OPT + SHIFT + UP</string>
+						<string>opt</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>With snippets, Kiki simulates a keyboard shortcut that selects text up to the previous linebreak to then send it through the workflow. Although this shortcut may not work universally, it is compatible with "most" apps. If you come across an app where the first selection does not work, you can switch to the other option. This does not apply to the MD Chat snippet trigger. More info in the README.</string>
+			<key>label</key>
+			<string>Snippets Function</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>snippetKeys</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
 				<string>.5</string>
 				<key>placeholder</key>
 				<string>.5</string>
@@ -7461,7 +7487,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.0.4</string>
+	<string>1.0.5</string>
 	<key>webaddress</key>
 	<string>https://afadingthought.substack.com</string>
 </dict>
