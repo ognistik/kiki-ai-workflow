@@ -5,6 +5,7 @@
     <img width="600" src="Kiki/assets/images/videoplay.jpg">
   </a>
 </p>
+<p align="center"><em><a href="https://youtu.be/nbYF9pyQyqc">Setup & Walkthrough</a></em></p>
 
 ---
 
