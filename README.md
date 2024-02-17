@@ -345,7 +345,7 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 
 ---
 ### My Karabiner Setup for Kiki
-The "kikiActions" trigger provides endless possibilities when combined with custom text presets. To run Kiki, I personally use [Karabiner-Elements](https://karabiner-elements.pqrs.org/) the most. Karabiner is a powerful tool that allows you to remap and customize your keyboard, enabling you to trigger scripts, open apps, and more. I have set up a virtual layer on my keyboard specifically for Kiki where. If you're familiar with Karabiner and [Goku](https://github.com/yqrashawn/GokuRakuJoudo), you can refer to my EDN file configuration [here](https://github.com/afadingthought/dotfiles/blob/main/karabiner/karabiner.edn).
+The "kikiActions" trigger provides endless possibilities when combined with custom text presets. To run Kiki, I personally use [Karabiner-Elements](https://karabiner-elements.pqrs.org/) the most. Karabiner is a powerful tool that allows you to remap and customize your keyboard, enabling you to trigger scripts, open apps, and more. I have set up a virtual layer on my keyboard specifically for Kiki where. If you're familiar with Karabiner and [Goku](https://github.com/yqrashawn/GokuRakuJoudo), you can refer to my EDN file configuration [here](https://github.com/afadingthought/dotfiles/blob/main/karabiner/karabiner.edn) (look for the Kiki AI layer). If you are not familiar with Karabiner but still want some inspiration, here's [a simple version.](https://github.com/afadingthought/dotfiles/blob/main/karabiner/keyboard-mods.md#a-mode-kiki-ai)
 
 ---
 ## FAQ & LIMITATIONS
