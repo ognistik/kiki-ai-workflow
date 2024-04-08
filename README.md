@@ -135,6 +135,10 @@ When using Kiki, you can have more options in your interactions by holding down 
 - **FN:** Holding FN allows you to get Kiki's answer below your selected text. This option is only available when using Kiki on selected text through a universal action, hotkey, snippet, or external trigger.
 - **FN + SHIFT:** This allows you to send your request to ANY of the preset models configured in the presets/models.json file inside Kiki's data folder. **IMPORTANT: You do have to rename your presets folder or it to be discoverable and have configured some models for this to work. Read the [INTERMEDIATE](#intermediate) section of this guide.**
 
+<p align="center">
+  <img width="600" src="Kiki/assets/images/custom_models.jpg">
+</p>
+
 ---
 ### Universal Actions on Text
 Select text and trigger your hotkey for Alfred's Universal Actions. Search for "Kiki" to be presented with some options for what to do with the selected text. In this mode, Kiki will automatically paste the result. If you want to customize this behavior, you can do so using modifiers once Alfred's command bar appears, as explained above. 
