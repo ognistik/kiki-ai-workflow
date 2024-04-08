@@ -37,7 +37,7 @@
 ---
 
 ## INTRODUCTION
-Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models. It is specifically designed with the following features in mind:
+Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropic LLM models. It is specifically designed with the following features in mind:
 
 1. **Quick chats initiated from Alfred’s command bar:** These chats start in the command bar of Alfred and continue as AppleScript dialogs.
 
@@ -59,7 +59,7 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 
 ---
 ## REQUIREMENTS
-* [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) API Tokens with existing credits or payment setup.
+* [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) and/or [Anthropic](https://www.anthropic.com/api) API Tokens with existing credits or payment setup.
 * [Jq](https://formulae.brew.sh/formula/jq)
 
 **OPTIONAL.** 
