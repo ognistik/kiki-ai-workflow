@@ -136,7 +136,7 @@ When using Kiki, you can have more options in your interactions by holding down 
 - **FN + SHIFT:** This allows you to send your request to ANY of the preset models configured in the presets/models.json file inside Kiki's data folder. **IMPORTANT: You do have to rename your presets folder or it to be discoverable and have configured some models for this to work. Read the [INTERMEDIATE](#intermediate) section of this guide.**
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/custom_model.jpg">
+  <img width="400" src="Kiki/assets/images/custom_model.jpg">
 </p>
 
 ---
