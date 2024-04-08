@@ -2,7 +2,7 @@ ObjC.import('stdlib');
 ObjC.import('Foundation');
 ObjC.import('AppKit');
 
-// kikiCopy can be: copy, snippet, incoming, custom (custom = requires input)
+// kikiCopy can be: copy, snippet, incoming, custom (custom = requires input or whisper...)
 // kikiMenu can be: menu or direct
 // menu,copy,4 works
 // menu,custom,4 works
@@ -56,7 +56,7 @@ function run(argv) {
         contextProcess = "reset";
     } else if (kikiMods === 2) {
         kikiType = "dialogChat";
-        chatAlt = "yes";
+        chatAlt = "Yes";
         contextProcess = "reset";
     } else if (kikiMods === 3) {
 		kikiType = "dialogChat";
@@ -72,19 +72,19 @@ function run(argv) {
         contextProcess = "reset";
 	} else if (kikiMods === 7) {
 		kikiType = "dialogChat";
-        chatAlt = "yes";
+        chatAlt = "Yes";
         contextProcess = "original";
 	} else if (kikiMods === 8) {
 		kikiType = "replaceAll";
-        chatAlt = "yes";
+        chatAlt = "Yes";
         contextProcess = "reset";
 	} else if (kikiMods === 9) {
 		kikiType = "dialogChat";
-        chatAlt = "yes";
+        chatAlt = "Yes";
         contextProcess = "reset";
 	} else if (kikiMods === 10) {
 		kikiType = fnType;
-        chatAlt = "yes";
+        chatAlt = "Yes";
         contextProcess = "reset";
 	} else if (kikiMods === 11) {
 		kikiType = "replaceAll";
@@ -97,15 +97,39 @@ function run(argv) {
         contextProcess = "original";
 	} else if (kikiMods === 14) {
 		kikiType = "replaceAll";
-        chatAlt = "yes";
+        chatAlt = "Yes";
         contextProcess = "original";
 	} else if (kikiMods === 15) {
 		kikiType = "dialogChat";
-        chatAlt = "yes";
+        chatAlt = "Yes";
         contextProcess = "original";
 	} else if (kikiMods === 16) {
 		kikiType = fnType;
-        chatAlt = "yes";
+        chatAlt = "Yes";
+        contextProcess = "original";
+	} else if (kikiMods === 17) {
+		kikiType = "dialogChat";
+        chatAlt = "List";
+        contextProcess = "reset";
+	} else if (kikiMods === 18) {
+		kikiType = "replaceAll";
+        chatAlt = "List";
+        contextProcess = "reset";
+	} else if (kikiMods === 19) {
+		kikiType = "dialogChat";
+        chatAlt = "List";
+        contextProcess = "original";
+	} else if (kikiMods === 20) {
+		kikiType = fnType;
+        chatAlt = "List";
+        contextProcess = "reset";
+	} else if (kikiMods === 21) {
+		kikiType = "replaceAll";
+        chatAlt = "List";
+        contextProcess = "original";
+	} else if (kikiMods === 22) {
+		kikiType = fnType;
+        chatAlt = "List";
         contextProcess = "original";
 	}
 

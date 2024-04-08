@@ -161,6 +161,69 @@ const mods = {
 		"chatAlt": "Yes"
 		},
 		"subtitle": fn16
+	},
+	"shift+fn": {
+		"valid": true,
+		"arg": "",
+		"variables": {
+		"kikiType": "dialogChat",
+		"theRequest": theRequest,
+		"chatContext": 1,
+		"chatAlt": "List"
+		},
+		"subtitle": `Continue in dialog, reset context, and choose a model from the preset list.`
+	},
+	"shift+fn+alt": {
+		"valid": true,
+		"arg": "",
+		"variables": {
+		"kikiType": "replaceAll",
+		"theRequest": theRequest,
+		"chatContext": 1,
+		"chatAlt": "List"
+		},
+		"subtitle": `Paste in frontmost app, reset context, and choose a model from the preset list.`
+	},
+	"shift+fn+ctrl": {
+		"valid": true,
+		"arg": "",
+		"variables": {
+		"kikiType": "dialogChat",
+		"theRequest": theRequest,
+		"chatAlt": "List"
+		},
+		"subtitle": `Continue in dialog, do not reset context, and choose a model from the preset list.`
+	},
+	"shift+fn+cmd": {
+		"valid": true,
+		"arg": "",
+		"variables": {
+		"kikiType": "dialogChat",
+		"theRequest": theRequest,
+		"chatContext": 1,
+		"chatAlt": "List"
+		},
+		"subtitle": `Continue in dialog, reset context, and choose a model from the preset list.`
+	},
+	"shift+fn+ctrl+alt": {
+		"valid": true,
+		"arg": "",
+		"variables": {
+		"kikiType": "replaceAll",
+		"theRequest": theRequest,
+		"chatAlt": "List"
+		},
+		"subtitle": `Paste in frontmost app, do not reset context, and choose a model from the preset list.`
+	},
+	"shift+fn+cmd+ctrl": {
+		"valid": true,
+		"arg": "",
+		"variables": {
+		"kikiType": "dialogChat",
+		"theRequest": theRequest,
+		"chatAlt": "List"
+		},
+		"subtitle": `Continue in dialog, do not reset context, and choose a model from the preset list.`
 	}
 };
 

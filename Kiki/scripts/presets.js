@@ -47,6 +47,8 @@ function run(argv) {
 		fn10 = `Insert below, reset context, and use "${chatModelB}."`;
 		fn13 = `Insert below, do not reset context, and use "${chatModel}."`;
 		fn16 = `Insert below, do not reset context, and use "${chatModelB}."`;
+		fn20 = `Insert below, reset context, and choose a model from the preset list.`
+		fn22 = `Insert below, do not reset context, and choose a model from the preset list.`
 	} else {
 		theSub = "CHOOSE AN ACTION. Input will be requested in the next step."
 		fnType = "dialogChat";
@@ -54,6 +56,8 @@ function run(argv) {
 		fn10 = `Continue in dialog, reset context, and use "${chatModelB}."`;
 		fn13 = `Continue in dialog, do not reset context, and use "${chatModel}."`;
 		fn16 = `Continue in dialog, do not reset context, and use "${chatModelB}."`;
+		fn20 = `Continue in dialog, reset context, and choose a model from the preset list.`
+		fn22 = `Continue in dialog, do not reset context, and choose a model from the preset list.`
 	}
 
 	if (kikiMods === 1) {
@@ -103,6 +107,24 @@ function run(argv) {
 		kikiType = "dialogChat";
 	} else if (kikiMods === 16) {
 		theSub = fn16;
+		kikiType = fnType;
+	} else if (kikiMods === 17) {
+		theSub = `Continue in dialog, reset context, and choose a model from the preset list.`;
+		kikiType = "dialogChat";
+	} else if (kikiMods === 18) {
+		theSub = `Paste in frontmost app, reset context, and choose a model from the preset list.`;
+		kikiType = "replaceAll";
+	} else if (kikiMods === 19) {
+		theSub = `Continue in dialog, do not reset context, and choose a model from the preset list.`;
+		kikiType = "dialogChat";
+	} else if (kikiMods === 20) {
+		theSub = fn20;
+		kikiType = fnType;
+	} else if (kikiMods === 21) {
+		theSub = `Paste in frontmost app, do not reset context, and choose a model from the preset list.`;
+		kikiType = "replaceAll";
+	} else if (kikiMods === 22) {
+		theSub = fn22;
 		kikiType = fnType;
 	}
 
@@ -374,6 +396,114 @@ function run(argv) {
 				"theRequest": theText
 			},
 			"subtitle": fn16
+		},
+		"shift+fn": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiMods": 17,
+				"kikiType": "dialogChat",
+				"chatAlt": "List",
+				"contextProcess": "reset",
+				"chatSystem": chatSystem,
+				"temperature": temperature,
+				"maxTokens": maxTokens,
+				"frePenalty": frePenalty,
+				"prePenalty": prePenalty,
+				"topP": topP,
+				"theRequest": theText
+			},
+			"subtitle": `Continue in dialog, reset context, and choose a model from the preset list.`
+		},
+		"shift+fn+alt": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiMods": 18,
+				"kikiType": "replaceAll",
+				"chatAlt": "List",
+				"contextProcess": "reset",
+				"chatSystem": chatSystem,
+				"temperature": temperature,
+				"maxTokens": maxTokens,
+				"frePenalty": frePenalty,
+				"prePenalty": prePenalty,
+				"topP": topP,
+				"theRequest": theText
+			},
+			"subtitle": `Paste in frontmost app, reset context, and choose a model from the preset list.`
+		},
+		"shift+fn+ctrl": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiMods": 19,
+				"kikiType": "dialogChat",
+				"chatAlt": "List",
+				"contextProcess": "original",
+				"chatSystem": chatSystem,
+				"temperature": temperature,
+				"maxTokens": maxTokens,
+				"frePenalty": frePenalty,
+				"prePenalty": prePenalty,
+				"topP": topP,
+				"theRequest": theText
+			},
+			"subtitle": `Continue in dialog, do not reset context, and choose a model from the preset list.`
+		},
+		"shift+fn+cmd": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiMods": 20,
+				"kikiType": fnType,
+				"chatAlt": "List",
+				"contextProcess": "reset",
+				"chatSystem": chatSystem,
+				"temperature": temperature,
+				"maxTokens": maxTokens,
+				"frePenalty": frePenalty,
+				"prePenalty": prePenalty,
+				"topP": topP,
+				"theRequest": theText
+			},
+			"subtitle": fn20
+		},
+		"shift+fn+ctrl+alt": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiMods": 21,
+				"kikiType": "replaceAll",
+				"chatAlt": "List",
+				"contextProcess": "original",
+				"chatSystem": chatSystem,
+				"temperature": temperature,
+				"maxTokens": maxTokens,
+				"frePenalty": frePenalty,
+				"prePenalty": prePenalty,
+				"topP": topP,
+				"theRequest": theText
+			},
+			"subtitle": `Paste in frontmost app, do not reset context, and choose a model from the preset list.`
+		},
+		"shift+fn+cmd+ctrl": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiMods": 22,
+				"kikiType": fnType,
+				"chatAlt": "List",
+				"contextProcess": "original",
+				"chatSystem": chatSystem,
+				"temperature": temperature,
+				"maxTokens": maxTokens,
+				"frePenalty": frePenalty,
+				"prePenalty": prePenalty,
+				"topP": topP,
+				"theRequest": theText
+			},
+			"subtitle": fn22
 		}
 	};
 
@@ -455,6 +585,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.chatSystem = item.S
 					localMods['cmd+ctrl+shift'].variables.chatSystem = item.S
 					localMods['cmd+ctrl+fn'].variables.chatSystem = item.S
+					localMods['shift+fn'].variables.chatSystem = item.S
+					localMods['shift+fn+alt'].variables.chatSystem = item.S
+					localMods['shift+fn+ctrl'].variables.chatSystem = item.S
+					localMods['shift+fn+cmd'].variables.chatSystem = item.S
+					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.S
+					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.S
 				}
 				if (item.T) {
 					localMods.cmd.variables.temperature = item.T
@@ -472,6 +608,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.temperature = item.T
 					localMods['cmd+ctrl+shift'].variables.temperature = item.T
 					localMods['cmd+ctrl+fn'].variables.temperature = item.T
+					localMods['shift+fn'].variables.chatSystem = item.T
+					localMods['shift+fn+alt'].variables.chatSystem = item.T
+					localMods['shift+fn+ctrl'].variables.chatSystem = item.T
+					localMods['shift+fn+cmd'].variables.chatSystem = item.T
+					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.T
+					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.T
 				}
 				if (item.X) {
 					localMods.cmd.variables.maxTokens = item.X
@@ -489,6 +631,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.maxTokens = item.X
 					localMods['cmd+ctrl+shift'].variables.maxTokens = item.X
 					localMods['cmd+ctrl+fn'].variables.maxTokens = item.X
+					localMods['shift+fn'].variables.chatSystem = item.T
+					localMods['shift+fn+alt'].variables.chatSystem = item.T
+					localMods['shift+fn+ctrl'].variables.chatSystem = item.T
+					localMods['shift+fn+cmd'].variables.chatSystem = item.T
+					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.T
+					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.T
 				}
 				if (item.F) {
 					localMods.cmd.variables.frePenalty = item.F
@@ -506,6 +654,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.frePenalty = item.F
 					localMods['cmd+ctrl+shift'].variables.frePenalty = item.F
 					localMods['cmd+ctrl+fn'].variables.frePenalty = item.F
+					localMods['shift+fn'].variables.chatSystem = item.F
+					localMods['shift+fn+alt'].variables.chatSystem = item.F
+					localMods['shift+fn+ctrl'].variables.chatSystem = item.F
+					localMods['shift+fn+cmd'].variables.chatSystem = item.F
+					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.F
+					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.F
 				}
 				if (item.P) {
 					localMods.cmd.variables.prePenalty = item.P
@@ -523,6 +677,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.prePenalty = item.P
 					localMods['cmd+ctrl+shift'].variables.prePenalty = item.P
 					localMods['cmd+ctrl+fn'].variables.prePenalty = item.P
+					localMods['shift+fn'].variables.chatSystem = item.P
+					localMods['shift+fn+alt'].variables.chatSystem = item.P
+					localMods['shift+fn+ctrl'].variables.chatSystem = item.P
+					localMods['shift+fn+cmd'].variables.chatSystem = item.P
+					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.P
+					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.P
 				}
 				if (item.O) {
 					localMods.cmd.variables.topP = item.O
@@ -540,6 +700,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.topP = item.O
 					localMods['cmd+ctrl+shift'].variables.topP = item.O
 					localMods['cmd+ctrl+fn'].variables.topP = item.O
+					localMods['shift+fn'].variables.chatSystem = item.O
+					localMods['shift+fn+alt'].variables.chatSystem = item.O
+					localMods['shift+fn+ctrl'].variables.chatSystem = item.O
+					localMods['shift+fn+cmd'].variables.chatSystem = item.O
+					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.O
+					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.O
 				}
 				localMods.cmd.variables.theRequest = processedPrompt
 				localMods.ctrl.variables.theRequest = processedPrompt
@@ -556,6 +722,12 @@ function run(argv) {
 				localMods['cmd+ctrl+alt'].variables.theRequest = processedPrompt
 				localMods['cmd+ctrl+shift'].variables.theRequest = processedPrompt
 				localMods['cmd+ctrl+fn'].variables.theRequest = processedPrompt
+				localMods['shift+fn'].variables.chatSystem = processedPrompt
+				localMods['shift+fn+alt'].variables.chatSystem = processedPrompt
+				localMods['shift+fn+ctrl'].variables.chatSystem = processedPrompt
+				localMods['shift+fn+cmd'].variables.chatSystem = processedPrompt
+				localMods['shift+fn+ctrl+alt'].variables.chatSystem = processedPrompt
+				localMods['shift+fn+cmd+ctrl'].variables.chatSystem = processedPrompt
                 return {
                     "uid": item.id,
                     "type": "default",

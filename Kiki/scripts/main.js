@@ -3,9 +3,11 @@ ObjC.import('Foundation');
 
 function run(argv) {
 	var theDir = $.getenv('kiki_data');
+	var chatModelB = $.getenv('chatModelB');
 	let dataDir = theDir;
 	let context = "";
 	let lastResponse = "";
+	let lastTranscription = "";
 	let kikiHistory = "";
 	let lastModel = "";
 
@@ -28,6 +30,11 @@ function run(argv) {
 	let responseFilePath = $(dataDir + '/lastResponse.txt').stringByExpandingTildeInPath;
 	if (fileManager.fileExistsAtPath(responseFilePath)) {
 		lastResponse = responseFilePath.js;
+	}
+
+	let transcriptionFilePath = $(dataDir + '/lastTranscription.txt').stringByExpandingTildeInPath;
+	if (fileManager.fileExistsAtPath(transcriptionFilePath)) {
+		lastTranscription = transcriptionFilePath.js;
 	}
 	
 	var app = Application.currentApplication();
@@ -83,6 +90,49 @@ function run(argv) {
 					}
 				}
 			},
+			{
+				"uid": "whisperTranscribe",
+				"type": "default",
+				"title": "Whisper AI Transcription",
+				"subtitle": "Record audio and transcribe it.",
+				"arg": "actionWhisper",
+				"variables": {
+					"kikiSplit2": "whisper"
+				},
+				"autocomplete": "Whisper AI Transcription",
+				"mods": {
+					"cmd": {
+						"valid": true,
+						"arg": "actionWhisper",
+						"variables": {
+							"kikiSplit1": "direct",
+							"kikiSplit2": "whisper",
+							"kikiSplit3": "1",
+							"kikiSplit4": "useAsPrompt"
+						},
+						"subtitle": "Record audio and use it as prompt for chat."
+					},
+					"alt": {
+						"valid": true,
+						"arg": "actionWhisper",
+						"variables": {
+							"kikiSplit1": "paste",
+							"kikiSplit2": "whisper"
+						},
+						"subtitle": "Record audio and paste transcripion in frontmost app."
+					},
+					"shift": {
+						"valid": true,
+						"arg": "actionWhisper",
+						"variables": {
+							"kikiSplit1": "menu",
+							"kikiSplit2": "whisper",
+							"kikiSplit3": "1"
+						},
+						"subtitle": "Record audio and run transcription through preset."
+					}
+				}
+			},
 			...(context !== '' ? [{
 				"uid": "resumeLast",
 				"type": "default",
@@ -97,8 +147,21 @@ function run(argv) {
 				"mods": {
 					"cmd": {
 						"valid": true,
-						"arg": "filesRevealPath",
-						"subtitle": "Reveal data & history path in Finder."
+						"arg": "actionResumeLast",
+						"subtitle": `Defaults to dialog responses and will use "${chatModelB}."`,
+						"variables": {
+							"theContext": context,
+							"chatModel": chatModelB
+						}
+					},
+					"fn+shift": {
+						"valid": true,
+						"arg": "actionResumeLast",
+						"subtitle": "Defaults to dialog responses and will prompt user for a model from the preset list.",
+						"variables": {
+							"theContext": context,
+							"chatAlt": "List"
+						}
 					}
 				},
 				"quicklookurl": context
@@ -118,6 +181,22 @@ function run(argv) {
 					}
 				},
 				"quicklookurl": lastResponse
+			  }] : []),
+			...(lastTranscription !== '' ? [{
+				"uid": "copyTrans",
+				"type": "default",
+				"title": "Copy Last Transcription",
+				"subtitle": "Copy last transcription text to your clipboard.",
+				"arg": "filesCopyTranscription",
+				"autocomplete": "Copy Last Transcription",
+				"mods": {
+					"cmd": {
+						"valid": true,
+						"arg": "filesRevealPath",
+						"subtitle": "Reveal data & history path in Finder."
+					}
+				},
+				"quicklookurl": lastTranscription
 			  }] : []),
 			...(context !== '' && copyContextPath !== '' ? [{
 				"uid": "copyContext",

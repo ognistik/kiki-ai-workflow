@@ -26,6 +26,11 @@ function run(argv) {
 		theText = '';
 	}
 	try {
+		transcription = $.getenv('transcription');
+	} catch (error) {
+		transcription = '';
+	}
+	try {
 		customPromptText = $.getenv('customPromptText');
 	} catch (error) {
 		customPromptText = '';
@@ -46,13 +51,15 @@ function run(argv) {
 		contextProcess = "reset";
 	}
 
-	if (kikiCopy === 'custom' || kikiCopy === '') {
+	if ((kikiCopy === 'custom' || kikiCopy === '') && (transcription === '')) {
 		fnType = "dialogChat";
 		theTitle = "Input the Text for your Chosen Action";
 		fn6 = `Continue in dialog, reset context, and use "${chatModel}."`;
 		fn10 = `Continue in dialog, reset context, and use "${chatModelB}."`;
 		fn13 = `Continue in dialog, do not reset context, and use "${chatModel}."`;
 		fn16 = `Continue in dialog, do not reset context, and use "${chatModelB}."`;
+		fn20 = `Continue in dialog, reset context, and choose a model from the preset list.`
+		fn22 = `Continue in dialog, do not reset context, and choose a model from the preset list.`
 	} else {
 		fnType = "insertBelow";
 		theTitle = "Type the Prompt for your Text";
@@ -60,6 +67,8 @@ function run(argv) {
 		fn10 = `Insert below, reset context, and use "${chatModelB}."`;
 		fn13 = `Insert below, do not reset context, and use "${chatModel}."`;
 		fn16 = `Insert below, do not reset context, and use "${chatModelB}."`;
+		fn20 = `Insert below, reset context, and choose a model from the preset list.`
+		fn22 = `Insert below, do not reset context, and choose a model from the preset list.`
 	}
 
     if (kikiMods === 1) {
@@ -109,6 +118,24 @@ function run(argv) {
 		kikiType = "dialogChat";
 	} else if (kikiMods === 16) {
 		theSub = fn16;
+		kikiType = fnType;
+	} else if (kikiMods === 17) {
+		theSub = `Continue in dialog, reset context, and choose a model from the preset list.`;
+		kikiType = "dialogChat";
+	} else if (kikiMods === 18) {
+		theSub = `Paste in frontmost app, reset context, and choose a model from the preset list.`;
+		kikiType = "replaceAll";
+	} else if (kikiMods === 19) {
+		theSub = `Continue in dialog, do not reset context, and choose a model from the preset list.`;
+		kikiType = "dialogChat";
+	} else if (kikiMods === 20) {
+		theSub = fn20;
+		kikiType = fnType;
+	} else if (kikiMods === 21) {
+		theSub = `Paste in frontmost app, do not reset context, and choose a model from the preset list.`;
+		kikiType = "replaceAll";
+	} else if (kikiMods === 22) {
+		theSub = fn22;
 		kikiType = fnType;
 	}
 	
@@ -212,6 +239,17 @@ function run(argv) {
 			"contextProcess": "reset"
 			},
 			"subtitle": fn6
+		},
+		"shift+fn": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+			"kikiType": "dialogChat",
+			"theRequest": theRequest,
+			"contextProcess": "reset",
+			"chatAlt": "List"
+			},
+			"subtitle": `Continue in dialog, reset context, and use a model from the user presets list.`
 		},
 		"cmd+ctrl": {
 			"valid": true,
@@ -319,6 +357,72 @@ function run(argv) {
 			"contextProcess": "original"
 			},
 			"subtitle": fn16
+		},
+		"shift+fn": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiType": "dialogChat",
+				"theRequest": theRequest,
+				"chatAlt": "List",
+				"contextProcess": "reset"
+			},
+			"subtitle": `Continue in dialog, reset context, and choose a model from the preset list.`
+		},
+		"shift+fn+alt": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiType": "replaceAll",
+				"theRequest": theRequest,
+				"chatAlt": "List",
+				"contextProcess": "reset"
+			},
+			"subtitle": `Paste in frontmost app, reset context, and choose a model from the preset list.`
+		},
+		"shift+fn+ctrl": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiType": "dialogChat",
+				"theRequest": theRequest,
+				"chatAlt": "List",
+				"contextProcess": "original"
+			},
+			"subtitle": `Continue in dialog, do not reset context, and choose a model from the preset list.`
+		},
+		"shift+fn+cmd": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiType": fnType,
+				"theRequest": theRequest,
+				"chatAlt": "List",
+				"contextProcess": "reset"
+			},
+			"subtitle": fn20
+		},
+		"shift+fn+ctrl+alt": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiType": "replaceAll",
+				"theRequest": theRequest,
+				"chatAlt": "List",
+				"contextProcess": "original"
+			},
+			"subtitle": `Paste in frontmost app, do not reset context, and choose a model from the preset list.`
+		},
+		"shift+fn+cmd+ctrl": {
+			"valid": true,
+			"arg": "",
+			"variables": {
+				"kikiType": fnType,
+				"theRequest": theRequest,
+				"chatAlt": "List",
+				"contextProcess": "original"
+			},
+			"subtitle": fn22
 		}
 	};
 	
