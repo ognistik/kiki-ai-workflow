@@ -51,6 +51,8 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 
 6. **Markdown Chat:** Enjoy the convenience of making AI requests directly in your preferred markdown text editor. Customize the chat settings through presets included on the header of your notes according to your preferences.
 
+7.  **Whisper AI Transcriptions:** Convenient multi-language transcriptions right at your fingertips. You can dictate/transcribe and paste in frontmost app, dictate and run the transcription through a custom preset, or transcribe any audio file below 25 MB with Alfred's file action.
+
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot01.jpg">
 </p>
@@ -60,7 +62,9 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 * [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) API Tokens with existing credits or payment setup.
 * [Jq](https://formulae.brew.sh/formula/jq)
 
-**OPTIONAL.** To utilize the Markdown Chat feature, ensure that your text editor copies selected text as markdown, rather than as formatted rich text.
+**OPTIONAL.** 
+* To utilize the Markdown Chat feature, ensure that your text editor copies selected text as markdown, rather than as formatted rich text.
+* To be able to record and transcribe audio, you need to have [THIS SHORTCUT](https://www.icloud.com/shortcuts/c2154f998e664884b80d08a0a77f397c). It's just a simple recorder.
 
 *Note: ‘Jq’ is necessary for Kiki to correctly format requests through OpenAI or OpenRouter APIs. In Terminal, simply run `brew install jq`. If you do not have [Homebrew](https://brew.sh/) in your system, you may need to install that first in order to install ‘jq’.*
 
@@ -68,7 +72,7 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 ## SETUP
 
 **The workflow’s configuration was prepared so that you:**
-1. Enter either an OpenRouter or OpenAI API Token.
+1. Enter either an OpenRouter, Anthropic, or OpenAI API Token.
 2. If you plan to use OpenRouter exclusively, remember to change the default Model to an Open Router model.
 3. Select your preferred Kiki data directory.
 4. You’re all set! You can now begin using Kiki.
@@ -80,6 +84,8 @@ Kiki is an AI utility to interact with OpenAI Chat GPT and OpenRouter LLM models
 4. **MD Chat Pattern ID.** If you use a text editor that supports Markdown, you may need to change this to another character. For example, I use [Bear](https://bear.app/), which supports organization through tags, so my Pattern ID is "#". The purpose of this setting will become clearer as you read through this documentation.
 
 All the other options allow you to further customize Kiki according to your personal needs. However, the default settings should suffice for most use cases. If you ever need to reconfigure the workflow, simply right-click on the workflow's name in Alfred and select "Configure...".
+
+*NOTE: The Frequency Penalty and Presence Penalty parameters are not available through the Anthropic's API. Any values you insert for those parameters in your Kiki workflow will be ignored. Other than that, it works the same as OpenRouter and OpenAI models.*
 
 ---
 ## HOW TO
@@ -94,7 +100,7 @@ Kiki is powerful, flexible, and offers extensive customization options. It’s e
   <img width="600" src="Kiki/assets/images/screenshot02.jpg">
 </p>
 
-* **The "ko" (or Kiki options) keyword provides a menu of actions you can perform on your Kiki data files. T**his menu will automatically populate after you have engaged in at least one chat. Press and hold the CMD key while selecting any option to reveal your data directory. Additionally, you can tap the SHIFT key to quickly preview the file associated with the selected action.
+* **The "ko" (or Kiki options) keyword provides a menu of actions you can perform on your Kiki data files.** This menu will automatically populate after you have engaged in at least one chat. Press and hold the CMD key while selecting file-related options to reveal your data directory. Additionally, you can tap the SHIFT key (or CMD Y) to quickly preview the file associated with the selected action. The Whisper AI Transcription option offers different options with the CMD, OPT, and SHIFT modifiers.
 
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot03.jpg">
@@ -127,6 +133,7 @@ When using Kiki, you can have more options in your interactions by holding down 
 - **CTRL:** When using CTRL, the existing context file will not be reset. Keep in mind that if the number of existing messages in the file exceeds the threshold set in the workflow's configuration, the oldest message will be removed.
 - **SHIFT:** This modifier triggers Kiki to reply in a dialog. It is the default way Kiki answers chats or presets initiated from Alfred's command bar. As we will learn soon, this "default" may change.
 - **FN:** Holding FN allows you to get Kiki's answer below your selected text. This option is only available when using Kiki on selected text through a universal action, hotkey, snippet, or external trigger.
+- **FN + SHIFT:** This allows you to send your request to ANY of the preset models configured in the presets/models.json file inside Kiki's data folder. **IMPORTANT: You do have to rename your presets folder or it to be discoverable and have configured some models for this to work. Read the [INTERMEDIATE](#intermediate) section of this guide.**
 
 ---
 ### Universal Actions on Text
@@ -135,7 +142,7 @@ Select text and trigger your hotkey for Alfred's Universal Actions. Search for "
   <img width="600" src="Kiki/assets/images/screenshot06.jpg">
 </p>
 
-*NOTE: the "Send to Chat" option won't present you with Alfred's bar, essentially being the only action that will always replace your selected text.*
+*NOTE: the "Send to Chat" option won't present you with Alfred's bar, essentially being the only action that will always replace your selected text. You can now also trigger Universal Action on txt or mardkdown files. In this case the result will appear as a dialog.*
 
 ---
 ### Custom Triggers
@@ -175,6 +182,7 @@ Here are a few things to keep in mind:
 - **To resume a chat from a context file, select the context file and trigger the hotkey you have set for Alfred Universal Actions.** Search for Kiki.
 - **When you resume chats, Kiki will use dialog popups by default and will not auto-save the conversation to your context file copy.** It will continue to save to its data folder. However, you have some options you can trigger by holding modifiers:
   - CMD to resume the chat using your alternative model.
+  - FN + SHIFT to resume the chat using a model from your presets list (set in models.json).
   - CTRL to continue auto-saving the conversation to your context file.
   - OPT to resume your chat from within the Markdown Chat feature. Do not use this modifier until you learn how this feature works.
 
@@ -182,7 +190,7 @@ Here are a few things to keep in mind:
   <img width="600" src="Kiki/assets/images/screenshot07.jpg">
 </p>
 
-*Note: When you resume chats using Alfred's Universal Action, your previous messages and system role will be retained, but all other settings will be based on Kiki's default configuration. For maximum flexibility, it is recommended to use the Markdown Chat feature.*
+*Note: When you resume chats using Alfred's Universal Action, your previous messages and system role will be retained, but all other settings will be based on Kiki's default configuration. You can select a model with the FN + SHIFT modifiers, but for maximum flexibility, it is recommended to use the Markdown Chat feature.*
 
 ---
 ## ADVANCED
@@ -299,13 +307,16 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 **The All-in-One Trigger in Kiki receives four arguments, which should be entered without spaces and separated by commas.** Let's break down what each argument means:
 
 1. **The first argument can be either "menu" or "direct."** This determines whether the user will be directed to the Kiki Text Presets menu or if a specific preset will be processed directly.
-2. **The second argument can be "copy," "snippet," "incoming," or "custom."** 
+2. **The second argument can be "copy," "snippet," "incoming," "whisper," or "custom."** 
    - If "copy" is chosen, it assumes that the user has selected text and wants to run it through the text presets menu or process it with a preset. If you use “copy” and there’s no text selected, Kiki will use whatever there is already in your clipboard 😉.
    - Using "snippet" triggers the CTRL + SHIFT + A shortcut, which selects text up to the previous line break. The selected text is then run through the text presets menu or directly processed with a preset.
-   - If the second argument is defined as "incoming," Kiki will grab the user's current clipboard content and will use it as the input for the workflow. This option is particularly useful for users to create their own Universal Actions to directly trigger their own custom presets (Alfred's Universal Actions place whatever text is selected on user's clipboard).
+   - If the second argument is defined as "incoming," Kiki will grab the user's current clipboard content and will use it as the input for the workflow. This option is particularly useful for users to create their own Universal Actions to directly trigger their own custom presets—since Alfred's Universal Actions place whatever text is selected on user's clipboard.
+   - The "whisper" argument will prompt the user to record audio and will Kiki will use its transcription as the input for the workflow.
    - Choosing "custom" means that no input is required initially. The user will be presented with Alfred's command bar to type an input something for either the text presets menu or an already-selected preset.
 3. **The third argument must be a number from the list of modifiers below.** This argument simulates a modifier or modifier combinations within Alfred's command bar. By using this, you can skip the command bar entirely and still have control over the multiple processing options available with Kiki.
 4. **The fourth argument refers is the ID of your text preset.** This argument is optional and must only be included if the first argument is "direct.”
+
+*NOTE: For users that use Whisper AI, there's a few unlisted options. If kikiActions is run with "paste,whisper" then the user will be prompted to record, and the result ill be pasted to the frontmost app. If kikiActions is run with "customWhisperPrompt" as its fourth argument, the user will be prompted to record audio and this will be transcribed to be used as the custom prompt of the workflow's input (which should be set from the other arguments). For example, user may select text and trigger kikiActions with "direct,copy,1,customWhisperPrompt".*
 
 **Number codes to be used on the third argument:**
 1. **No Modifiers.** Continue in dialog, reset context, and use the main chat model.
@@ -324,6 +335,12 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 14. **Command + Control + Option.** Paste in frontmost app, do not reset context, and use the alternative chat model.
 15. **Command + Control + Shift.** Continue in dialog, do not reset context, and use the alternative chat model.
 16. **Command + Control + FN.** Insert below, do not reset context, and use the alternative chat model.
+17. **SHIFT + FN.** Continue in dialog, reset context, and choose a model from the preset list.
+18. **SHIFT + FN + Option.** Paste in frontmost app, reset context, and choose a model from the preset list.
+19. **SHIFT + FN + Control.** Continue in dialog, do not reset context, and choose a model from the preset list.
+20. **SHIFT + FN + CMD.** Insert below, reset context, and choose a model from the preset list.
+21. **SHIFT + FN + Control + Option.** Paste in frontmost app, do not reset context, and choose a model from the preset list.
+22. **SHIFT + FN + Command + Control.** Insert below, do not reset context, and choose a model from the preset list.
 
 ---
 ### Preset-Specific Triggers
