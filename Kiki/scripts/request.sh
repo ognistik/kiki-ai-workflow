@@ -15,6 +15,7 @@ HISTORY_LIMIT=${historyLimit}
 OPENAI_API_KEY="${APIToken_OAI}"
 OPENROUTER_API_KEY="${APIToken_OR}"
 ANTHROPIC_API_KEY="${APIToken_AN}"
+API_ENDPOINT="${API_Endpoint}"
 
 # File Paths
 HISTORY_PATH="${kiki_data}/history/"
@@ -131,8 +132,13 @@ elif [[ "$MODEL" == claude* ]]; then
     )
 fi
 
+# check if API_ENDPOINT is empty, if so assign the API_URL based on the online service sbove
+if [[ -z $API_ENDPOINT ]]; then
+    API_ENDPOINT=$API_URL
+fi
+
 # Make the API request
-response=$(curl -s -X POST "${HEADERS[@]}" -d "$payload" "$API_URL")
+response=$(curl -s -X POST "${HEADERS[@]}" -d "$payload" "$API_ENDPOINT")
 
 # Check for the existence of the "error" field in the response
 if echo "$response" | jq -e '.error' > /dev/null; then

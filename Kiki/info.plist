@@ -9049,6 +9049,27 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>config</key>
 			<dict>
 				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Leave blank to automatically assign based on the model; for a local LLM tool you can enter something like http://localhost:4891/v1/chat/completions or other API endpoint as required</string>
+			<key>label</key>
+			<string>API Endpoint URL</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>API_Endpoint</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
 				<string>gpt-3.5-turbo</string>
 				<key>placeholder</key>
 				<string></string>
