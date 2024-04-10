@@ -4543,213 +4543,15 @@ echo "$theRequest"</string>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
-				<integer>102</integer>
+				<integer>0</integer>
 				<key>script</key>
-				<string>#!/bin/bash
-
-# Configuration variables
-CONTEXT_MESSAGES_LIMIT=${chatContext}
-MODEL="${chatModel}"
-TEMPERATURE=${temperature}
-MAX_TOKENS=${maxTokens}
-PRESENCE_PENALTY=${prePenalty}
-FREQUENCY_PENALTY=${frePenalty}
-TOP_P=${topP}
-SYSTEM_ROLE_MESSAGE="${chatSystem}"
-NEW_MESSAGE="${theRequest}"
-ALTERNATIVE_CHAT="${chatAlt}"
-HISTORY_LIMIT=${historyLimit}
-OPENAI_API_KEY="${APIToken_OAI}"
-OPENROUTER_API_KEY="${APIToken_OR}"
-ANTHROPIC_API_KEY="${APIToken_AN}"
-
-# File Paths
-HISTORY_PATH="${kiki_data}/history/"
-EXTERNAL_CONTEXT="${externalContext}"
-EXTERNAL_CONTEXT_PATH="${kiki_data}/lastExternalContext.txt"
-REPLACE_CONTEXT="${repContext}"
-MODEL_FILE="${kiki_data}/lastModel.txt"
-RESPONSE_FILE="${kiki_data}/lastResponse.txt"
-REQUEST_FILE="${kiki_data}/lastRequest.txt"
-SYSTEM_FILE="${kiki_data}/lastSystem.txt"
-
-# Define the context and other file paths
-if [ "${createUserPresets}" == "Yes" ]; then
-  if [ -z "$(find "${kiki_data}" -maxdepth 1 -type d -name 'preset*')" ]; then
-    cp -r "$(pwd)/assets/presets_" "${kiki_data}"
-  fi
-fi
-
-# Saving User's message by itself before sending... as a backup
-echo "$NEW_MESSAGE" &gt; "$REQUEST_FILE"
-
-# Check if REPLACE_CONTEXT variable is non-empty
-if [[ -n "$REPLACE_CONTEXT" ]]; then
-	CONTEXT_FILE="$REPLACE_CONTEXT"
-	echo "$REPLACE_CONTEXT" &gt; "$EXTERNAL_CONTEXT_PATH"
-else
-	CONTEXT_FILE="${kiki_data}/context.json"
-fi
-
-# Check if EXTERNAL_CONTEXT variable is non-empty and if so, uses it as is
-if [[ -n "$EXTERNAL_CONTEXT" ]] &amp;&amp; [[ "$kikiType" != "pasteChat" ]]; then
-    messages=$(cat "$EXTERNAL_CONTEXT")
-	SYSTEM_ROLE_MESSAGE=$(echo "$messages" | jq -r '.[] | select(.role == "system") | .content')
-elif [[ -n "$EXTERNAL_CONTEXT" ]] &amp;&amp; [[ "$kikiType" == "pasteChat" ]]; then
-	messages=$(cat "$EXTERNAL_CONTEXT" | jq --arg msg "$SYSTEM_ROLE_MESSAGE" '.[0].content = $msg')
-else
-    # Creates context file or cleans it if limit is set to 1
-	if [[ ! -f "$CONTEXT_FILE" || $CONTEXT_MESSAGES_LIMIT -eq 1 ]]; then
-	    messages=$(jq -n --arg msg "$SYSTEM_ROLE_MESSAGE" '[{"role":"system","content":$msg}]')
-	# If it's for MD chat, it will always inject the System Role (could be preset)
-	elif [[ "$kikiType" == "pasteChat" ]]; then
-	    messages=$(cat "$CONTEXT_FILE" | jq --arg msg "$SYSTEM_ROLE_MESSAGE" '.[0].content = $msg')
-	else
-	    messages=$(cat "$CONTEXT_FILE")
-		SYSTEM_ROLE_MESSAGE=$(echo "$messages" | jq -r '.[] | select(.role == "system") | .content')
-	fi
-fi
-
-# Append the new message to the context array
-messages=$(echo "$messages" | jq --arg msg "$NEW_MESSAGE" '. + [{"role":"user","content":$msg}]')
-
-# If context limit is not zero, ensure we keep only the last N messages, plus the system role
-if [[ "$CONTEXT_MESSAGES_LIMIT" -ne 0 ]]; then
-    messages=$(echo "$messages" | jq --argjson limit "$CONTEXT_MESSAGES_LIMIT" '
-        if ([.[] | select(.role != "system")] | length) &gt; $limit
-        then
-            .[0] as $systemRole | (.[1:] | .[-$limit:]) | [$systemRole] + .
-        else
-            .
-        end
-    ')
-fi
-
-# Formulate the API request payload
-payload=$(jq -n \
-    --arg model "$MODEL" \
-    --argjson messages "$messages" \
-    --argjson temperature "$TEMPERATURE" \
-	--argjson presence_penalty "$PRESENCE_PENALTY" \
-	--argjson frequency_penalty "$FREQUENCY_PENALTY" \
-	--argjson top_p "$TOP_P" \
-    '{model: $model, messages: $messages, temperature: $temperature, presence_penalty: $presence_penalty, frequency_penalty: $frequency_penalty, top_p: $top_p}')
-
-# If MAX_TOKENS is set, add it to the payload
-if [[ "$MAX_TOKENS" -ne 0 ]]; then
-    payload=$(echo "$payload" | jq --argjson max_tokens "$MAX_TOKENS" '. + {max_tokens: $max_tokens}')
-fi
-
-if [[ "$MODEL" == claude* ]]; then
-    payload=$(jq -n \
-        --arg model "$MODEL" \
-        --arg system_message "$SYSTEM_ROLE_MESSAGE" \
-		--argjson max_tokens "$(echo "$MAX_TOKENS" | jq 'tonumber | if . &lt; 1 then 4000 else . end')" \
-        --argjson user_messages "$(echo "$messages" | jq '[.[] | select(.role != "system")]')" \
-        --argjson temperature "$TEMPERATURE" \
-        --argjson top_p "$TOP_P" \
-        '{model: $model, system: $system_message, max_tokens: $max_tokens, messages: $user_messages, temperature: $temperature, top_p: $top_p}')
-fi
-
-# Determine the API URL and headers based on the model string
-API_URL="https://api.openai.com/v1/chat/completions"
-HEADERS=(
-    "-H" "Content-Type: application/json"
-    "-H" "Authorization: Bearer $OPENAI_API_KEY"
-)
-
-if [[ "$MODEL" == *"/"* ]]; then
-    API_URL="https://openrouter.ai/api/v1/chat/completions"
-    # Update the authorization to use OPENROUTER_API_KEY instead of OPENAI_API_KEY
-    HEADERS=(
-        "-H" "Content-Type: application/json"
-        "-H" "Authorization: Bearer $OPENROUTER_API_KEY"
-        "-H" "HTTP-Referer: https://afadingthought.substack.com"
-        "-H" "X-Title: Kiki"
-    )
-
-elif [[ "$MODEL" == claude* ]]; then
-    API_URL="https://api.anthropic.com/v1/messages"
-    # Update the authorization to use Anthropic's API key
-    HEADERS=(
-		"-H" "Content-Type: application/json"
-		"-H" "x-api-key: $ANTHROPIC_API_KEY"
-		"-H" "anthropic-version: 2023-06-01"
-    )
-fi
-
-# Make the API request
-response=$(curl -s -X POST "${HEADERS[@]}" -d "$payload" "$API_URL")
-
-# Check for the existence of the "error" field in the response
-if echo "$response" | jq -e '.error' &gt; /dev/null; then
-    # Extract the error message and use it as the assistant_response
-    assistant_response=$(echo "$response" | jq -r '.error.message')
-else
-    # Extract the assistant's response trimming whitespaces with xargs
-    if echo "$response" | jq -e '.choices' &gt; /dev/null; then
-        assistant_response=$(echo "$response" | jq -r '.choices[0].message.content | gsub("^\\s+|\\s+$";"")')
-    elif echo "$response" | jq -e '.content' &gt; /dev/null; then
-        assistant_response=$(echo "$response" | jq -r '.content[0].text | gsub("^\\s+|\\s+$";"")')
-    else
-        echo "API request failed or did not return expected 'choices' field." &gt;&amp;2
-        exit 1
-    fi
-fi
-
-# Append the assistant's response to the messages
-messages=$(echo "$messages" | jq --arg msg "$assistant_response" '. + [{"role":"assistant","content":$msg}]')
-
-# Update the context file with the new messages
-if [[ -n "$REPLACE_CONTEXT" ]]; then
-	echo "$messages" &gt; "$CONTEXT_FILE"
-	echo "$messages" &gt; "${kiki_data}/context.json"
-else
-	echo "$messages" &gt; "$CONTEXT_FILE"
-fi
-
-# Write separate files
-echo "$assistant_response" &gt; "$RESPONSE_FILE"
-echo "$MODEL" &gt; "$MODEL_FILE"
-echo "$SYSTEM_ROLE_MESSAGE" &gt; "$SYSTEM_FILE"
-
-#------------------------------------------------------ THE HISTORY LOGS
-if [ "${historyLimit}" -ne 0 ]; then
-  # Ensure the history path directory exists
-  if [ ! -d "$HISTORY_PATH" ]; then
-    mkdir -p "$HISTORY_PATH"
-  fi
-
-  # Format for the filename: YYMMDD-HHMMSS.json
-  FILENAME=$(date +"%y%m%d-%H%M%S").json
-
-  # Save the messages to a new file with the current date and time
-  echo "$messages" &gt; "$HISTORY_PATH/$FILENAME"
-
-  # Check and maintain the history limit
-  FILE_COUNT=$(find "$HISTORY_PATH" -maxdepth 1 -name '*.json' | wc -l)
-
-  if [ "$FILE_COUNT" -gt "$HISTORY_LIMIT" ]; then
-    # Calculate how many files to delete
-    DELETE_COUNT=$((FILE_COUNT - HISTORY_LIMIT))
-    
-    # Delete the oldest files
-    ls -t "$HISTORY_PATH"/*.json | tail -n "$DELETE_COUNT" | xargs -I {} rm {}
-  fi
-fi
-#------------------------------------------------------
-
-
-# Now lets call the action when returning
-osascript -e 'tell application id "com.runningwithcrayons.Alfred" to run trigger "'${kikiType}'" in workflow "com.kiki.ai"'
-
-# No need to echo the response here, as Alfred will read from RESPONSE_FILE</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>scripts/request.sh</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -7750,7 +7552,7 @@ Currently, there is no implemented solution for this issue. However, in all of m
 The waiting placeholder is useful to prevent clicking around while waiting for a response to be pasted in your frontmost app. Unfortunately, there are limited formatting options within Alfred to adjust its size. You can customize it to some extent in the "Large Type" block color coded in red, or you can disable it completely in Kiki's configuration.
 
 **My response seems cut off… what happened?**
-If you find that your response is being cut off, it is likely due to your Max Tokens setting. To avoid this issue, it is recommended to set the Max Tokens value to 0. However, if you have already set it to a different value, you can try increasing it. Additionally, there is a length limit for Kiki's dialogs. If you are having a lengthy conversation with long answers and want to avoid hitting this limit, it is suggested to use the Markdown Chat feature.
+There are two things to consider here. If you find that your response is being cut off (on a short AppleScript Dialog), it is likely due to your Max Tokens setting. To avoid this issue, it is recommended to set the Max Tokens value to 0. If you have already set it to a different value, you can try increasing it. Additionally, there is a length limit for Kiki's dialogs... Kiki replies will be cut-off at about 1800 characters. If you are having a lengthy conversation with long answers and want to avoid hitting this limit, it is suggested to use the Markdown Chat feature.
 
 **My snippet requests seem to send the text from my clipboard instead of the one indicated by my snippet.**
 If this happens, first of all check that the keyboard shortcut for CTRL + SHIFT + A works by itself. It should select the text up to your previous linebreak, but if it's not happening it means your host app is not compatible with this feature. If the selection alone works and you have this issue it's likely due to the delay required for your system to copy text to the clipboard. You can change this setting in Kiki's configuration. A delay of 0.5 should work for most cases, but if you're experiencing this issue, you may need to increase it slightly. Conversely, you can lower the delay to make Kiki feel more responsive. I have my delay set at 0.3.
@@ -7759,7 +7561,7 @@ If this happens, first of all check that the keyboard shortcut for CTRL + SHIFT 
 ## CLOSING
 I hope Kiki proves to be useful for you. If you come across any bugs that you can reproduce, please don't hesitate to [let me know.](mailto:hello@afadingthought.com) I will do my best to address them.
 
-The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts and would like a similar custom AI presets tool for iOS, you can check it out [HERE](https://afadingthought.substack.com/p/toolvox-gpt-one-shortcut-to-rule). ToolVox AI offers more features than Kiki, such as web browsing, GPT4 Vision, Whisper AI, Eleven Labs integration, and Dall-e 3. However, running it on a Mac is slow due to its complexity, and it is more complicated to set up. Kiki was designed as a simpler alternative for everyday tasks.
+The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts and would like a similar custom AI presets tool for iOS, you can check it out [HERE](https://afadingthought.substack.com/p/toolvox-gpt-one-shortcut-to-rule). ToolVox AI offers a few more features than Kiki, such as web browsing, GPT4 Vision, Eleven Labs integration, and Dall-e 3. Kiki was designed as a simpler alternative for everyday tasks.
 
 *Lastly, if you find Kiki useful, I would greatly appreciate your support by buying me a coffee at [THIS LINK](https://www.buymeacoffee.com/afadingthought). Your generosity would mean the world to me. For any future updates on Kiki or other personal projects, you can sign up for my newsletter: [A Fading Thought](https://afadingthought.substack.com/)*</string>
 	<key>uidata</key>
@@ -9679,29 +9481,10 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<string>whisperPrompt</string>
 		</dict>
 	</array>
-	<key>variables</key>
-	<dict>
-		<key>theResponse</key>
-		<string>Here is a short story in two paragraphs:
-
-It was a crisp autumn morning, the kind that made the leaves on the trees seem to glow with an inner fire. Sarah pulled her jacket tighter as she stepped outside, her breath forming small clouds in the chilly air. She set off down the winding path that led through the woods behind her house, the familiar crunch of leaves under her boots a comforting rhythm.
-
-As she walked, Sarah let her mind wander, drinking in the sights and sounds around her. A squirrel darted across the path, its bushy tail flicking back and forth. A bird's song echoed through the trees, a sweet and melancholic melody. Sarah felt a sense of peace wash over her, the stresses of the day fading away as she immersed herself in the beauty of the natural world. It was in moments like these that she felt truly alive, connected to something greater than herself.
-
-It was a crisp autumn morning, the kind that made the leaves on the trees seem to glow with an inner fire. Sarah pulled her jacket tighter as she stepped outside, her breath forming small clouds in the chilly air. She set off down the winding path that led through the woods behind her house, the familiar crunch of leaves under her boots a comforting rhythm.
-
-As she walked, Sarah let her mind wander, drinking in the sights and sounds around her. A squirrel darted across the path, its bushy tail flicking back and forth. A bird's song echoed through the trees, a sweet and melancholic melody. Sarah felt a sense of peace wash over her, the stresses of the day fading away as she immersed herself in the beauty of the natural world. It was in moments like these that she felt truly alive, connected to something greater than herself.
-
-It was a crisp autumn morning, the kind that made the leaves on the trees seem to glow with an inner fire. Sarah pulled her jacket tighter as she stepped outside, her breath forming small clouds in the chilly air. She set off down the winding path that led through the woods behind her house, the familiar crunch of leaves under her boots a comforting rhythm.
-
-HERE... As she walked, Sarah let her mind wander, drinking in the sights and sounds around her. A squirrel darted across the path, its bushy tail flicking back and forth. A bird's song echoed through the trees, a sweet and melancholic melody. Sarah felt a sense of peace wash over her, the stresses of the day fading away as she immersed herself in the beauty of the natural world. It was in moments like these that she felt truly alive, connected to something greater than herself.
-
-It was a crisp autumn morning, the kind that made the leaves on the trees seem to glow with an inner fire. Sarah pulled her jacket tighter as she stepped outside, her breath forming small clouds in the chilly air. She set off down the winding path that led through the woods behind her house, the familiar crunch of leaves under her boots a comforting rhythm.
-
-As she walked, Sarah let her mind wander, drinking in the sights and sounds around her. A squirrel darted across the path, its bushy tail flicking back and forth. A bird's song echoed through the trees, a sweet and melancholic melody. Sarah felt a sense of peace wash over her, the stresses of the day fading away as she immersed herself in the beauty of the natural world. It was in moments like these that she felt truly alive, connected to something greater than herself.</string>
-	</dict>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/afadingthought/kiki-ai-workflow</string>
 </dict>
