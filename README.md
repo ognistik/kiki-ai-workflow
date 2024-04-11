@@ -85,7 +85,7 @@ Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropi
 
 All the other options allow you to further customize Kiki according to your personal needs. However, the default settings should suffice for most use cases. If you ever need to reconfigure the workflow, simply right-click on the workflow's name in Alfred and select "Configure...".
 
-*NOTE: The Frequency Penalty and Presence Penalty parameters are not available through the Anthropic's API. Any values you insert for those parameters in your Kiki workflow will be ignored. Other than that, it works the same as OpenRouter and OpenAI models.*
+*NOTE: The Frequency Penalty and Presence Penalty parameters are not available through the Anthropic's API. Any values you insert for those parameters in your Kiki workflow will be ignored. Other than that, it works the same as OpenRouter and OpenAI models. It's important to note that Kiki supports any of the API providers mentioned above or a Custom API Endpoint if set, but not both.*
 
 ---
 ## HOW TO
