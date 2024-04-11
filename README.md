@@ -37,7 +37,7 @@
 ---
 
 ## INTRODUCTION
-Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropic LLM models. It is specifically designed with the following features in mind:
+Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropic LLM models. It now also supports a custom API endpoint, which allows it to interact with local/offline LLM models. It is specifically designed with the following features in mind:
 
 1. **Quick chats initiated from Alfred’s command bar:** These chats start in the command bar of Alfred and continue as AppleScript dialogs.
 
@@ -59,26 +59,26 @@ Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropi
 
 ---
 ## REQUIREMENTS
-* [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) and/or [Anthropic](https://www.anthropic.com/api) API Tokens with existing credits or payment setup.
+* [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) and/or [Anthropic](https://www.anthropic.com/api) API Tokens with existing credits or payment setup. || Alternatively, users can set a custom API endpoint URL.
 * [Jq](https://formulae.brew.sh/formula/jq)
 
 **OPTIONAL.** 
 * To utilize the Markdown Chat feature, ensure that your text editor copies selected text as markdown, rather than as formatted rich text.
-* To be able to record and transcribe audio, you need to have [THIS SHORTCUT](https://www.icloud.com/shortcuts/c2154f998e664884b80d08a0a77f397c). It's just a simple recorder.
+* To be able to record and transcribe audio, you need to have [THIS SHORTCUT](https://www.icloud.com/shortcuts/c2154f998e664884b80d08a0a77f397c). It's just a simple recorder. Whisper AI also requires an OpenAI API Token with credits.
 
-*Note: ‘Jq’ is necessary for Kiki to correctly format requests through OpenAI or OpenRouter APIs. In Terminal, simply run `brew install jq`. If you do not have [Homebrew](https://brew.sh/) in your system, you may need to install that first in order to install ‘jq’.*
+*Note: ‘Jq’ is necessary for Kiki to correctly format AI requests. In Terminal, simply run `brew install jq`. If you do not have [Homebrew](https://brew.sh/) in your system, you may need to install that first in order to install ‘jq’.*
 
 ---
 ## SETUP
 
 **The workflow’s configuration was prepared so that you:**
-1. Enter either an OpenRouter, Anthropic, or OpenAI API Token.
-2. If you plan to use OpenRouter exclusively, remember to change the default Model to an Open Router model.
+1. Enter either an OpenRouter/Anthropic/OpenAI API Token OR a Custom API Endpoint.
+2. Make sure to set your default Model to one you have access to.
 3. Select your preferred Kiki data directory.
 4. You’re all set! You can now begin using Kiki.
 
 **To make the most of this workflow, consider setting up the following as well:**
-1. **An alternative model.** If you are solely using OpenRouter, ensure that you specify a valid model here. Your alternative model can be the same as the default.
+1. **An alternative model.** Your alternative model can be the same as the default.
 2. **An alternative system role.** This allows you to quickly send chats or requests to an alternative AI "persona."
 3. **The path to copy context files to.** While Kiki is optimized for one-time interactions, having a designated path to copy your context files enables you to easily keep track of multiple conversations that can be resumed at any time.
 4. **MD Chat Pattern ID.** If you use a text editor that supports Markdown, you may need to change this to another character. For example, I use [Bear](https://bear.app/), which supports organization through tags, so my Pattern ID is "#". The purpose of this setting will become clearer as you read through this documentation.
@@ -100,13 +100,15 @@ Kiki is powerful, flexible, and offers extensive customization options. It’s e
   <img width="600" src="Kiki/assets/images/screenshot02.jpg">
 </p>
 
-* **The "ko" (or Kiki options) keyword provides a menu of actions you can perform on your Kiki data files.** This menu will automatically populate after you have engaged in at least one chat. Press and hold the CMD key while selecting file-related options to reveal your data directory. Additionally, you can tap the SHIFT key (or CMD Y) to quickly preview the file associated with the selected action. The Whisper AI Transcription option offers different options with the CMD, OPT, and SHIFT modifiers.
+* **The "ko" (or Kiki options) keyword provides a menu of actions you can perform on your Kiki data files.** This menu will automatically populate after you have engaged in at least one chat. Press and hold the CMD key while selecting file-related options to reveal your data directory. Additionally, you can tap the SHIFT key (or CMD Y) to quickly preview the file associated with the selected action.
+
+*NOTE: Whisper AI Transcription offers different options with the CMD, OPT, and SHIFT modifiers. You may also "Resume Last Chat" with CMD to use your alternative set model or FN + SHIFT to use a model from your presets/models.json file.*
 
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot03.jpg">
 </p>
 
-* **The "kt" (or Kiki text) keyword presents you with text presets.** Once you choose a preset, you can enter the text you want to use. Kiki comes with a few basic presets, but we will explore how to create custom presets in the "intermediate" section of this guide.
+* **The "kt" (or Kiki text) keyword presents you with text presets.** Once you choose a preset, you can enter the text you want to use. Kiki comes with a few basic presets, but we will explore how to create custom presets in the [INTERMEDIATE](#intermediate) section of this guide.
 
 <p align="center">
   <img width="600" src="Kiki/assets/images/screenshot04.jpg">
@@ -133,7 +135,7 @@ When using Kiki, you can have more options in your interactions by holding down 
 - **CTRL:** When using CTRL, the existing context file will not be reset. Keep in mind that if the number of existing messages in the file exceeds the threshold set in the workflow's configuration, the oldest message will be removed.
 - **SHIFT:** This modifier triggers Kiki to reply in a dialog. It is the default way Kiki answers chats or presets initiated from Alfred's command bar. As we will learn soon, this "default" may change.
 - **FN:** Holding FN allows you to get Kiki's answer below your selected text. This option is only available when using Kiki on selected text through a universal action, hotkey, snippet, or external trigger.
-- **FN + SHIFT:** This allows you to send your request to ANY of the preset models configured in the presets/models.json file inside Kiki's data folder. **IMPORTANT: You do have to rename your presets folder or it to be discoverable and have configured some models for this to work. Read the [INTERMEDIATE](#intermediate) section of this guide.**
+- **FN + SHIFT:** This allows you to send your request to ANY of the preset models configured in the presets/models.json file inside Kiki's data folder. **IMPORTANT: You do have to rename your presets folder or it to be discoverable and have configured some models for this to work. More in the [INTERMEDIATE](#intermediate) section of this guide.**
 
 <p align="center">
   <img width="400" src="Kiki/assets/images/custom_model.jpg">
@@ -146,14 +148,14 @@ Select text and trigger your hotkey for Alfred's Universal Actions. Search for "
   <img width="600" src="Kiki/assets/images/screenshot06.jpg">
 </p>
 
-*NOTE: the "Send to Chat" option won't present you with Alfred's bar, essentially being the only action that will always replace your selected text. You can now also trigger Universal Action on txt or mardkdown files. In this case the result will appear as a dialog.*
+*NOTE: the "Send to Chat" option won't present you with Alfred's bar, essentially being the only action that will always replace your selected text. You can now also trigger Universal Actions on txt or markdown files. In this case the result will appear as a dialog.*
 
 ---
 ### Custom Triggers
 Kiki provides various options for triggering chats, presets, actions, or menus, in addition to using Alfred keywords. You can zoom out with CMD & “-“ in the workflow editor to see them clearly. These options are color-coded as follows:
 * **Yellow-colored hotkeys** are the most basic and perform the same actions as the Kiki keywords.
 * **Green-colored hotkey**s work on selected text, serving as shortcuts to the options available as Universal Actions.
-* **Orange-colored snippets** simulate the "CTRL + SHIFT + A" OR "OPT + SHIFT + UP" keyboard shortcut to select text up to the previous line break. **IMPORTANT: while most text editing apps receive and interpret the OPT shortcut, it does not work everywhere, that is why I am giving you the option to set this up as you prefer in the configuration. It’s a good idea to test first and choose the option that will be compatible with the app you plan to use snippets most.** The snippets in Kiki will send the selected text to one of the options available as Universal Actions. **With snippets, along with the same options found in Universal Actions, you can also directly process text presets and automatically paste the results.** It’s a fantastic way to use Kiki inline, without loosing focus on what you are typing. More information about this and how to create your own can be found in the Advanced section.
+* **Orange-colored snippets** simulate the "CTRL + SHIFT + A" OR "OPT + SHIFT + UP" keyboard shortcut to select text up to the previous line break. **IMPORTANT: while most text editing apps receive and interpret the OPT shortcut, it does not work everywhere, that is why Kiki gives you the option to set this up as you prefer in the configuration. It’s a good idea to test first and choose the option that will be compatible with the app you plan to use snippets most.** The snippets in Kiki will send the selected text to one of the options available as Universal Actions. **With snippets, along with the same options found in Universal Actions, you can also directly process text presets and automatically paste the results.** It’s a fantastic way to use Kiki inline, without loosing focus on what you are typing. More information about this and how to create your own can be found in the Advanced section.
 * **Blue-colored triggers** offer powerful ways to communicate with Kiki from outside the workflow or from within third-party apps. More information about this in the Advanced section.
 * **Violet-colored triggers** are used for the Markdown Chat feature. It is recommended to avoid setting these up or using them until you understand how this feature works.
 
@@ -320,7 +322,7 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 3. **The third argument must be a number from the list of modifiers below.** This argument simulates a modifier or modifier combinations within Alfred's command bar. By using this, you can skip the command bar entirely and still have control over the multiple processing options available with Kiki.
 4. **The fourth argument refers is the ID of your text preset.** This argument is optional and must only be included if the first argument is "direct.”
 
-*NOTE: For users that use Whisper AI, there's a few unlisted options. If kikiActions is run with "paste,whisper" then the user will be prompted to record, and the result ill be pasted to the frontmost app. If kikiActions is run with "customWhisperPrompt" as its fourth argument, the user will be prompted to record audio and this will be transcribed to be used as the custom prompt of the workflow's input (which should be set from the other arguments). For example, user may select text and trigger kikiActions with "direct,copy,1,customWhisperPrompt".*
+*NOTE: For using Whisper AI, there's a few unlisted options. If kikiActions is run with "paste,whisper" then the user will be prompted to record, and the result will be pasted to the frontmost app. If kikiActions is run with "customWhisperPrompt" as its fourth argument, the user will be prompted to record audio and this will be transcribed to be used as the custom prompt of the workflow's input (which should be set by the other arguments). For example, user may select text and trigger kikiActions with "direct,copy,1,customWhisperPrompt".*
 
 **Number codes to be used on the third argument:**
 1. **No Modifiers.** Continue in dialog, reset context, and use the main chat model.
@@ -372,27 +374,30 @@ The "kikiActions" trigger provides endless possibilities when combined with cust
 ## FAQ & LIMITATIONS
 
 **Is there any way to speed up Kiki’s responses?**
-The speed of Kiki's responses depends on your Internet speed and the speed of the OpenAI and OpenRouter servers. In my testing, I have found that Chat GPT 3.5 Turbo is the fastest model and I can only expect all the other models to eventually become faster.
+The speed of Kiki's responses depends on your Internet speed or the speed of the OpenAI/OpenRouter/Anhtropic servers. In my testing, I have found that Chat GPT 3.5 Turbo is the fastest model and I can only expect all the other models to eventually become faster.
 
 **Is there any way to see the progress of my request? How do I know Kiki is not stuck or that my Internet connection went out?**
 Unfortunately, I haven't been able to find a good solution to this problem due to my limited coding abilities. If you have any ideas, please [feel free to share them with me.](mailto:hello@afadingthought.com)
 
 **What if my request times out? Is there any way to get a system notification?**
-Currently, there is no implemented solution for this issue. However, in all of my testing, I haven't encountered any request timeouts with the way the workflow is set up. If you reach the maximum token limit, the model is more likely to give you an incomplete response, or if something is not right, it will give you an error message instead of timing out. 
+Currently, there is no implemented solution for this issue. However, in all of my testing, I haven't encountered any request timeouts with the way the workflow is set up. If you reach the max_token limit, the model is more likely to give you an incomplete response, or if something is not right, it will give you an error message instead of timing out. 
 
 **Is there any way to make the waiting placeholder smaller?**
 The waiting placeholder is useful to prevent clicking around while waiting for a response to be pasted in your frontmost app. Unfortunately, there are limited formatting options within Alfred to adjust its size. You can customize it to some extent in the "Large Type" block color coded in red, or you can disable it completely in Kiki's configuration.
 
 **My response seems cut off… what happened?**
-If you find that your response is being cut off, it is likely due to your Max Tokens setting. To avoid this issue, it is recommended to set the Max Tokens value to 0. However, if you have already set it to a different value, you can try increasing it. Additionally, there is a length limit for Kiki's dialogs. If you are having a lengthy conversation with long answers and want to avoid hitting this limit, it is suggested to use the Markdown Chat feature.
+There are two things to consider here. If you find that your response is being cut off (on a short AppleScript Dialog), it is likely due to your Max Tokens setting. To avoid this issue, it is recommended to set the Max Tokens value to 0. If you have already set it to a different value, you can try increasing it. Additionally, there is a length limit for Kiki's dialogs... Kiki replies will be cut-off at about 1800 characters. If you are having a lengthy conversation with long answers and want to avoid hitting this limit, it is suggested to use the Markdown Chat feature.
+
+**Why won't Kiki use Alfred's text view?**
+I'd love to integrate Kiki with Alfred's text view. This just seems to require a major code rewrite and I haven't quite figured out how to do that while keeping the current feature set. I do hope to eventually get there, but any suggestions, ideas, or contributions are welcome.
 
 **My snippet requests seem to send the text from my clipboard instead of the one indicated by my snippet.**
 If this happens, first of all check that the keyboard shortcut for CTRL + SHIFT + A works by itself. It should select the text up to your previous linebreak, but if it's not happening it means your host app is not compatible with this feature. If the selection alone works and you have this issue it's likely due to the delay required for your system to copy text to the clipboard. You can change this setting in Kiki's configuration. A delay of 0.5 should work for most cases, but if you're experiencing this issue, you may need to increase it slightly. Conversely, you can lower the delay to make Kiki feel more responsive. I have my delay set at 0.3.
 
 ---
 ## CLOSING
-I hope Kiki proves to be useful for you. If you come across any bugs that you can reproduce, please don't hesitate to [let me know.](mailto:hello@afadingthought.com) I will do my best to address them.
+I hope Kiki proves to be useful for you. If you come across any bugs that you can reproduce, please don't hesitate to [let me know.](https://github.com/afadingthought/kiki-ai-workflow/issues) I will do my best to address them.
 
-The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts and would like a similar custom AI presets tool for iOS, you can check it out [HERE](https://afadingthought.substack.com/p/toolvox-gpt-one-shortcut-to-rule). ToolVox AI offers more features than Kiki, such as web browsing, GPT4 Vision, Whisper AI, Eleven Labs integration, and Dall-e 3. However, running it on a Mac is slow due to its complexity, and it is more complicated to set up. Kiki was designed as a simpler alternative for everyday tasks.
+The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts and would like a similar custom AI presets tool for iOS, you can check it out [HERE](https://afadingthought.substack.com/p/toolvox-gpt-one-shortcut-to-rule). ToolVox AI offers a few more features than Kiki, such as web browsing, GPT4 Vision, Eleven Labs integration, and Dall-e 3. Kiki was designed as a simpler alternative for everyday tasks.
 
 *Lastly, if you find Kiki useful, I would greatly appreciate your support by buying me a coffee at [THIS LINK](https://www.buymeacoffee.com/afadingthought). Your generosity would mean the world to me. For any future updates on Kiki or other personal projects, you can sign up for my newsletter: [A Fading Thought](https://afadingthought.substack.com/)*
