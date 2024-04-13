@@ -54,6 +54,12 @@ function run(argv) {
 		copyContextPath = "";
 	}
 
+	try {
+		oaiToken = $.getenv('APIToken_OAI');
+	} catch (error) {
+		oaiToken = "";
+	}
+
 
 	function escapeForJSON(value) {
 		return value.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
@@ -90,7 +96,7 @@ function run(argv) {
 					}
 				}
 			},
-			{
+			...(oaiToken !== '' ? [{
 				"uid": "whisperTranscribe",
 				"type": "default",
 				"title": "Whisper AI Transcription",
@@ -132,7 +138,7 @@ function run(argv) {
 						"subtitle": "Record audio and run transcription through preset."
 					}
 				}
-			},
+			}] : []),
 			...(context !== '' ? [{
 				"uid": "resumeLast",
 				"type": "default",

@@ -79,6 +79,17 @@ if [[ "$CONTEXT_MESSAGES_LIMIT" -ne 0 ]]; then
     ')
 fi
 
+#IF $MODEL starts with "custom_" remove "custom_", use remaining text as model, and make sure API_ENDPOINT url is used. IF no online services are set, also make sure to use API_ENDPOINT.
+if [[ "$MODEL" == custom_* ]] || [[ -z $OPENAI_API_KEY && -z $OPENROUTER_API_KEY && -z $ANTHROPIC_API_KEY ]]; then
+    if [[ "$MODEL" == custom_* ]]; then
+        MODEL=${MODEL#custom_}
+    fi
+    API_URL=$API_ENDPOINT
+    HEADERS=(
+        "-H" "Content-Type: application/json"
+    )
+fi
+
 # Formulate the API request payload
 payload=$(jq -n \
     --arg model "$MODEL" \
@@ -94,6 +105,7 @@ if [[ "$MAX_TOKENS" -ne 0 ]]; then
     payload=$(echo "$payload" | jq --argjson max_tokens "$MAX_TOKENS" '. + {max_tokens: $max_tokens}')
 fi
 
+# Anthropic's API request payload requires some modifications
 if [[ "$MODEL" == claude* ]]; then
     payload=$(jq -n \
         --arg model "$MODEL" \
@@ -105,35 +117,37 @@ if [[ "$MODEL" == claude* ]]; then
         '{model: $model, system: $system_message, max_tokens: $max_tokens, messages: $user_messages, temperature: $temperature, top_p: $top_p}')
 fi
 
-# Determine the API URL and headers based on the model string
-API_URL="https://api.openai.com/v1/chat/completions"
-HEADERS=(
-    "-H" "Content-Type: application/json"
-    "-H" "Authorization: Bearer $OPENAI_API_KEY"
-)
-
-if [[ "$MODEL" == *"/"* ]]; then
-    API_URL="https://openrouter.ai/api/v1/chat/completions"
-    # Update the authorization to use OPENROUTER_API_KEY instead of OPENAI_API_KEY
+# Determine the API URL and headers based on the model string IF API_URL hasn't been set to be the same as API_ENDPOINT above. OpenAI API is first set as fallback.
+if [[ $API_ENDPOINT != $API_URL ]]; then
+    API_URL="https://api.openai.com/v1/chat/completions"
     HEADERS=(
         "-H" "Content-Type: application/json"
-        "-H" "Authorization: Bearer $OPENROUTER_API_KEY"
-        "-H" "HTTP-Referer: https://afadingthought.substack.com"
-        "-H" "X-Title: Kiki"
+        "-H" "Authorization: Bearer $OPENAI_API_KEY"
     )
 
-elif [[ "$MODEL" == claude* ]]; then
-    API_URL="https://api.anthropic.com/v1/messages"
-    # Update the authorization to use Anthropic's API key
-    HEADERS=(
-		"-H" "Content-Type: application/json"
-		"-H" "x-api-key: $ANTHROPIC_API_KEY"
-		"-H" "anthropic-version: 2023-06-01"
-    )
+    if [[ "$MODEL" == *"/"* ]]; then
+        API_URL="https://openrouter.ai/api/v1/chat/completions"
+        # Update the authorization to use OPENROUTER_API_KEY instead of OPENAI_API_KEY
+        HEADERS=(
+            "-H" "Content-Type: application/json"
+            "-H" "Authorization: Bearer $OPENROUTER_API_KEY"
+            "-H" "HTTP-Referer: https://afadingthought.substack.com"
+            "-H" "X-Title: Kiki"
+        )
+
+    elif [[ "$MODEL" == claude* ]]; then
+        API_URL="https://api.anthropic.com/v1/messages"
+        # Update the authorization to use Anthropic's API key
+        HEADERS=(
+            "-H" "Content-Type: application/json"
+            "-H" "x-api-key: $ANTHROPIC_API_KEY"
+            "-H" "anthropic-version: 2023-06-01"
+        )
+    fi
 fi
 
-# check if API_ENDPOINT is empty, if so assign the API_URL based on the online service sbove
-if [[ -z $API_ENDPOINT ]]; then
+# check if API_ENDPOINT is empty OR if API_ENDPOINT is different than API_URL, if so assign the API_URL based on the online service above
+if [[ -z $API_ENDPOINT || $API_ENDPOINT != $API_URL ]]; then
     API_ENDPOINT=$API_URL
 fi
 
@@ -169,10 +183,13 @@ fi
 
 # Write separate files
 echo "$assistant_response" > "$RESPONSE_FILE"
+if [ "$API_URL" = "$API_ENDPOINT" ]; then
+    MODEL="custom_$MODEL"
+fi
 echo "$MODEL" > "$MODEL_FILE"
 echo "$SYSTEM_ROLE_MESSAGE" > "$SYSTEM_FILE"
 
-#------------------------------------------------------ THE HISTORY LOGS
+#------------------------------------------------------ HISTORY LOGS
 if [ "${historyLimit}" -ne 0 ]; then
   # Ensure the history path directory exists
   if [ ! -d "$HISTORY_PATH" ]; then

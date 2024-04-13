@@ -7275,7 +7275,7 @@ Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropi
 ## SETUP
 
 **The workflow’s configuration was prepared so that you:**
-1. Enter either an OpenRouter/Anthropic/OpenAI API Token OR a Custom API Endpoint.
+1. Enter either an OpenRouter/Anthropic/OpenAI API Token OR a custom API Endpoint URL.
 2. Make sure to set your default Model to one you have access to.
 3. Select your preferred Kiki data directory.
 4. You’re all set! You can now begin using Kiki.
@@ -7288,7 +7288,25 @@ Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropi
 
 All the other options allow you to further customize Kiki according to your personal needs. However, the default settings should suffice for most use cases. If you ever need to reconfigure the workflow, simply right-click on the workflow's name in Alfred and select "Configure...".
 
-*NOTE: The Frequency Penalty and Presence Penalty parameters are not available through the Anthropic's API. Any values you insert for those parameters in your Kiki workflow will be ignored. Other than that, it works the same as OpenRouter and OpenAI models. It's important to note that Kiki supports any of the API providers mentioned above or a Custom API Endpoint if set, but not both.**
+*NOTE: The Frequency Penalty and Presence Penalty parameters are not available through the Anthropic's API. Any values you insert for those parameters in your Kiki workflow will be ignored. Other than that, it works the same as OpenRouter and OpenAI models.**
+
+---
+## ONLINE &amp; OFFLINE MODES
+
+Setting up Kiki can be done in three ways: Online, Offline, or both Online &amp; Offline.
+
+### ONLINE
+* **Simply use API Tokens from the online services you have credits on.** Make sure to use models your account currently has access to.
+
+### OFFLINE
+* **To use Kiki locally without any online service, leave the API Token fields blank and fill in the API Endpoint URL.** The API Endpoint URL must be compatible with OpenAI's API for Kiki to function properly. It typically looks like: `http://127.0.0.1:11434/v1/chat/completions`. _Check the documentation of the specific tool you are using. Ollama and LM Studio have been tested without issues._
+* The "model" parameter may or may not be necessary based on your API Endpoint URL. 
+  * *For example, if LM Studio only loads one model in its server, the model parameter is ignored. However, if there's a Multi Model session, the server requires the model identifier. Ollama always requires the model parameter.*
+
+### ONLINE &amp; OFFLINE
+* You can use both online and offline models interchangeably in Kiki. **For requests to be directed to the custom API Endpoint URL, add "custom\_" as a prefix to the offline model you want to use.** Online services (OpenAI, OpenRouter, Anthropic) are auto-recognized and do not require a prefix.
+  * *For example: If using Ollama with model "llama2", write "custom\_llama2" in your workflow configuration. The same naming convention should be followed when setting up models within presets.*
+* In case of using an API Endpoint URL where the "model" parameter is not required, Kiki still needs the "custom_" prefix as an identifier for such a model. *This is only a requirement when you have at least one API token configured for an online service. It won't make a difference if all the API Token fields are left blank.* 
 
 ---
 ## HOW TO
@@ -9063,7 +9081,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>Leave blank to automatically assign based on the model; for a local LLM tool you can enter something like http://localhost:4891/v1/chat/completions or other API endpoint as required</string>
+			<string>Leave blank to automatically assign based on the model; for a local LLM tool you can enter something like http://localhost:4891/v1/chat/completions or other API endpoint as required.</string>
 			<key>label</key>
 			<string>API Endpoint URL</string>
 			<key>type</key>
@@ -9077,7 +9095,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 				<key>default</key>
 				<string>gpt-3.5-turbo</string>
 				<key>placeholder</key>
-				<string></string>
+				<string>gpt-3.5-turbo</string>
 				<key>required</key>
 				<true/>
 				<key>trim</key>
@@ -9117,16 +9135,16 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>gpt-4-turbo-preview</string>
+				<string>gpt-4-turbo</string>
 				<key>placeholder</key>
-				<string></string>
+				<string>gpt-4-turbo</string>
 				<key>required</key>
 				<true/>
 				<key>trim</key>
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>To be used when the user triggers a preset or chat within Alfred by holding CMD. Can be set to the same default model effectively canceling the use of the CMD modifier.</string>
+			<string>To be used when the user triggers a preset or chat within Alfred by holding CMD. Can be set to the same as the default model with the CMD modifier only triggering the use of a different System Role.</string>
 			<key>label</key>
 			<string>Alternative Model</string>
 			<key>type</key>
@@ -9510,7 +9528,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1.2</string>
+	<string>1.1.3</string>
 	<key>webaddress</key>
 	<string>https://github.com/afadingthought/kiki-ai-workflow</string>
 </dict>
