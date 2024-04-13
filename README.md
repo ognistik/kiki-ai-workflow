@@ -13,6 +13,10 @@
 - [INTRODUCTION](#introduction)
 - [REQUIREMENTS](#requirements)
 - [SETUP](#setup)
+- [ONLINE \& OFFLINE MODES](#online--offline-modes)
+  - [ONLINE](#online)
+  - [OFFLINE](#offline)
+  - [ONLINE & OFFLINE](#online--offline)
 - [HOW TO](#how-to)
 - [BASIC](#basic)
   - [Keywords](#keywords)
@@ -59,12 +63,12 @@ Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropi
 
 ---
 ## REQUIREMENTS
-* [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) and/or [Anthropic](https://www.anthropic.com/api) API Tokens with existing credits or payment setup. || Alternatively, users can set a custom API endpoint URL.
+* [OpenAI](https://openai.com/api/) and/or [OpenRouter](https://openrouter.ai/) and/or [Anthropic](https://www.anthropic.com/api) API Tokens with existing credits or payment setup. || Alternatively, users can set a custom API Endpoint URL.
 * [Jq](https://formulae.brew.sh/formula/jq)
 
 **OPTIONAL.** 
 * To utilize the Markdown Chat feature, ensure that your text editor copies selected text as markdown, rather than as formatted rich text.
-* To be able to record and transcribe audio, you need to have [THIS SHORTCUT](https://www.icloud.com/shortcuts/c2154f998e664884b80d08a0a77f397c). It's just a simple recorder. Whisper AI also requires an OpenAI API Token with credits.
+* To be able to record and transcribe audio, you need to have [THIS SHORTCUT](https://www.icloud.com/shortcuts/c2154f998e664884b80d08a0a77f397c). It's just a simple recorder. Whisper AI requires an OpenAI API Token with credits.
 
 *Note: ‘Jq’ is necessary for Kiki to correctly format AI requests. In Terminal, simply run `brew install jq`. If you do not have [Homebrew](https://brew.sh/) in your system, you may need to install that first in order to install ‘jq’.*
 
@@ -72,7 +76,7 @@ Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropi
 ## SETUP
 
 **The workflow’s configuration was prepared so that you:**
-1. Enter either an OpenRouter/Anthropic/OpenAI API Token OR a Custom API Endpoint.
+1. Enter either an OpenRouter/Anthropic/OpenAI API Token OR a custom API Endpoint URL.
 2. Make sure to set your default Model to one you have access to.
 3. Select your preferred Kiki data directory.
 4. You’re all set! You can now begin using Kiki.
@@ -85,7 +89,25 @@ Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropi
 
 All the other options allow you to further customize Kiki according to your personal needs. However, the default settings should suffice for most use cases. If you ever need to reconfigure the workflow, simply right-click on the workflow's name in Alfred and select "Configure...".
 
-*NOTE: The Frequency Penalty and Presence Penalty parameters are not available through the Anthropic's API. Any values you insert for those parameters in your Kiki workflow will be ignored. Other than that, it works the same as OpenRouter and OpenAI models. It's important to note that Kiki supports any of the API providers mentioned above or a Custom API Endpoint if set, but not both.*
+*NOTE: The Frequency Penalty and Presence Penalty parameters are not available through the Anthropic's API. Any values you insert for those parameters in your Kiki workflow will be ignored. Other than that, it works the same as OpenRouter and OpenAI models.*
+
+---
+## ONLINE & OFFLINE MODES
+
+Setting up Kiki can be done in three ways: Online, Offline, or both Online & Offline.
+
+### ONLINE
+* **Simply use API Tokens from the online services you have credits on.** Make sure to use models your account currently has access to.
+
+### OFFLINE
+* **To use Kiki locally without any online service, leave the API Token fields blank and fill in the API Endpoint URL.** The API Endpoint URL must be compatible with OpenAI's API for Kiki to function properly. It typically looks like: `http://127.0.0.1:11434/v1/chat/completions`. _Check the documentation of the specific tool you are using. Ollama and LM Studio have been tested without issues._
+* The "model" parameter may or may not be necessary based on your API Endpoint URL. 
+  * *For example, if LM Studio only loads one model in its server, the model parameter is ignored. However, if there's a Multi Model session, the server requires the model identifier. Ollama always requires the model parameter.*
+
+### ONLINE & OFFLINE
+* You can use both online and offline models interchangeably in Kiki. **For requests to be directed to the custom API Endpoint URL, add "custom\_" as a prefix to the offline model you want to use.** Online services (OpenAI, OpenRouter, Anthropic) are auto-recognized and do not require a prefix.
+  * *For example: If using Ollama with model "llama2", write "custom\_llama2" in your workflow configuration. The same naming convention should be followed when setting up models within presets.*
+* In case of using an API Endpoint URL where the "model" parameter is not required, Kiki still needs the "custom_" prefix as an identifier for such a model. *This is only a requirement when you have at least one API token configured for an online service. It won't make a difference if all the API Token fields are left blank.* 
 
 ---
 ## HOW TO
