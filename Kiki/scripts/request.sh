@@ -183,7 +183,7 @@ fi
 
 # Write separate files
 echo "$assistant_response" > "$RESPONSE_FILE"
-if [ "$API_URL" = "$API_ENDPOINT" ]; then
+if [ "$API_URL" = "${API_Endpoint}" ]; then
     MODEL="custom_$MODEL"
 fi
 echo "$MODEL" > "$MODEL_FILE"
