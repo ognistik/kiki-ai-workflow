@@ -164,7 +164,7 @@ function run(argv) {
 			"subtitle": `Continue in dialog, do not reset context, and use "${chatModel}."`
 		},
 		"alt": {
-			"valid": true,
+			"valid": true,	
 			"variables": {
 				"kikiMods": 4,
 				"kikiType": "replaceAll",
@@ -182,7 +182,6 @@ function run(argv) {
 		},
 		"shift": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 5,
 				"kikiType": "dialogChat",
@@ -200,7 +199,6 @@ function run(argv) {
 		},
 		"fn": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 6,
 				"kikiType": fnType,
@@ -218,7 +216,6 @@ function run(argv) {
 		},
 		"cmd+ctrl": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 7,
 				"kikiType": "dialogChat",
@@ -236,7 +233,6 @@ function run(argv) {
 		},
 		"cmd+alt": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 8,
 				"kikiType": "replaceAll",
@@ -254,7 +250,6 @@ function run(argv) {
 		},
 		"cmd+shift": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 9,
 				"kikiType": "dialogChat",
@@ -273,7 +268,6 @@ function run(argv) {
 		},
 		"cmd+fn": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 10,
 				"kikiType": fnType,
@@ -291,7 +285,6 @@ function run(argv) {
 		},
 		"ctrl+alt": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 11,
 				"kikiType": "replaceAll",
@@ -309,7 +302,6 @@ function run(argv) {
 		},
 		"ctrl+shift": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 12,
 				"kikiType": "dialogChat",
@@ -327,7 +319,6 @@ function run(argv) {
 		},
 		"ctrl+fn": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 13,
 				"kikiType": fnType,
@@ -345,7 +336,6 @@ function run(argv) {
 		},
 		"cmd+ctrl+alt": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 14,
 				"kikiType": "replaceAll",
@@ -363,7 +353,6 @@ function run(argv) {
 		},
 		"cmd+ctrl+shift": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 15,
 				"kikiType": "dialogChat",
@@ -381,7 +370,6 @@ function run(argv) {
 		},
 		"cmd+ctrl+fn": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 16,
 				"kikiType": fnType,
@@ -399,7 +387,6 @@ function run(argv) {
 		},
 		"shift+fn": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 17,
 				"kikiType": "dialogChat",
@@ -417,7 +404,6 @@ function run(argv) {
 		},
 		"shift+fn+alt": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 18,
 				"kikiType": "replaceAll",
@@ -435,7 +421,6 @@ function run(argv) {
 		},
 		"shift+fn+ctrl": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 19,
 				"kikiType": "dialogChat",
@@ -453,7 +438,6 @@ function run(argv) {
 		},
 		"shift+fn+cmd": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 20,
 				"kikiType": fnType,
@@ -471,7 +455,6 @@ function run(argv) {
 		},
 		"shift+fn+ctrl+alt": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 21,
 				"kikiType": "replaceAll",
@@ -489,7 +472,6 @@ function run(argv) {
 		},
 		"shift+fn+cmd+ctrl": {
 			"valid": true,
-			"arg": "",
 			"variables": {
 				"kikiMods": 22,
 				"kikiType": fnType,
@@ -608,12 +590,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.temperature = item.T
 					localMods['cmd+ctrl+shift'].variables.temperature = item.T
 					localMods['cmd+ctrl+fn'].variables.temperature = item.T
-					localMods['shift+fn'].variables.chatSystem = item.T
-					localMods['shift+fn+alt'].variables.chatSystem = item.T
-					localMods['shift+fn+ctrl'].variables.chatSystem = item.T
-					localMods['shift+fn+cmd'].variables.chatSystem = item.T
-					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.T
-					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.T
+					localMods['shift+fn'].variables.temperature = item.T
+					localMods['shift+fn+alt'].variables.temperature = item.T
+					localMods['shift+fn+ctrl'].variables.temperature = item.T
+					localMods['shift+fn+cmd'].variables.temperature = item.T
+					localMods['shift+fn+ctrl+alt'].variables.temperature = item.T
+					localMods['shift+fn+cmd+ctrl'].variables.temperature = item.T
 				}
 				if (item.X) {
 					localMods.cmd.variables.maxTokens = item.X
@@ -631,12 +613,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.maxTokens = item.X
 					localMods['cmd+ctrl+shift'].variables.maxTokens = item.X
 					localMods['cmd+ctrl+fn'].variables.maxTokens = item.X
-					localMods['shift+fn'].variables.chatSystem = item.T
-					localMods['shift+fn+alt'].variables.chatSystem = item.T
-					localMods['shift+fn+ctrl'].variables.chatSystem = item.T
-					localMods['shift+fn+cmd'].variables.chatSystem = item.T
-					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.T
-					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.T
+					localMods['shift+fn'].variables.maxTokens = item.T
+					localMods['shift+fn+alt'].variables.maxTokens = item.T
+					localMods['shift+fn+ctrl'].variables.maxTokens = item.T
+					localMods['shift+fn+cmd'].variables.maxTokens = item.T
+					localMods['shift+fn+ctrl+alt'].variables.maxTokens = item.T
+					localMods['shift+fn+cmd+ctrl'].variables.maxTokens = item.T
 				}
 				if (item.F) {
 					localMods.cmd.variables.frePenalty = item.F
@@ -654,12 +636,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.frePenalty = item.F
 					localMods['cmd+ctrl+shift'].variables.frePenalty = item.F
 					localMods['cmd+ctrl+fn'].variables.frePenalty = item.F
-					localMods['shift+fn'].variables.chatSystem = item.F
-					localMods['shift+fn+alt'].variables.chatSystem = item.F
-					localMods['shift+fn+ctrl'].variables.chatSystem = item.F
-					localMods['shift+fn+cmd'].variables.chatSystem = item.F
-					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.F
-					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.F
+					localMods['shift+fn'].variables.frePenalty = item.F
+					localMods['shift+fn+alt'].variables.frePenalty = item.F
+					localMods['shift+fn+ctrl'].variables.frePenalty = item.F
+					localMods['shift+fn+cmd'].variables.frePenalty = item.F
+					localMods['shift+fn+ctrl+alt'].variables.frePenalty = item.F
+					localMods['shift+fn+cmd+ctrl'].variables.frePenalty = item.F
 				}
 				if (item.P) {
 					localMods.cmd.variables.prePenalty = item.P
@@ -677,12 +659,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.prePenalty = item.P
 					localMods['cmd+ctrl+shift'].variables.prePenalty = item.P
 					localMods['cmd+ctrl+fn'].variables.prePenalty = item.P
-					localMods['shift+fn'].variables.chatSystem = item.P
-					localMods['shift+fn+alt'].variables.chatSystem = item.P
-					localMods['shift+fn+ctrl'].variables.chatSystem = item.P
-					localMods['shift+fn+cmd'].variables.chatSystem = item.P
-					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.P
-					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.P
+					localMods['shift+fn'].variables.prePenalty = item.P
+					localMods['shift+fn+alt'].variables.prePenalty = item.P
+					localMods['shift+fn+ctrl'].variables.prePenalty = item.P
+					localMods['shift+fn+cmd'].variables.prePenalty = item.P
+					localMods['shift+fn+ctrl+alt'].variables.prePenalty = item.P
+					localMods['shift+fn+cmd+ctrl'].variables.prePenalty = item.P
 				}
 				if (item.O) {
 					localMods.cmd.variables.topP = item.O
@@ -700,12 +682,12 @@ function run(argv) {
 					localMods['cmd+ctrl+alt'].variables.topP = item.O
 					localMods['cmd+ctrl+shift'].variables.topP = item.O
 					localMods['cmd+ctrl+fn'].variables.topP = item.O
-					localMods['shift+fn'].variables.chatSystem = item.O
-					localMods['shift+fn+alt'].variables.chatSystem = item.O
-					localMods['shift+fn+ctrl'].variables.chatSystem = item.O
-					localMods['shift+fn+cmd'].variables.chatSystem = item.O
-					localMods['shift+fn+ctrl+alt'].variables.chatSystem = item.O
-					localMods['shift+fn+cmd+ctrl'].variables.chatSystem = item.O
+					localMods['shift+fn'].variables.topP = item.O
+					localMods['shift+fn+alt'].variables.topP = item.O
+					localMods['shift+fn+ctrl'].variables.topP = item.O
+					localMods['shift+fn+cmd'].variables.topP = item.O
+					localMods['shift+fn+ctrl+alt'].variables.topP = item.O
+					localMods['shift+fn+cmd+ctrl'].variables.topP = item.O
 				}
 				localMods.cmd.variables.theRequest = processedPrompt
 				localMods.ctrl.variables.theRequest = processedPrompt
@@ -722,12 +704,12 @@ function run(argv) {
 				localMods['cmd+ctrl+alt'].variables.theRequest = processedPrompt
 				localMods['cmd+ctrl+shift'].variables.theRequest = processedPrompt
 				localMods['cmd+ctrl+fn'].variables.theRequest = processedPrompt
-				localMods['shift+fn'].variables.chatSystem = processedPrompt
-				localMods['shift+fn+alt'].variables.chatSystem = processedPrompt
-				localMods['shift+fn+ctrl'].variables.chatSystem = processedPrompt
-				localMods['shift+fn+cmd'].variables.chatSystem = processedPrompt
-				localMods['shift+fn+ctrl+alt'].variables.chatSystem = processedPrompt
-				localMods['shift+fn+cmd+ctrl'].variables.chatSystem = processedPrompt
+				localMods['shift+fn'].variables.theRequest = processedPrompt
+				localMods['shift+fn+alt'].variables.theRequest = processedPrompt
+				localMods['shift+fn+ctrl'].variables.theRequest = processedPrompt
+				localMods['shift+fn+cmd'].variables.theRequest = processedPrompt
+				localMods['shift+fn+ctrl+alt'].variables.theRequest = processedPrompt
+				localMods['shift+fn+cmd+ctrl'].variables.theRequest = processedPrompt
                 return {
                     "uid": item.id,
                     "type": "default",
