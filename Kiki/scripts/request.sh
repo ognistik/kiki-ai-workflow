@@ -34,6 +34,38 @@ if [ "${createUserPresets}" == "Yes" ]; then
   fi
 fi
 
+#------------------------------------------------------ PLACEHOLDER REPLACEMENTS
+# Do any replacement on request and system IF user has content for the placeholders and has used them in this request
+cbReplace=${_cbReplace}
+clipboardContent=$(pbpaste)
+ph1=${ph1}
+ph2=${ph2}
+ph1txt=${ph1txt}
+ph2txt=${ph2txt}
+
+if [ -n "$cbReplace" ] && [[ $NEW_MESSAGE == *$cbReplace* ]]; then  # checks if cbReplace is not empty and NEW_MESSAGE contains it 
+    NEW_MESSAGE="${NEW_MESSAGE//"$cbReplace"/$clipboardContent}" # replaces cbReplace with clipboard content in NEW_MESSAGE
+fi
+
+if [ -n "$ph1" ]; then # checks if ph1 is not empty and NEW_MESSAGE contains it... then SYSTEM_ROLE_MESSAGE
+	if [[ $NEW_MESSAGE == *$ph1* ]]; then  
+    NEW_MESSAGE="${NEW_MESSAGE//"$ph1"/$ph1txt}"
+	fi
+	if [[ $SYSTEM_ROLE_MESSAGE == *$ph1* ]]; then
+	SYSTEM_ROLE_MESSAGE="${SYSTEM_ROLE_MESSAGE//"$ph1"/$ph1txt}"
+	fi
+fi
+
+if [ -n "$ph2" ]; then # checks if ph2 is not empty and NEW_MESSAGE contains it... then SYSTEM_ROLE_MESSAGE
+	if [[ $NEW_MESSAGE == *$ph2* ]]; then  
+    NEW_MESSAGE="${NEW_MESSAGE//"$ph2"/$ph2txt}"
+	fi
+	if [[ $SYSTEM_ROLE_MESSAGE == *$ph2* ]]; then
+	SYSTEM_ROLE_MESSAGE="${SYSTEM_ROLE_MESSAGE//"$ph2"/$ph2txt}"
+	fi
+fi
+#------------------------------------------------------ 
+
 # Saving User's message by itself before sending... as a backup
 echo "$NEW_MESSAGE" > "$REQUEST_FILE"
 
