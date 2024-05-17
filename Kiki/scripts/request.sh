@@ -120,6 +120,8 @@ if [[ "$MODEL" == custom_* ]] || [[ -z $OPENAI_API_KEY && -z $OPENROUTER_API_KEY
     HEADERS=(
         "-H" "Content-Type: application/json"
     )
+else
+    API_ENDPOINT="_"
 fi
 
 # Formulate the API request payload
