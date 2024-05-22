@@ -16,6 +16,7 @@ OPENAI_API_KEY="${APIToken_OAI}"
 OPENROUTER_API_KEY="${APIToken_OR}"
 ANTHROPIC_API_KEY="${APIToken_AN}"
 API_ENDPOINT="${API_Endpoint}"
+API_ENDPOINT_TOKEN="${APIEndpointToken}"
 
 # File Paths
 HISTORY_PATH="${kiki_data}/history/"
@@ -117,9 +118,16 @@ if [[ "$MODEL" == custom_* ]] || [[ -z $OPENAI_API_KEY && -z $OPENROUTER_API_KEY
         MODEL=${MODEL#custom_}
     fi
     API_URL=$API_ENDPOINT
-    HEADERS=(
-        "-H" "Content-Type: application/json"
-    )
+    if [[ -z $API_ENDPOINT_TOKEN ]]; then
+        HEADERS=(
+            "-H" "Content-Type: application/json"
+        )
+    else
+        HEADERS=(
+            "-H" "Content-Type: application/json"
+            "-H" "Authorization: Bearer $API_ENDPOINT_TOKEN"
+        )
+    fi
 else
     API_ENDPOINT="_"
 fi
