@@ -2754,6 +2754,8 @@ elif [[ "$1" == "filesOpenContext" ]]; then
 
 elif [[ "$1" == "filesRevealPath" ]]; then
 	open "${kiki_data}/"
+elif [[ "$1" == "filesRevealWorkflow" ]]; then
+	osascript -e 'tell application "Alfred" to reveal workflow "com.kiki.ai"'
 fi</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
@@ -6083,7 +6085,15 @@ resultString;</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>audioFilePath=("${audioFilePath[@]}")
+				<string># audioFilePath=("${audioFilePath[@]}")
+audioFilePath="${audioFilePath}"
+kikiSplit5="${kikiSplit5}"
+
+# Check for the special case of kikiSplit5 environment variable
+if [ -n "$kikiSplit5" ]; then
+  audioFilePath=$kikiSplit5
+fi
+
 
 # Trigger "Kiki Whisper" shortcut and get file path
 if [ -z "$audioFilePath" ]; then
@@ -6092,7 +6102,8 @@ tell application "Shortcuts Events" to run shortcut "Kiki Whisper"
 end timeout')
 fi
 
-echo "${audioFilePath[@]}"</string>
+# echo "${audioFilePath[@]}"
+echo "${audioFilePath}"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -6177,15 +6188,24 @@ echo "${audioFilePath[@]}"</string>
 				<key>script</key>
 				<string>MODEL="${chatModel}"
 SAVETRANSCRIPTION="${kiki_data}/lastTranscription.txt"
+WHISPERSERVICE="${whisperService}"
 
 # Other Environment variables
 APIToken_OAI=${APIToken_OAI}
+APIToken_GROQ=${APIToken_GROQ}
 whisperPrompt=${whisperPrompt}
 
 # Splitting input into an array based on tabs
 oIFS="$IFS"
 IFS=$'\t' audioFilePaths=($1)
 IFS="$oIFS"
+
+# Sort the array and store it back in the same variable
+IFS=$'\n' sorted=($(sort &lt;&lt;&lt;"${audioFilePaths[*]}"))
+unset IFS
+
+# Assign the sorted array back to the original variable
+audioFilePaths=("${sorted[@]}")
 
 # Check file sizes
 for filePath in "${audioFilePaths[@]}"; do
@@ -6201,12 +6221,21 @@ firstEntry=true
 
 # Process each file path for transcription if under the limit size.
 for filePath in "${audioFilePaths[@]}"; do 
-    response=$(curl -X POST "https://api.openai.com/v1/audio/transcriptions" \
-      -H "Authorization: Bearer $APIToken_OAI" \
-      -H "Content-Type: multipart/form-data" \
-      -F "model=whisper-1" \
-      -F "prompt=$whisperPrompt" \
-      -F "file=@$filePath")
+    if [ "$WHISPERSERVICE" = "openai" ]; then
+        response=$(curl -X POST "https://api.openai.com/v1/audio/transcriptions" \
+            -H "Authorization: Bearer $APIToken_OAI" \
+            -H "Content-Type: multipart/form-data" \
+            -F "model=whisper-1" \
+            -F "prompt=$whisperPrompt" \
+            -F "file=@$filePath")
+    elif [ "$WHISPERSERVICE" = "groq" ]; then
+        response=$(curl -X POST "https://api.groq.com/openai/v1/audio/transcriptions" \
+            -H "Authorization: Bearer $APIToken_GROQ" \
+            -H "Content-Type: multipart/form-data" \
+            -F "model=whisper-large-v3" \
+            -F "prompt=$whisperPrompt" \
+            -F "file=@$filePath")
+    fi
 
     # Extract the transcription text from the response and format it as a list if multiple files are provided.
     currentTranscription=$(echo $response | jq --raw-output '.text')
@@ -7423,6 +7452,8 @@ resultString;</string>
 
 *[*Setup &amp; Walkthrough Video*](https://youtu.be/nbYF9pyQyqc)*
 
+*[*Whisper Features*](https://youtu.be/mOc77fnzNPM)*
+
 ---
 
 ## INTRODUCTION
@@ -7682,19 +7713,19 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 
 ![](assets/images/screenshot17.jpg)
 
-**The All-in-One Trigger in Kiki receives four arguments, which should be entered without spaces and separated by commas.** Let's break down what each argument means:
+**The All-in-One Trigger in Kiki can receive up to five arguments, which should be entered without spaces and separated by commas.** Let's break down what each argument means:
 
 1. **The first argument can be either "menu" or "direct."** This determines whether the user will be directed to the Kiki Text Presets menu or if a specific preset will be processed directly.
 2. **The second argument can be "copy," "snippet," "incoming," "whisper," or "custom."** 
    - If "copy" is chosen, it assumes that the user has selected text and wants to run it through the text presets menu or process it with a preset. If you use “copy” and there’s no text selected, Kiki will use whatever there is already in your clipboard 😉.
    - Using "snippet" triggers the CTRL + SHIFT + A shortcut, which selects text up to the previous line break. The selected text is then run through the text presets menu or directly processed with a preset.
    - If the second argument is defined as "incoming," Kiki will grab the user's current clipboard content and will use it as the input for the workflow. This option is particularly useful for users to create their own Universal Actions to directly trigger their own custom presets—since Alfred's Universal Actions place whatever text is selected on user's clipboard.
-   - The "whisper" argument will prompt the user to record audio and will Kiki will use its transcription as the input for the workflow.
+   - The "whisper" argument will prompt the user to record audio and Kiki will use its transcription as the input for the workflow.
    - Choosing "custom" means that no input is required initially. The user will be presented with Alfred's command bar to type an input something for either the text presets menu or an already-selected preset.
 3. **The third argument must be a number from the list of modifiers below.** This argument simulates a modifier or modifier combinations within Alfred's command bar. By using this, you can skip the command bar entirely and still have control over the multiple processing options available with Kiki.
 4. **The fourth argument refers is the ID of your text preset.** This argument is optional and must only be included if the first argument is "direct.”
 
-*NOTE: For using Whisper AI, there's a few unlisted options. If kikiActions is run with "paste,whisper" then the user will be prompted to record, and the result will be pasted to the frontmost app. If kikiActions is run with "customWhisperPrompt" as its fourth argument, the user will be prompted to record audio and this will be transcribed to be used as the custom prompt of the workflow's input (which should be set by the other arguments). For example, user may select text and trigger kikiActions with "direct,copy,1,customWhisperPrompt".*
+*NOTE: For using Whisper AI, there's a few unlisted options. If kikiActions is run with "paste,whisper" then the user will be prompted to record, and the result will be pasted to the frontmost app. If kikiActions is run with "customWhisperPrompt" as its fourth argument, the user will be prompted to record audio and this will be transcribed to be used as the custom prompt of the workflow's input (which should be set by the other arguments). For example, user may select text and trigger kikiActions with "direct,copy,1,customWhisperPrompt". Lastly, the kikiActions trigger can receive fifth argument when used for Whisper transcriptions. This fifth argument can be the path or multiple paths tab-separated to audio files for them to be transcribed. For example "direct,whisper,1,translate,path1	path2*
 
 **Number codes to be used on the third argument:**
 1. **No Modifiers.** Continue in dialog, reset context, and use the main chat model.
@@ -9283,6 +9314,27 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 				<true/>
 			</dict>
 			<key>description</key>
+			<string></string>
+			<key>label</key>
+			<string>Groq's API Token</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>APIToken_GROQ</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>placeholder</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
 			<string>Leave blank to automatically assign based on the model; for a local LLM tool you can enter something like http://localhost:4891/v1/chat/completions or other API endpoint as required.</string>
 			<key>label</key>
 			<string>API Endpoint URL</string>
@@ -9304,7 +9356,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 				<true/>
 			</dict>
 			<key>description</key>
-			<string>If your OpenAI compatible API Endpoint URL requires a token, insert it here. This is meant for custom online providers, e.g. Groq. For local LLM tools, leave this empty.</string>
+			<string>If your OpenAI compatible API Endpoint URL requires a token, insert it here. This is meant for custom online providers. For local LLM tools, leave this empty.</string>
 			<key>label</key>
 			<string>API Endpoint Token</string>
 			<key>type</key>
@@ -9316,9 +9368,9 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>gpt-3.5-turbo</string>
+				<string>gpt-4o</string>
 				<key>placeholder</key>
-				<string>gpt-3.5-turbo</string>
+				<string>gpt-4o</string>
 				<key>required</key>
 				<true/>
 				<key>trim</key>
@@ -9360,7 +9412,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 				<key>default</key>
 				<string>gpt-4o</string>
 				<key>placeholder</key>
-				<string>gpt-4-turbo</string>
+				<string>gpt-4o</string>
 				<key>required</key>
 				<true/>
 				<key>trim</key>
@@ -9688,6 +9740,32 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>config</key>
 			<dict>
 				<key>default</key>
+				<string>openai</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>OpenAI</string>
+						<string>openai</string>
+					</array>
+					<array>
+						<string>Groq</string>
+						<string>groq</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Using Whisper AI requires the Shortcut linked in the documentation.</string>
+			<key>label</key>
+			<string>Whisper AI Service</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>whisperService</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
 				<string>Transcribe the audio into text. Provide the transcription in a clear manner.</string>
 				<key>required</key>
 				<true/>
@@ -9835,7 +9913,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.1.9</string>
+	<string>1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/afadingthought/kiki-ai-workflow</string>
 </dict>

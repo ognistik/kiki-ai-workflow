@@ -15,6 +15,7 @@ HISTORY_LIMIT=${historyLimit}
 OPENAI_API_KEY="${APIToken_OAI}"
 OPENROUTER_API_KEY="${APIToken_OR}"
 ANTHROPIC_API_KEY="${APIToken_AN}"
+GROQ_API_KEY="${APIToken_GROQ}"
 API_ENDPOINT="${API_Endpoint}"
 API_ENDPOINT_TOKEN="${APIEndpointToken}"
 
@@ -161,25 +162,29 @@ fi
 
 # Determine the API URL and headers based on the model string IF API_URL hasn't been set to be the same as API_ENDPOINT above. OpenAI API is first set as fallback.
 if [[ $API_ENDPOINT != $API_URL ]]; then
-    API_URL="https://api.openai.com/v1/chat/completions"
+    # Default to Groq API because there's no common identifier for its models
+    API_URL="https://api.groq.com/openai/v1/chat/completions"
     HEADERS=(
         "-H" "Content-Type: application/json"
-        "-H" "Authorization: Bearer $OPENAI_API_KEY"
+        "-H" "Authorization: Bearer $GROQ_API_KEY"
     )
 
-    if [[ "$MODEL" == *"/"* ]]; then
+    if [[ "$MODEL" == gpt* ]]; then
+        API_URL="https://api.openai.com/v1/chat/completions"
+        HEADERS=(
+            "-H" "Content-Type: application/json"
+            "-H" "Authorization: Bearer $OPENAI_API_KEY"
+        )
+    elif [[ "$MODEL" == *"/"* ]]; then
         API_URL="https://openrouter.ai/api/v1/chat/completions"
-        # Update the authorization to use OPENROUTER_API_KEY instead of OPENAI_API_KEY
         HEADERS=(
             "-H" "Content-Type: application/json"
             "-H" "Authorization: Bearer $OPENROUTER_API_KEY"
             "-H" "HTTP-Referer: https://afadingthought.substack.com"
             "-H" "X-Title: Kiki"
         )
-
     elif [[ "$MODEL" == claude* ]]; then
         API_URL="https://api.anthropic.com/v1/messages"
-        # Update the authorization to use Anthropic's API key
         HEADERS=(
             "-H" "Content-Type: application/json"
             "-H" "x-api-key: $ANTHROPIC_API_KEY"
