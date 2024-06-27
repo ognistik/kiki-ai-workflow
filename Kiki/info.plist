@@ -7725,7 +7725,7 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 3. **The third argument must be a number from the list of modifiers below.** This argument simulates a modifier or modifier combinations within Alfred's command bar. By using this, you can skip the command bar entirely and still have control over the multiple processing options available with Kiki.
 4. **The fourth argument refers is the ID of your text preset.** This argument is optional and must only be included if the first argument is "direct.”
 
-*NOTE: For using Whisper AI, there's a few unlisted options. If kikiActions is run with "paste,whisper" then the user will be prompted to record, and the result will be pasted to the frontmost app. If kikiActions is run with "customWhisperPrompt" as its fourth argument, the user will be prompted to record audio and this will be transcribed to be used as the custom prompt of the workflow's input (which should be set by the other arguments). For example, user may select text and trigger kikiActions with "direct,copy,1,customWhisperPrompt". Lastly, the kikiActions trigger can receive fifth argument when used for Whisper transcriptions. This fifth argument can be the path or multiple paths tab-separated to audio files for them to be transcribed. For example "direct,whisper,1,translate,path1	path2*
+*NOTE: For using Whisper AI, there's a few unlisted options. If kikiActions is run with "paste,whisper" then the user will be prompted to record, and the result will be pasted to the frontmost app. If kikiActions is run with "customWhisperPrompt" as its fourth argument, the user will be prompted to record audio and this will be transcribed to be used as the custom prompt of the workflow's input (which should be set by the other arguments). For example, user may select text and trigger kikiActions with "direct,copy,1,customWhisperPrompt". Lastly, the kikiActions trigger can receive fifth argument when used for Whisper transcriptions. This fifth argument can be the path or multiple paths tab-separated to audio files for them to be transcribed. For example "direct,whisper,1,translate,path1	path2"*
 
 **Number codes to be used on the third argument:**
 1. **No Modifiers.** Continue in dialog, reset context, and use the main chat model.
@@ -9913,7 +9913,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.2</string>
+	<string>1.2.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/afadingthought/kiki-ai-workflow</string>
 </dict>
