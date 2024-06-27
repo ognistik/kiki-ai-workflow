@@ -76,7 +76,7 @@ Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropi
 ## SETUP
 
 **The workflow’s configuration was prepared so that you:**
-1. Enter either an OpenRouter/Anthropic/OpenAI API Token OR a custom API Endpoint URL.
+1. Enter either an OpenRouter/Anthropic/OpenAI/GROQ API Token AND/OR a custom API Endpoint URL.
 2. Make sure to set your default Model to one you have access to.
 3. Select your preferred Kiki data directory.
 4. You’re all set! You can now begin using Kiki.
@@ -105,7 +105,7 @@ Setting up Kiki can be done in three ways: Online, Offline, or both Online & Off
   * *For example, if LM Studio only loads one model in its server, the model parameter is ignored. However, if there's a Multi Model session, the server requires the model identifier. Ollama always requires the model parameter.*
 
 ### ONLINE & OFFLINE
-* You can use both online and offline models interchangeably in Kiki. **For requests to be directed to the custom API Endpoint URL, add "custom\_" as a prefix to the offline model you want to use.** Online services (OpenAI, OpenRouter, Anthropic) are auto-recognized and do not require a prefix.
+* You can use both online and offline models interchangeably in Kiki. **For requests to be directed to the custom API Endpoint URL, add "custom\_" as a prefix to the offline model you want to use.** Online services (OpenAI, OpenRouter, Anthropic, Groq) are auto-recognized and do not require a prefix.
   * *For example: If using Ollama with model "llama2", write "custom\_llama2" in your workflow configuration. The same naming convention should be followed when setting up models within presets.*
 * In case of using an API Endpoint URL where the "model" parameter is not required, Kiki still needs the "custom_" prefix as an identifier for such a model. *This is only a requirement when you have at least one API token configured for an online service. It won't make a difference if all the API Token fields are left blank.* 
 
@@ -339,12 +339,12 @@ There is one external trigger which can replace a lot of your hotkeys, universal
    - If "copy" is chosen, it assumes that the user has selected text and wants to run it through the text presets menu or process it with a preset. If you use “copy” and there’s no text selected, Kiki will use whatever there is already in your clipboard 😉.
    - Using "snippet" triggers the CTRL + SHIFT + A shortcut, which selects text up to the previous line break. The selected text is then run through the text presets menu or directly processed with a preset.
    - If the second argument is defined as "incoming," Kiki will grab the user's current clipboard content and will use it as the input for the workflow. This option is particularly useful for users to create their own Universal Actions to directly trigger their own custom presets—since Alfred's Universal Actions place whatever text is selected on user's clipboard.
-   - The "whisper" argument will prompt the user to record audio and will Kiki will use its transcription as the input for the workflow.
+   - The "whisper" argument will prompt the user to record audio and Kiki will use its transcription as the input for the workflow.
    - Choosing "custom" means that no input is required initially. The user will be presented with Alfred's command bar to type an input something for either the text presets menu or an already-selected preset.
 3. **The third argument must be a number from the list of modifiers below.** This argument simulates a modifier or modifier combinations within Alfred's command bar. By using this, you can skip the command bar entirely and still have control over the multiple processing options available with Kiki.
 4. **The fourth argument refers is the ID of your text preset.** This argument is optional and must only be included if the first argument is "direct.”
 
-*NOTE: For using Whisper AI, there's a few unlisted options. If kikiActions is run with "paste,whisper" then the user will be prompted to record, and the result will be pasted to the frontmost app. If kikiActions is run with "customWhisperPrompt" as its fourth argument, the user will be prompted to record audio and this will be transcribed to be used as the custom prompt of the workflow's input (which should be set by the other arguments). For example, user may select text and trigger kikiActions with "direct,copy,1,customWhisperPrompt".*
+*NOTE: For Whisper AI, there's a few unlisted options. If kikiActions is run with "paste,whisper" then the user will be prompted to record, and the result will be pasted to the frontmost app. If kikiActions is run with "customWhisperPrompt" as its fourth argument, the user will be prompted to record audio and this will be transcribed to be used as the custom prompt of the workflow's input (which should be set by the other arguments). For example, user may select text and trigger kikiActions with "direct,copy,1,customWhisperPrompt". Lastly, the kikiActions trigger can receive fifth argument when used for Whisper transcriptions. This fifth argument can be the path or multiple paths tab-separated to audio files for them to be transcribed. For example "direct,whisper,1,translate,path1	path2*
 
 **Number codes to be used on the third argument:**
 1. **No Modifiers.** Continue in dialog, reset context, and use the main chat model.
