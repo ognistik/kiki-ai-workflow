@@ -2,7 +2,7 @@
 <p align="center"><strong>AI-Powered Chat & Text Tools</strong></p>
 <p align="center">
     <a href="https://youtu.be/fB0YwMdkumQ">
-    <img width="600" src="Kiki/assets/images/videoplay.jpg">
+    <img width="600" src="Workflow/assets/images/videoplay.jpg">
   </a>
 </p>
 <p align="center"><em><a href="https://youtu.be/nbYF9pyQyqc">Setup & Walkthrough</a> | <a href="https://youtu.be/mOc77fnzNPM">Whisper Features</a></em></p>
@@ -10,13 +10,14 @@
 ---
 
 ## TABLE OF CONTENTS
+- [TABLE OF CONTENTS](#table-of-contents)
 - [INTRODUCTION](#introduction)
 - [REQUIREMENTS](#requirements)
 - [SETUP](#setup)
 - [ONLINE \& OFFLINE MODES](#online--offline-modes)
   - [ONLINE](#online)
   - [OFFLINE](#offline)
-  - [ONLINE & OFFLINE](#online--offline)
+  - [ONLINE \& OFFLINE](#online--offline)
 - [HOW TO](#how-to)
 - [BASIC](#basic)
   - [Keywords](#keywords)
@@ -58,7 +59,7 @@ Kiki is an AI utility to interact with OpenAI Chat GPT, OpenRouter, and Anthropi
 7.  **Whisper AI Transcriptions:** Convenient multi-language transcriptions right at your fingertips. You can dictate/transcribe and paste in frontmost app, dictate and run the transcription through a custom preset, or transcribe any audio file below 25 MB with Alfred's file action.
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot01.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot01.jpg">
 </p>
 
 ---
@@ -119,7 +120,7 @@ Kiki is powerful, flexible, and offers extensive customization options. It’s e
 * **The "kc" (or Kiki chat) keyword allows you to start a chat session.** Simply type the keyword followed by a space, and you can begin typing your message.
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot02.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot02.jpg">
 </p>
 
 * **The "ko" (or Kiki options) keyword provides a menu of actions you can perform on your Kiki data files.** This menu will automatically populate after you have engaged in at least one chat. Press and hold the CMD key while selecting file-related options to reveal your data directory. Additionally, you can tap the SHIFT key (or CMD Y) to quickly preview the file associated with the selected action.
@@ -127,13 +128,13 @@ Kiki is powerful, flexible, and offers extensive customization options. It’s e
 *NOTE: Whisper AI Transcription offers different options with the CMD, OPT, and SHIFT modifiers. You may also "Resume Last Chat" with CMD to use your alternative set model or FN + SHIFT to use a model from your presets/models.json file.*
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot03.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot03.jpg">
 </p>
 
 * **The "kt" (or Kiki text) keyword presents you with text presets.** Once you choose a preset, you can enter the text you want to use. Kiki comes with a few basic presets, but we will explore how to create custom presets in the [INTERMEDIATE](#intermediate) section of this guide.
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot04.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot04.jpg">
 </p>
 
 ---
@@ -149,7 +150,7 @@ Kiki is powerful, flexible, and offers extensive customization options. It’s e
 When using Kiki, you can have more options in your interactions by holding down different modifiers while initiating a chat or preset from Alfred's command bar. Here's a simple breakdown of what each modifier does:
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot05.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot05.jpg">
 </p>
 
 - **CMD:** This allows you to use an alternative model and, if configured, an alternative system role.
@@ -160,14 +161,14 @@ When using Kiki, you can have more options in your interactions by holding down 
 - **FN + SHIFT:** This allows you to send your request to ANY of the preset models configured in the presets/models.json file inside Kiki's data folder. **IMPORTANT: You do have to rename your presets folder or it to be discoverable and have configured some models for this to work. More in the [INTERMEDIATE](#intermediate) section of this guide.**
 
 <p align="center">
-  <img width="400" src="Kiki/assets/images/custom_model.jpg">
+  <img width="400" src="Workflow/assets/images/custom_model.jpg">
 </p>
 
 ---
 ### Universal Actions on Text
 Select text and trigger your hotkey for Alfred's Universal Actions. Search for "Kiki" to be presented with some options for what to do with the selected text. In this mode, Kiki will automatically paste the result. If you want to customize this behavior, you can do so using modifiers once Alfred's command bar appears, as explained above. 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot06.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot06.jpg">
 </p>
 
 *NOTE: the "Send to Chat" option won't present you with Alfred's bar, essentially being the only action that will always replace your selected text. You can now also trigger Universal Actions on txt or markdown files. In this case the result will appear as a dialog.*
@@ -215,7 +216,7 @@ Here are a few things to keep in mind:
   - OPT to resume your chat from within the Markdown Chat feature. Do not use this modifier until you learn how this feature works.
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot07.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot07.jpg">
 </p>
 
 *Note: When you resume chats using Alfred's Universal Action, your previous messages and system role will be retained, but all other settings will be based on Kiki's default configuration. You can select a model with the FN + SHIFT modifiers, but for maximum flexibility, it is recommended to use the Markdown Chat feature.*
@@ -241,17 +242,17 @@ There are three ways to trigger a Markdown Chat request. Remember these are colo
 Before triggering your Markdown Chat, let's look at how you should format your note for it to work properly. 
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot08.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot08.jpg">
 </p>
 
 If your Mac automatically joins the hyphens when typing them as in the image, you can work around this by adding a space between them, like `- - -`, or by using three asterisks `***`. Your markdown text editor should still recognize these as line separators. Once you initiate the Markdown Chat, **Kiki will automatically add the "USER" heading text to indicate that the context has been reset.**
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot09.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot09.jpg">
 </p>
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot10.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot10.jpg">
 </p>
 
 *My recommendation is that you either setup your notes you start with the header already there, or that you create a snippet within Alfred to insert the header for you.* 
@@ -265,13 +266,13 @@ If your Mac automatically joins the hyphens when typing them as in the image, yo
 Knowing this, you can start a conversation from within Alfred’s command bar where you get the response in a dialog…
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot11.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot11.jpg">
 </p>
 
 And simply continue with a Markdown Chat in a completely blank note, or after inserting a double line separator.
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot12.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot12.jpg">
 </p>
 
 But there’s more! You can use presets to configure the settings in which the Markdown Chat will prepare your AI Request. 
@@ -289,12 +290,12 @@ Kiki will recognize presets or commands for your conversation within the header 
 
 For example, I used this a lot during the creation of Kiki:
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot13.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot13.jpg">
 </p>
 
 Oh, and remember when we talked about custom text presets? You can also use most of these parameters there! 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot14.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot14.jpg">
 </p>
 
 *Note: Notice that you cannot directly set the context limit as a parameter when creating text presets. Instead, you need to define this within the workflow configuration. You can always override this setting when triggering a text preset by holding down the CTRL key, or by using the parameter specified in the header of a Markdown Chat.*
@@ -303,7 +304,7 @@ Oh, and remember when we talked about custom text presets? You can also use most
 If your markdown text editor allows you to include media and files on your notes, you can use Alfred's Universal Actions to trigger "Kiki Resume Chat" on an attached context file. To resume your chat within your Markdown Chat instead of a dialog, hold the OPT modifier key while selecting the option. Kiki will then read the conversation settings from your note header.
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot15.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot15.jpg">
 </p>
 
 *Note: As a helpful tip, you can save time by setting your most frequently used header parameter combinations as Alfred snippets.*
@@ -315,7 +316,7 @@ In Kiki, there is a feature that can greatly enhance efficiency and productivity
 The simplest external triggers in Kiki are "kikiWorkflow" and "kikiChat". These triggers do not require any arguments and will open the main Kiki Options or Kiki Chat respectively. There’s also "kikiMD", which is used to trigger a Markdown Chat. If you navigate to the far right in the workflow editor, you will find the external trigger "kikiFiles". By sending one of the following arguments to this trigger, you can bypass the Kiki Options menu and directly perform specific actions:
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot16.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot16.jpg">
 </p>
 
 - filesCopyResponse: This will copy the latest response from Kiki to your clipboard.
@@ -329,7 +330,7 @@ The simplest external triggers in Kiki are "kikiWorkflow" and "kikiChat". These 
 There is one external trigger which can replace a lot of your hotkeys, universal action triggers, snippet triggers, and it can even replace the use of Alfred’s command bar for text presets. This is the “kikiActions” trigger.
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot17.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot17.jpg">
 </p>
 
 **The All-in-One Trigger in Kiki receives four arguments, which should be entered without spaces and separated by commas.** Let's break down what each argument means:
@@ -379,13 +380,13 @@ There is one external trigger which can replace a lot of your hotkeys, universal
 4. Return to your newly created workflow and right-click on the canvas. Select "Actions," then "Run Script." In the "Language" dropdown, choose the option with AppleScript.
 5. Paste the code you copied into the Script area. Replace "text" with your desired arguments. For example, you can use "direct,snippet,4,emojify." "Emojify" is one of the text presets and snippets already included, but you can replace it with the ID of your custom preset.
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot19.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot19.jpg">
 </p>
 6. By using these arguments, you are telling Kiki to skip the menu, directly grab the text from since the last line break, replace the selected text (as if using the modifiers from option 4), and run the text preset "emojify." If you want the result in a dialog instead of pasted in the frontmost window, you would use "direct,snippet,1,emojify" instead. 
 7. Connect the snippet block to your script block, and now you have a preset-specific trigger! Test it in your text editor.
 
 <p align="center">
-  <img width="600" src="Kiki/assets/images/screenshot18.jpg">
+  <img width="600" src="Workflow/assets/images/screenshot18.jpg">
 </p>
 
 ---
