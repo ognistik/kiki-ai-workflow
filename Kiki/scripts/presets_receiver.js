@@ -2,11 +2,11 @@ ObjC.import('stdlib');
 ObjC.import('Foundation');
 ObjC.import('AppKit');
 
-// kikiCopy can be: copy, snippet, incoming, custom (custom = requires input or whisper...)
 // kikiMenu can be: menu or direct
+// kikiCopy can be: copy, snippet, incoming, whisper, file (currently only one), custom (custom = requires input and dismisses the 4th arg if its customPrompt)
 // menu,copy,4 works
-// menu,custom,4 works
-// custom,direct,4,translateEn ???? makes no sense...
+// menu,custom,4 works (Note that if there was a 4th argument it would be ignored, since it will be chosen by menu)
+// custom,direct,4,translateEn ???? makes no sense... and direct,custom,4,customPrompt won't take the customPrompt into account.
 
 function run(argv) {
     const kikiMenu = $.getenv('kikiSplit1');

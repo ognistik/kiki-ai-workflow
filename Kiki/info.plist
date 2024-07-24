@@ -797,6 +797,18 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>7C25D2AA-24DF-40FC-86E6-0DF72974F2A6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>75B6AB23-5FE1-4AB5-9B28-6EBA162919F2</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>3FC0D1F2-17C9-43D7-9AB0-5E0201688381</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -1518,6 +1530,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7C25D2AA-24DF-40FC-86E6-0DF72974F2A6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AE2C898E-44C5-443C-8FA1-A24DC8274164</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7C2EA42A-C144-4289-B4DE-561A399C067B</key>
 		<array>
 			<dict>
@@ -2031,6 +2056,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>AE2C898E-44C5-443C-8FA1-A24DC8274164</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B8D3C392-1B60-4AFC-BA0E-1DB38C1831D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B2FC0E68-D9D9-47B0-A19D-4F9C54486BBE</key>
 		<array>
 			<dict>
@@ -2113,6 +2151,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>FF5C7CBC-FF90-45F7-9595-C156008B422E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B8D3C392-1B60-4AFC-BA0E-1DB38C1831D0</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>F0E56011-DBB5-417B-A880-6BB56A4467D7</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2420,6 +2471,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>E0537AE0-14CF-451B-B21B-B3C3E65C59CD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>3FC0D1F2-17C9-43D7-9AB0-5E0201688381</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>E0B82036-BCE8-4B4E-A22A-0BBB88D297B1</key>
 		<array>
 			<dict>
@@ -2461,6 +2525,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>015BBB4B-F62C-446E-B055-77E370370769</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E6B3F85B-4BCC-4591-881F-22DA58CBDE97</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E0537AE0-14CF-451B-B21B-B3C3E65C59CD</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2565,6 +2642,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>A1FE0C88-CBF1-4F00-8B5B-7F291A31B6C6</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>F0E56011-DBB5-417B-A880-6BB56A4467D7</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E6B3F85B-4BCC-4591-881F-22DA58CBDE97</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -6302,6 +6392,20 @@ echo "${transcriptionList}"</string>
 						<key>uid</key>
 						<string>92DA2759-2873-4E82-9380-77149BF1C946</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:kikiSplit2}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>file</string>
+						<key>outputlabel</key>
+						<string>readFile</string>
+						<key>uid</key>
+						<string>75B6AB23-5FE1-4AB5-9B28-6EBA162919F2</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>else</string>
@@ -6542,6 +6646,52 @@ echo "${transcriptionList}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>F0E56011-DBB5-417B-A880-6BB56A4467D7</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>tell application "Finder"
+	set currentSelection to selection
+	set selectedFile to item 1 of currentSelection
+	return POSIX path of (selectedFile as text)
+end tell</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7C25D2AA-24DF-40FC-86E6-0DF72974F2A6</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -6566,6 +6716,29 @@ echo "${transcriptionList}"</string>
 			<string>C75BEBA0-EAFB-4944-A38F-B14D6D707404</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>echo -n "$(cat "$1")"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B8D3C392-1B60-4AFC-BA0E-1DB38C1831D0</string>
+			<key>version</key>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -6647,6 +6820,32 @@ echo "${transcriptionList}"</string>
 			<string>alfred.workflow.trigger.universalaction</string>
 			<key>uid</key>
 			<string>3A9AD3D3-7BA3-4E6C-950A-1A58F65DE8D9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>seconds</key>
+				<string>{var:_delayClipboard}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.delay</string>
+			<key>uid</key>
+			<string>E6B3F85B-4BCC-4591-881F-22DA58CBDE97</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>AE2C898E-44C5-443C-8FA1-A24DC8274164</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -6869,6 +7068,26 @@ resultString;</string>
 			<string>3131639D-2F5D-4863-BCDF-37EDEF4E67B3</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>kikiSplit2</key>
+					<string>incoming</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>E0537AE0-14CF-451B-B21B-B3C3E65C59CD</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -8598,6 +8817,15 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
+		<key>7C25D2AA-24DF-40FC-86E6-0DF72974F2A6</key>
+		<dict>
+			<key>note</key>
+			<string>Get Path to File</string>
+			<key>xpos</key>
+			<real>735</real>
+			<key>ypos</key>
+			<real>1360</real>
+		</dict>
 		<key>7C2EA42A-C144-4289-B4DE-561A399C067B</key>
 		<dict>
 			<key>colorindex</key>
@@ -8855,6 +9083,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>600</real>
 		</dict>
+		<key>AE2C898E-44C5-443C-8FA1-A24DC8274164</key>
+		<dict>
+			<key>xpos</key>
+			<real>865</real>
+			<key>ypos</key>
+			<real>1390</real>
+		</dict>
 		<key>B2FC0E68-D9D9-47B0-A19D-4F9C54486BBE</key>
 		<dict>
 			<key>xpos</key>
@@ -8905,6 +9140,15 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<real>1595</real>
 			<key>ypos</key>
 			<real>135</real>
+		</dict>
+		<key>B8D3C392-1B60-4AFC-BA0E-1DB38C1831D0</key>
+		<dict>
+			<key>note</key>
+			<string>Read File and Echo its Contents</string>
+			<key>xpos</key>
+			<real>920</real>
+			<key>ypos</key>
+			<real>1360</real>
 		</dict>
 		<key>B9EEF6D1-D0D0-40D4-AAE6-2B7359AA811D</key>
 		<dict>
@@ -9068,6 +9312,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>365</real>
 		</dict>
+		<key>E0537AE0-14CF-451B-B21B-B3C3E65C59CD</key>
+		<dict>
+			<key>xpos</key>
+			<real>1055</real>
+			<key>ypos</key>
+			<real>1590</real>
+		</dict>
 		<key>E0B82036-BCE8-4B4E-A22A-0BBB88D297B1</key>
 		<dict>
 			<key>xpos</key>
@@ -9099,6 +9350,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<real>1040</real>
 			<key>ypos</key>
 			<real>970</real>
+		</dict>
+		<key>E6B3F85B-4BCC-4591-881F-22DA58CBDE97</key>
+		<dict>
+			<key>xpos</key>
+			<real>1195</real>
+			<key>ypos</key>
+			<real>1390</real>
 		</dict>
 		<key>E769FA9B-B02A-4725-A6D1-3410DA4465F7</key>
 		<dict>
@@ -9161,6 +9419,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<real>1245</real>
 			<key>ypos</key>
 			<real>285</real>
+		</dict>
+		<key>F0E56011-DBB5-417B-A880-6BB56A4467D7</key>
+		<dict>
+			<key>xpos</key>
+			<real>1060</real>
+			<key>ypos</key>
+			<real>1360</real>
 		</dict>
 		<key>F12D797F-41D4-48DC-829C-59C21809E481</key>
 		<dict>
