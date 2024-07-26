@@ -32,6 +32,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>00BB63E8-6113-494E-AD62-C439EDB2AC12</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>32F952DC-265C-49C3-B422-651EB61110CA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>014EFF09-EFA5-4D6E-B473-CCFD450D26BB</key>
 		<array>
 			<dict>
@@ -2695,6 +2708,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C5688313-8545-4368-BBBC-1DA52D3BD53B</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>00BB63E8-6113-494E-AD62-C439EDB2AC12</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>39B6FB99-C0D9-4793-8792-73E411934461</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>22308D71-3B22-45F3-B3FA-7FBAA38FEFB2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C56FAB20-8F47-4C09-8A89-5E4CD6A07978</key>
 		<array>
 			<dict>
@@ -3176,7 +3214,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>22308D71-3B22-45F3-B3FA-7FBAA38FEFB2</string>
+				<string>C5688313-8545-4368-BBBC-1DA52D3BD53B</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -4665,6 +4703,29 @@ return AllText</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
+				<string>/usr/bin/osascript scripts/resume-chat-vars.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>00BB63E8-6113-494E-AD62-C439EDB2AC12</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
 				<string>tell application "System Events"
     keystroke (ASCII character 29) -- right arrow
     keystroke return
@@ -4705,72 +4766,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.snippet</string>
-			<key>uid</key>
-			<string>6F9906FE-8412-4386-B52E-E6EEF349AC7B</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>ko||kiki options</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Please wait...</string>
-				<key>script</key>
-				<string>/usr/bin/osascript scripts/main.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>skipuniversalaction</key>
-				<true/>
-				<key>subtext</key>
-				<string>Data, Logs, and Extra Options</string>
-				<key>title</key>
-				<string>Kiki Options</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>22308D71-3B22-45F3-B3FA-7FBAA38FEFB2</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>availableviaurlhandler</key>
 				<false/>
 				<key>triggerid</key>
@@ -4780,6 +4775,21 @@ end tell</string>
 			<string>alfred.workflow.trigger.external</string>
 			<key>uid</key>
 			<string>F36BEC89-FDEB-4CB5-A85C-34E44126E00F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>focusedappvariable</key>
+				<false/>
+				<key>focusedappvariablename</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.snippet</string>
+			<key>uid</key>
+			<string>6F9906FE-8412-4386-B52E-E6EEF349AC7B</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -4811,6 +4821,38 @@ end tell</string>
 			<string>303A2B90-0D25-465C-A30F-740989CE85D6</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>actionResumeLast</string>
+						<key>outputlabel</key>
+						<string>Resume Chat</string>
+						<key>uid</key>
+						<string>39B6FB99-C0D9-4793-8792-73E411934461</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>C5688313-8545-4368-BBBC-1DA52D3BD53B</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -4935,6 +4977,57 @@ echo -n "$(cat "${kiki_data}/lastresponse.txt")"</string>
 			<string>6FDBA534-FC44-465E-BD65-C742A5FC184C</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ko||kiki options</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please wait...</string>
+				<key>script</key>
+				<string>/usr/bin/osascript scripts/main.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>Data, Logs, and Extra Options</string>
+				<key>title</key>
+				<string>Kiki Options</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>22308D71-3B22-45F3-B3FA-7FBAA38FEFB2</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -9034,6 +9127,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>690</real>
 		</dict>
+		<key>00BB63E8-6113-494E-AD62-C439EDB2AC12</key>
+		<dict>
+			<key>xpos</key>
+			<real>590</real>
+			<key>ypos</key>
+			<real>680</real>
+		</dict>
 		<key>014EFF09-EFA5-4D6E-B473-CCFD450D26BB</key>
 		<dict>
 			<key>colorindex</key>
@@ -9263,9 +9363,9 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>22308D71-3B22-45F3-B3FA-7FBAA38FEFB2</key>
 		<dict>
 			<key>xpos</key>
-			<real>480</real>
+			<real>590</real>
 			<key>ypos</key>
-			<real>705</real>
+			<real>815</real>
 		</dict>
 		<key>232338CB-AD9D-4708-AE8B-41422799F634</key>
 		<dict>
@@ -9520,7 +9620,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>468A7053-29EE-4549-9386-1E396AF86D0F</key>
 		<dict>
 			<key>xpos</key>
-			<real>955</real>
+			<real>970</real>
 			<key>ypos</key>
 			<real>430</real>
 		</dict>
@@ -10316,6 +10416,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>420</real>
 		</dict>
+		<key>C5688313-8545-4368-BBBC-1DA52D3BD53B</key>
+		<dict>
+			<key>xpos</key>
+			<real>440</real>
+			<key>ypos</key>
+			<real>715</real>
+		</dict>
 		<key>C56FAB20-8F47-4C09-8A89-5E4CD6A07978</key>
 		<dict>
 			<key>xpos</key>
@@ -10328,7 +10435,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Resume Context Options</string>
 			<key>xpos</key>
-			<real>820</real>
+			<real>835</real>
 			<key>ypos</key>
 			<real>375</real>
 		</dict>
@@ -10590,7 +10697,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>xpos</key>
 			<real>300</real>
 			<key>ypos</key>
-			<real>705</real>
+			<real>695</real>
 		</dict>
 		<key>F4CC0099-3D84-4EEC-BE16-BCAE27E70D3D</key>
 		<dict>
@@ -11334,7 +11441,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 	<key>variables</key>
 	<dict>
 		<key>theResponse</key>
-		<string>Bonjour ! Comment puis-je vous aider aujourd'hui ?</string>
+		<string>Safari</string>
 	</dict>
 	<key>variablesdontexport</key>
 	<array/>
