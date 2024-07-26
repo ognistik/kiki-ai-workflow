@@ -60,19 +60,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>01C6CE02-FF81-4342-A539-170ADE777F3C</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>0D7C5B64-31BD-4F86-9408-C14873E00DF0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>022853D0-ECBD-41A8-9F1D-9E014264BFC4</key>
 		<array>
 			<dict>
@@ -205,19 +192,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>0D7C5B64-31BD-4F86-9408-C14873E00DF0</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>675B6EC3-0B59-4EAB-A279-38B20725B078</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>112BF868-FFA3-49EC-8171-BA45081B7C86</key>
 		<array>
 			<dict>
@@ -295,6 +269,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>16D37EE0-2E47-4E8B-A342-E1C5082992C6</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>187709E8-B220-490E-86F3-D5405003DF92</key>
 		<array>
 			<dict>
@@ -347,6 +334,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>1B683016-A214-4757-9E7C-7BF06EF98C29</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2075CD73-E714-461C-B845-7CA6014AC8A1</key>
 		<array>
 			<dict>
@@ -377,7 +377,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>330D337A-096C-4E19-8059-D23A0AED244D</string>
+				<string>675B6EC3-0B59-4EAB-A279-38B20725B078</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -526,6 +526,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>277A17E6-9CE8-40D4-982B-E6299159BB10</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>2C876DD7-C1DE-4EC8-BADB-6F081AFD9396</key>
 		<array>
 			<dict>
@@ -544,6 +557,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>112BF868-FFA3-49EC-8171-BA45081B7C86</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2E8134A0-7BA3-4F5E-AB88-1D87352EDE35</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -679,31 +705,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>330D337A-096C-4E19-8059-D23A0AED244D</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>01C6CE02-FF81-4342-A539-170ADE777F3C</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>B113E3CA-5FF2-482B-AFA2-1DA572853FA9</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>0D7C5B64-31BD-4F86-9408-C14873E00DF0</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>37B50770-8825-49B1-A563-E9D66B5DAAF7</key>
 		<array>
 			<dict>
@@ -774,6 +775,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F12D797F-41D4-48DC-829C-59C21809E481</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>3BE3C8C2-9715-4ED8-A69E-D30D7A9974B5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -956,6 +970,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>47CBC521-5917-4B13-B17F-B5F08C10E5A2</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>4AD6351B-46B0-4F95-B1E4-34884BFFF028</key>
 		<array>
 			<dict>
@@ -1037,6 +1064,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>92F8BFEE-4CD8-4FD4-9DB0-543BE71BAEC0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>4D3B1C8A-EA1E-45E2-A71C-2F4AE467082F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1491,6 +1531,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7302F5DC-10A0-45C7-9E22-1485C200C57E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>73824266-E873-4980-B994-77956D85D52E</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>74122E8E-EF7C-431A-B2E9-B914801B67CF</key>
 		<array>
 			<dict>
@@ -1754,6 +1820,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8D877AD6-A1D6-42A0-A669-C92DC8728CEC</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>8E7E9AEF-937E-42BE-9AD2-7E2E1036D675</key>
 		<array>
 			<dict>
@@ -1780,6 +1859,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>8F4C6340-27CE-4AB8-86C8-3121FA2777F3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>90414C8D-1F16-43D4-A377-46E244B346ED</key>
 		<array>
 			<dict>
@@ -1795,16 +1887,6 @@
 		</array>
 		<key>908A01FD-21AA-4F22-90E6-B6C589D0849C</key>
 		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>D7A9C667-0D4B-41A6-BE7A-1FA68D703098</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
 			<dict>
 				<key>destinationuid</key>
 				<string>56E3E834-AE7A-4356-9177-1A19FA7567D2</string>
@@ -1824,6 +1906,29 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>11CE90B2-7F65-4418-82C1-A4C585D9DEB3</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>D7A9C667-0D4B-41A6-BE7A-1FA68D703098</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>92B27792-6E2F-4793-AD36-1A5FB4742504</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -1880,21 +1985,11 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>A828EC91-6AE7-45D3-8705-3DE6500904D0</string>
+				<string>E29346ED-28C4-49B9-BBC3-BFB38C6E9FAA</string>
 				<key>modifiers</key>
-				<integer>9043968</integer>
+				<integer>1048576</integer>
 				<key>modifiersubtext</key>
-				<string>Don't press this combination...</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>A3037C87-225F-4DDD-AAFD-149996547B86</string>
-				<key>modifiers</key>
-				<integer>9306112</integer>
-				<key>modifiersubtext</key>
-				<string>Don't press this combination...</string>
+				<string>Continue in Dialog and Use Alternative Model</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -1910,11 +2005,31 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
+				<string>D34D41F1-D8B3-417A-A098-D78D82EFA0DE</string>
+				<key>modifiers</key>
+				<integer>1310720</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in Dialog, Auto-Save Context File, and Use Alternative Model</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
 				<string>F85AD190-096D-4117-8FC3-7653A37CCBD5</string>
 				<key>modifiers</key>
 				<integer>786432</integer>
 				<key>modifiersubtext</key>
 				<string>Continue as Markdown Chat and Auto-Save ONE REQUEST in Context File</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B9EEF6D1-D0D0-40D4-AAE6-2B7359AA811D</string>
+				<key>modifiers</key>
+				<integer>8519680</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in Dialog and Use Model from Preset List</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -1940,41 +2055,31 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>E29346ED-28C4-49B9-BBC3-BFB38C6E9FAA</string>
-				<key>modifiers</key>
-				<integer>1048576</integer>
-				<key>modifiersubtext</key>
-				<string>Continue in Dialog and Use Alternative Model</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>D34D41F1-D8B3-417A-A098-D78D82EFA0DE</string>
-				<key>modifiers</key>
-				<integer>1310720</integer>
-				<key>modifiersubtext</key>
-				<string>Continue in Dialog, Auto-Save Context File, and Use Alternative Model</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
-				<string>B9EEF6D1-D0D0-40D4-AAE6-2B7359AA811D</string>
-				<key>modifiers</key>
-				<integer>8519680</integer>
-				<key>modifiersubtext</key>
-				<string>Continue in Dialog and Use Model from Preset List</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>DF008D2F-FCB3-4528-BF93-CCD5EB55E4B9</string>
 				<key>modifiers</key>
 				<integer>8781824</integer>
 				<key>modifiersubtext</key>
 				<string>Continue in Dialog, Auto-Save Context File, and Use Model from Preset List</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A828EC91-6AE7-45D3-8705-3DE6500904D0</string>
+				<key>modifiers</key>
+				<integer>9043968</integer>
+				<key>modifiersubtext</key>
+				<string>Don't press this combination...</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A3037C87-225F-4DDD-AAFD-149996547B86</string>
+				<key>modifiers</key>
+				<integer>9306112</integer>
+				<key>modifiersubtext</key>
+				<string>Don't press this combination...</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -2030,6 +2135,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>A0B9803F-F145-408D-A583-41F082FE29F5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>A1FE0C88-CBF1-4F00-8B5B-7F291A31B6C6</key>
 		<array>
 			<dict>
@@ -2052,6 +2170,229 @@
 				<integer>0</integer>
 				<key>modifiersubtext</key>
 				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A3C96976-E017-4753-A86A-2BE9194CB89D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AF226BFD-3A4C-4703-9017-C1AF4FEA6446</string>
+				<key>modifiers</key>
+				<integer>1310720</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, do not reset context, and use "{var:chatModelB}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>92B27792-6E2F-4793-AD36-1A5FB4742504</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EA1AAA47-9103-4B6A-98A2-234FFF2F809D</string>
+				<key>modifiers</key>
+				<integer>1572864</integer>
+				<key>modifiersubtext</key>
+				<string>Paste in frontmost app, reset context, and use "{var:chatModelB}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B7E656E2-7FBC-433C-B4A2-C8844921BFD9</string>
+				<key>modifiers</key>
+				<integer>9699328</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, do not reset context, and use "{var:chatModelB}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>F4CC0099-3D84-4EEC-BE16-BCAE27E70D3D</string>
+				<key>modifiers</key>
+				<integer>1048576</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, reset context, and use "{var:chatModelB}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>3BE3C8C2-9715-4ED8-A69E-D30D7A9974B5</string>
+				<key>modifiers</key>
+				<integer>1835008</integer>
+				<key>modifiersubtext</key>
+				<string>Paste in frontmost app, do not reset context, and use "{var:chatModelB}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>47CBC521-5917-4B13-B17F-B5F08C10E5A2</string>
+				<key>modifiers</key>
+				<integer>1179648</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, reset context, and use "{var:chatModelB}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>4D3B1C8A-EA1E-45E2-A71C-2F4AE467082F</string>
+				<key>modifiers</key>
+				<integer>8519680</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, reset context, and choose a model from the preset list.</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>FF967D99-C461-4253-BE64-5704141D8B52</string>
+				<key>modifiers</key>
+				<integer>262144</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, do not reset context, and use "{var:chatModel}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E2494AC8-D31A-4384-8F1C-34919E263FBB</string>
+				<key>modifiers</key>
+				<integer>1441792</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, do not reset context, and use "{var:chatModelB}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7302F5DC-10A0-45C7-9E22-1485C200C57E</string>
+				<key>modifiers</key>
+				<integer>9437184</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, reset context, and use "${chatModelB}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A0B9803F-F145-408D-A583-41F082FE29F5</string>
+				<key>modifiers</key>
+				<integer>9043968</integer>
+				<key>modifiersubtext</key>
+				<string>Paste in frontmost app, reset context, and choose a model from the preset list.</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>B71E6FE1-EA6D-45F5-82C6-C814A7B49427</string>
+				<key>modifiers</key>
+				<integer>524288</integer>
+				<key>modifiersubtext</key>
+				<string>Paste in frontmost app, reset context, and use "{var:chatModel}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>16D37EE0-2E47-4E8B-A342-E1C5082992C6</string>
+				<key>modifiers</key>
+				<integer>9306112</integer>
+				<key>modifiersubtext</key>
+				<string>Paste in frontmost app, do not reset context, and choose a model from the preset list.</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>73824266-E873-4980-B994-77956D85D52E</string>
+				<key>modifiers</key>
+				<integer>786432</integer>
+				<key>modifiersubtext</key>
+				<string>Paste in frontmost app, do not reset context, and use "{var:chatModel}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8F4C6340-27CE-4AB8-86C8-3121FA2777F3</string>
+				<key>modifiers</key>
+				<integer>8781824</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, do not reset context, and choose a model from the preset list.</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>E26F0DBC-CD5C-4C02-95E9-1C09A96AA5FD</string>
+				<key>modifiers</key>
+				<integer>131072</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, reset context, and use "{var:chatModel}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>8D877AD6-A1D6-42A0-A669-C92DC8728CEC</string>
+				<key>modifiers</key>
+				<integer>9830400</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, do not reset context, and choose a model from the preset list.</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>EA483C0E-57D8-44E1-A3FB-694F31AAFE56</string>
+				<key>modifiers</key>
+				<integer>393216</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, do not reset context, and use "{var:chatModel}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>277A17E6-9CE8-40D4-982B-E6299159BB10</string>
+				<key>modifiers</key>
+				<integer>9568256</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, reset context, and choose a model from the preset list.</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>2E8134A0-7BA3-4F5E-AB88-1D87352EDE35</string>
+				<key>modifiers</key>
+				<integer>8388608</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, reset context, and use "{var:chatModel}."</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>1B683016-A214-4757-9E7C-7BF06EF98C29</string>
+				<key>modifiers</key>
+				<integer>8650752</integer>
+				<key>modifiersubtext</key>
+				<string>Continue in dialog, do not reset context, and use "{var:chatModel}."</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -2100,6 +2441,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>B8D3C392-1B60-4AFC-BA0E-1DB38C1831D0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>AF226BFD-3A4C-4703-9017-C1AF4FEA6446</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2172,11 +2526,37 @@
 				<false/>
 			</dict>
 		</array>
+		<key>B71E6FE1-EA6D-45F5-82C6-C814A7B49427</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>B76ED5DB-4DAA-4843-8AC4-E96F067F8F4F</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
 				<string>3FC0D1F2-17C9-43D7-9AB0-5E0201688381</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B7E656E2-7FBC-433C-B4A2-C8844921BFD9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2470,6 +2850,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>D9F554D8-FFE2-4298-A2A6-A28813635474</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>675B6EC3-0B59-4EAB-A279-38B20725B078</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>DA582392-AA95-439D-A15C-5080CCC758AB</key>
 		<array>
 			<dict>
@@ -2496,8 +2889,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>DED3761B-BB0B-47FC-91EE-346650C323AA</key>
-		<array/>
 		<key>DF008D2F-FCB3-4528-BF93-CCD5EB55E4B9</key>
 		<array>
 			<dict>
@@ -2542,6 +2933,32 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>4D11F285-5E2D-45A5-A7B5-6EE620854E98</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E2494AC8-D31A-4384-8F1C-34919E263FBB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E26F0DBC-CD5C-4C02-95E9-1C09A96AA5FD</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2638,6 +3055,32 @@
 				<false/>
 			</dict>
 		</array>
+		<key>EA1AAA47-9103-4B6A-98A2-234FFF2F809D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EA483C0E-57D8-44E1-A3FB-694F31AAFE56</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>EAB0D362-B0F9-493E-B9B2-98AA53ED415F</key>
 		<array>
 			<dict>
@@ -2656,19 +3099,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>3D9E6F9D-CC19-4A9E-9E69-8CBFD615FE6E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>ED9AEBDC-1C98-4F4D-AC03-3A97EB182650</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>330D337A-096C-4E19-8059-D23A0AED244D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2755,6 +3185,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>F4CC0099-3D84-4EEC-BE16-BCAE27E70D3D</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>F5559850-B091-40EA-8FBE-4905BEDDCC90</key>
 		<array>
 			<dict>
@@ -2833,6 +3276,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>FF967D99-C461-4253-BE64-5704141D8B52</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>Robert J. P. Oberg</string>
@@ -2847,67 +3303,268 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>script</key>
-				<string>#!/bin/bash
-
-# The path to the JSON file is the first argument
-jsonFilePath="${repContext}"
-iconPath="$(pwd)/icon.png"
-
-# Use jq to extract the last "content" where role is "assistant"
-lastAssistantContent=$(jq -r '[.[] | select(.role == "assistant")][-1].content' "$jsonFilePath")
-
-# Create a temporary AppleScript file
-tempScript=$(mktemp /tmp/script.XXXXXX)
-
-# Prepare the escaped content to be shown in the dialog
-# Escape backslashes first, then escape double quotes and wrap the content in quotes for AppleScript
-
-# This seems to be working best, even though most simple
-escapedContent=$(echo "$lastAssistantContent" | sed 's/\\/\\\\/g' | sed 's/\"/\\"/g') 
-
-# Better, but not working on dialogs
-# escapedContent=$(echo "$lastAssistantContent" | sed 's/\\/\\\\/g; s/"/\\"/g; s/\//\\\//g; s/\n/\\n/g; s/\r/\\r/g; s/\t/\\t/g')
-
-# Write the AppleScript commands to the temporary file
-cat &gt; "$tempScript" &lt;&lt;EOF
-tell application "System Events"
-    set userResponse to display dialog "$escapedContent" buttons {"Close", "Continue"} with icon {"$iconPath"} default button 2 default answer "" cancel button "Close" with title "Continue Conversation"
-    if button returned of userResponse is "Continue" then
-		if text returned of userResponse is "" then
-			tell application id "com.runningwithcrayons.Alfred" to set configuration "theResponse" to value "$escapedContent" in workflow "com.kiki.ai" with exportable
-			set dialogInput to "-"
-		else
-    			set dialogInput to text returned of userResponse
-		end if
-    end if
-end tell
-EOF
-
-# Execute the temporary AppleScript
-osascript "$tempScript"
-
-# Remove the temporary file
-rm "$tempScript"
-
-echo "$dialogInput"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
+				<key>button1</key>
+				<string>Ok</string>
+				<key>button2</key>
 				<string></string>
-				<key>type</key>
-				<integer>0</integer>
+				<key>button3</key>
+				<string></string>
+				<key>description</key>
+				<string>When you use the Markdown Chat feature, the alternative model has to be set through a preset in the header of your note.</string>
+				<key>title</key>
+				<string>Sorry!</string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.script</string>
+			<string>alfred.workflow.utility.dialog</string>
 			<key>uid</key>
-			<string>DED3761B-BB0B-47FC-91EE-346650C323AA</string>
+			<string>24E42C45-88F7-452C-A297-981747B4A5A2</string>
 			<key>version</key>
-			<integer>2</integer>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>button1</key>
+				<string>Ok</string>
+				<key>button2</key>
+				<string></string>
+				<key>button3</key>
+				<string></string>
+				<key>description</key>
+				<string>When you use the Markdown Chat feature, the alternative model has to be set through a preset in the header of your note.</string>
+				<key>title</key>
+				<string>Sorry!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>B4A77B92-7BCD-4783-A3ED-59E3A0E4DED7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatModel</key>
+					<string>{var:chatModelB}</string>
+					<key>externalContext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>E29346ED-28C4-49B9-BBC3-BFB38C6E9FAA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>externalContext</key>
+					<string>{query}</string>
+					<key>kikiType</key>
+					<string>pasteChat</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2DF1BA01-4619-42E4-84A8-3A43DFF71069</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatModel</key>
+					<string>{var:chatModelB}</string>
+					<key>kikiType</key>
+					<string>dialogRepContext</string>
+					<key>repContext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>D34D41F1-D8B3-417A-A098-D78D82EFA0DE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>kikiType</key>
+					<string>pasteChat</string>
+					<key>repContext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>F85AD190-096D-4117-8FC3-7653A37CCBD5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string>{clipboard:1}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>transient</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>5339101C-7E65-4F8F-AC85-F4E5B1A75A61</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>acceptsmulti</key>
+				<integer>0</integer>
+				<key>filetypes</key>
+				<array>
+					<string>public.json</string>
+				</array>
+				<key>name</key>
+				<string>Kiki Resume Chat</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.action</string>
+			<key>uid</key>
+			<string>95D755F9-FD48-4BD2-B82A-605304B56615</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>112BF868-FFA3-49EC-8171-BA45081B7C86</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>List</string>
+					<key>externalContext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B9EEF6D1-D0D0-40D4-AAE6-2B7359AA811D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>externalContext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>82D892DE-79B7-4E6E-89F2-6AA10D9C87CE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>kikiType</key>
+					<string>dialogRepContext</string>
+					<key>repContext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>FA670416-C8C6-4552-9FDF-C9CBCE941792</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>List</string>
+					<key>kikiType</key>
+					<string>dialogRepContext</string>
+					<key>repContext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>DF008D2F-FCB3-4528-BF93-CCD5EB55E4B9</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -3176,6 +3833,46 @@ fi</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>DEC03FA6-7F0D-4A66-876E-8264E798F1C3</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>94900AA1-F15F-49FD-858A-A0BF97A1D1F7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>4F8D11A6-729D-4D2C-87FA-655D99654B24</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string></string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
 						<integer>4</integer>
 						<key>matchstring</key>
 						<string>files(.*)</string>
@@ -3250,65 +3947,6 @@ fi</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>32F952DC-265C-49C3-B422-651EB61110CA</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>1</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>DEC03FA6-7F0D-4A66-876E-8264E798F1C3</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>94900AA1-F15F-49FD-858A-A0BF97A1D1F7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>autopaste</key>
-				<false/>
-				<key>clipboardtext</key>
-				<string>{clipboard:1}</string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>transient</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.clipboard</string>
-			<key>uid</key>
-			<string>5339101C-7E65-4F8F-AC85-F4E5B1A75A61</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>4F8D11A6-729D-4D2C-87FA-655D99654B24</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3430,6 +4068,27 @@ fi</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>button1</key>
+				<string>Ok</string>
+				<key>button2</key>
+				<string></string>
+				<key>button3</key>
+				<string></string>
+				<key>description</key>
+				<string>When you use the Markdown Chat feature, the alternative model has to be set through a preset in the header of your note.</string>
+				<key>title</key>
+				<string>Sorry!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>A828EC91-6AE7-45D3-8705-3DE6500904D0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>argument</key>
 				<string></string>
 				<key>passthroughargument</key>
@@ -3513,6 +4172,27 @@ fi</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>631E3F64-38D8-4165-88FD-1B7AA3F3D588</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>button1</key>
+				<string>Ok</string>
+				<key>button2</key>
+				<string></string>
+				<key>button3</key>
+				<string></string>
+				<key>description</key>
+				<string>When you use the Markdown Chat feature, the alternative model has to be set through a preset in the header of your note.</string>
+				<key>title</key>
+				<string>Sorry!</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.dialog</string>
+			<key>uid</key>
+			<string>A3037C87-225F-4DDD-AAFD-149996547B86</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3795,57 +4475,6 @@ return AllText</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alfredfiltersresults</key>
-				<true/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<true/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>ko||kiki options</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<true/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>1</integer>
-				<key>runningsubtext</key>
-				<string>Please wait...</string>
-				<key>script</key>
-				<string>/usr/bin/osascript scripts/main.js "$1"</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>skipuniversalaction</key>
-				<true/>
-				<key>subtext</key>
-				<string>Data, Logs, and Extra Options</string>
-				<key>title</key>
-				<string>Kiki Options</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>22308D71-3B22-45F3-B3FA-7FBAA38FEFB2</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -3872,42 +4501,6 @@ return AllText</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>8B9A729D-F783-47B4-A17F-2DD002A270C2</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>availableviaurlhandler</key>
-				<false/>
-				<key>triggerid</key>
-				<string>kikiWorkflow</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
-			<key>uid</key>
-			<string>F36BEC89-FDEB-4CB5-A85C-34E44126E00F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>button1</key>
-				<string>Ok</string>
-				<key>button2</key>
-				<string></string>
-				<key>button3</key>
-				<string></string>
-				<key>description</key>
-				<string>When you use the Markdown Chat feature, the alternative model has to be set through a preset in the header of your note.</string>
-				<key>title</key>
-				<string>Sorry!</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.dialog</string>
-			<key>uid</key>
-			<string>B4A77B92-7BCD-4783-A3ED-59E3A0E4DED7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3974,27 +4567,6 @@ return AllText</string>
 			<string>A707B93B-8E57-4871-929C-7CC4A2FADBF4</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>button1</key>
-				<string>Ok</string>
-				<key>button2</key>
-				<string></string>
-				<key>button3</key>
-				<string></string>
-				<key>description</key>
-				<string>When you use the Markdown Chat feature, the alternative model has to be set through a preset in the header of your note.</string>
-				<key>title</key>
-				<string>Sorry!</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.dialog</string>
-			<key>uid</key>
-			<string>24E42C45-88F7-452C-A297-981747B4A5A2</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -4088,27 +4660,6 @@ return AllText</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>button1</key>
-				<string>Ok</string>
-				<key>button2</key>
-				<string></string>
-				<key>button3</key>
-				<string></string>
-				<key>description</key>
-				<string>When you use the Markdown Chat feature, the alternative model has to be set through a preset in the header of your note.</string>
-				<key>title</key>
-				<string>Sorry!</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.dialog</string>
-			<key>uid</key>
-			<string>A828EC91-6AE7-45D3-8705-3DE6500904D0</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -4129,35 +4680,6 @@ end tell</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>00950F78-F08C-4BF6-9961-81EDF763B445</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>6FDBA534-FC44-465E-BD65-C742A5FC184C</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -4198,6 +4720,72 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>ko||kiki options</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string>Please wait...</string>
+				<key>script</key>
+				<string>/usr/bin/osascript scripts/main.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>skipuniversalaction</key>
+				<true/>
+				<key>subtext</key>
+				<string>Data, Logs, and Extra Options</string>
+				<key>title</key>
+				<string>Kiki Options</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>22308D71-3B22-45F3-B3FA-7FBAA38FEFB2</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>kikiWorkflow</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>F36BEC89-FDEB-4CB5-A85C-34E44126E00F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -4227,27 +4815,6 @@ end tell</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>button1</key>
-				<string>Ok</string>
-				<key>button2</key>
-				<string></string>
-				<key>button3</key>
-				<string></string>
-				<key>description</key>
-				<string>When you use the Markdown Chat feature, the alternative model has to be set through a preset in the header of your note.</string>
-				<key>title</key>
-				<string>Sorry!</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.dialog</string>
-			<key>uid</key>
-			<string>A3037C87-225F-4DDD-AAFD-149996547B86</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>seconds</key>
 				<string>{var:_delayClipboard}</string>
 			</dict>
@@ -4255,28 +4822,6 @@ end tell</string>
 			<string>alfred.workflow.utility.delay</string>
 			<key>uid</key>
 			<string>90414C8D-1F16-43D4-A377-46E244B346ED</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>externalContext</key>
-					<string>{query}</string>
-					<key>kikiType</key>
-					<string>pasteChat</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>2DF1BA01-4619-42E4-84A8-3A43DFF71069</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -4365,77 +4910,31 @@ echo -n "$(cat "${kiki_data}/lastresponse.txt")"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>alignment</key>
-				<integer>2</integer>
-				<key>backgroundcolor</key>
-				<string>#000000A5</string>
-				<key>fadespeed</key>
+				<key>action</key>
 				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>2</integer>
-				<key>font</key>
-				<string>System</string>
-				<key>ignoredynamicplaceholders</key>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
-				<key>largetypetext</key>
-				<string>⚛︎</string>
-				<key>textcolor</key>
-				<string>#FBFFF1FF</string>
-				<key>wrapat</key>
-				<integer>20</integer>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>28BC2357-6861-48FB-9675-627D2EFB01CA</string>
+			<string>6FDBA534-FC44-465E-BD65-C742A5FC184C</string>
 			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:isWhisper}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>Yes</string>
-						<key>outputlabel</key>
-						<string></string>
-						<key>uid</key>
-						<string>D64FEFAE-A0D9-4986-A8EE-4D608099BA36</string>
-					</dict>
-					<dict>
-						<key>inputstring</key>
-						<string>{var:usePlaceholder}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>Yes</string>
-						<key>outputlabel</key>
-						<string>LT</string>
-						<key>uid</key>
-						<string>02E600C7-F41B-400E-A53F-0AC6D733BA3B</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<true/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>D7A9C667-0D4B-41A6-BE7A-1FA68D703098</string>
-			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -4447,47 +4946,6 @@ echo -n "$(cat "${kiki_data}/lastresponse.txt")"</string>
 			<string>alfred.workflow.utility.delay</string>
 			<key>uid</key>
 			<string>6ACAE7E6-7EA7-4EB7-9842-CF24F0DD9F9A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>kikiType</key>
-					<string>pasteChat</string>
-					<key>repContext</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>F85AD190-096D-4117-8FC3-7653A37CCBD5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>acceptsmulti</key>
-				<integer>0</integer>
-				<key>filetypes</key>
-				<array>
-					<string>public.json</string>
-				</array>
-				<key>name</key>
-				<string>Kiki Resume Chat</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.action</string>
-			<key>uid</key>
-			<string>95D755F9-FD48-4BD2-B82A-605304B56615</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -4581,63 +5039,6 @@ echo -n "$(cat "${kiki_data}/lastresponse.txt")"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>chatContext</key>
-					<string>1</string>
-					<key>kikiType</key>
-					<string>dialogChat</string>
-					<key>theRequest</key>
-					<string>{query}
-{var:theText}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>01C6CE02-FF81-4342-A539-170ADE777F3C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string></string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>1</integer>
-						<key>matchstring</key>
-						<string></string>
-						<key>outputlabel</key>
-						<string>Fallback Search</string>
-						<key>uid</key>
-						<string>B113E3CA-5FF2-482B-AFA2-1DA572853FA9</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>else</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>330D337A-096C-4E19-8059-D23A0AED244D</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>conditions</key>
 				<array>
 					<dict>
@@ -4684,23 +5085,6 @@ echo -n "$(cat "${kiki_data}/lastresponse.txt")"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>4152401A-66B1-41AF-9CCE-2DB62A4FFCA7</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -4722,10 +5106,19 @@ echo -n "$(cat "${kiki_data}/lastresponse.txt")"</string>
 			<integer>2</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>0D7C5B64-31BD-4F86-9408-C14873E00DF0</string>
+			<string>4152401A-66B1-41AF-9CCE-2DB62A4FFCA7</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -4779,26 +5172,6 @@ echo -n "$(cat "${kiki_data}/lastresponse.txt")"</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>908A01FD-21AA-4F22-90E6-B6C589D0849C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>externalContext</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>82D892DE-79B7-4E6E-89F2-6AA10D9C87CE</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -5055,19 +5428,6 @@ resultString;</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>text</key>
-				<string>Send to Kiki</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.fallback</string>
-			<key>uid</key>
-			<string>ED9AEBDC-1C98-4F4D-AC03-3A97EB182650</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>action</key>
 				<integer>0</integer>
 				<key>argument</key>
@@ -5093,28 +5453,6 @@ resultString;</string>
 			<string>EA07827B-D03B-4EE9-9B66-D15F60842B07</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>kikiType</key>
-					<string>dialogRepContext</string>
-					<key>repContext</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>FA670416-C8C6-4552-9FDF-C9CBCE941792</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -5214,6 +5552,81 @@ resultString;</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>alignment</key>
+				<integer>2</integer>
+				<key>backgroundcolor</key>
+				<string>#000000A5</string>
+				<key>fadespeed</key>
+				<integer>0</integer>
+				<key>fillmode</key>
+				<integer>2</integer>
+				<key>font</key>
+				<string>System</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>largetypetext</key>
+				<string>⚛︎</string>
+				<key>textcolor</key>
+				<string>#FBFFF1FF</string>
+				<key>wrapat</key>
+				<integer>20</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.largetype</string>
+			<key>uid</key>
+			<string>28BC2357-6861-48FB-9675-627D2EFB01CA</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:isWhisper}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>Yes</string>
+						<key>outputlabel</key>
+						<string></string>
+						<key>uid</key>
+						<string>D64FEFAE-A0D9-4986-A8EE-4D608099BA36</string>
+					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:usePlaceholder}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>Yes</string>
+						<key>outputlabel</key>
+						<string>LT</string>
+						<key>uid</key>
+						<string>02E600C7-F41B-400E-A53F-0AC6D733BA3B</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>else</string>
+				<key>hideelse</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>D7A9C667-0D4B-41A6-BE7A-1FA68D703098</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -5221,28 +5634,6 @@ resultString;</string>
 			<string>alfred.workflow.utility.transform</string>
 			<key>uid</key>
 			<string>A30CE575-E84B-4EA5-92A0-1BB79E93148C</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>chatModel</key>
-					<string>{var:chatModelB}</string>
-					<key>externalContext</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>E29346ED-28C4-49B9-BBC3-BFB38C6E9FAA</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -5495,30 +5886,6 @@ resultString;</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>chatModel</key>
-					<string>{var:chatModelB}</string>
-					<key>kikiType</key>
-					<string>dialogRepContext</string>
-					<key>repContext</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>D34D41F1-D8B3-417A-A098-D78D82EFA0DE</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -5595,14 +5962,6 @@ resultString;</string>
 			<string>C3E06DEC-1B03-46CA-86AD-A71A5536EA5B</string>
 			<key>version</key>
 			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
-			<key>uid</key>
-			<string>112BF868-FFA3-49EC-8171-BA45081B7C86</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -5831,6 +6190,14 @@ resultString;</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>1636294C-0E15-42A7-B6B6-743C49761E13</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>config</key>
 			<dict>
 				<key>argument</key>
@@ -5840,23 +6207,43 @@ resultString;</string>
 				<key>variables</key>
 				<dict>
 					<key>chatAlt</key>
-					<string>List</string>
-					<key>externalContext</key>
-					<string>{query}</string>
+					<string>Yes</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>B9EEF6D1-D0D0-40D4-AAE6-2B7359AA811D</string>
+			<string>AF226BFD-3A4C-4703-9017-C1AF4FEA6446</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>1636294C-0E15-42A7-B6B6-743C49761E13</string>
+			<string>92B27792-6E2F-4793-AD36-1A5FB4742504</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -5953,6 +6340,58 @@ resultString;</string>
 				<false/>
 				<key>variables</key>
 				<dict>
+					<key>chatAlt</key>
+					<string>Yes</string>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>replaceAll</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>EA1AAA47-9103-4B6A-98A2-234FFF2F809D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>Yes</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B7E656E2-7FBC-433C-B4A2-C8844921BFD9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
 					<key>audioFilePath</key>
 					<string>{query}</string>
 					<key>kikiSplit2</key>
@@ -6021,17 +6460,137 @@ resultString;</string>
 				<key>variables</key>
 				<dict>
 					<key>chatAlt</key>
-					<string>List</string>
+					<string>Yes</string>
+					<key>chatContext</key>
+					<string>1</string>
 					<key>kikiType</key>
-					<string>dialogRepContext</string>
-					<key>repContext</key>
-					<string>{query}</string>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
 				</dict>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>DF008D2F-FCB3-4528-BF93-CCD5EB55E4B9</string>
+			<string>F4CC0099-3D84-4EEC-BE16-BCAE27E70D3D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>Yes</string>
+					<key>kikiType</key>
+					<string>replaceAll</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>3BE3C8C2-9715-4ED8-A69E-D30D7A9974B5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>Yes</string>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>47CBC521-5917-4B13-B17F-B5F08C10E5A2</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>List</string>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>4D3B1C8A-EA1E-45E2-A71C-2F4AE467082F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>subtext</key>
+				<string>Continue in dialog, reset context, and use default model.</string>
+				<key>text</key>
+				<string>Send to Kiki</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.fallback</string>
+			<key>uid</key>
+			<string>A3C96976-E017-4753-A86A-2BE9194CB89D</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>FF967D99-C461-4253-BE64-5704141D8B52</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -6065,6 +6624,66 @@ resultString;</string>
 			<string>8E7E9AEF-937E-42BE-9AD2-7E2E1036D675</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>Yes</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>E2494AC8-D31A-4384-8F1C-34919E263FBB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>D9F554D8-FFE2-4298-A2A6-A28813635474</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>Yes</string>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7302F5DC-10A0-45C7-9E22-1485C200C57E</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -6126,6 +6745,33 @@ resultString;</string>
 				<false/>
 				<key>variables</key>
 				<dict>
+					<key>chatAlt</key>
+					<string>List</string>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>replaceAll</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>A0B9803F-F145-408D-A583-41F082FE29F5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
 					<key>chatModel</key>
 					<string>{query}</string>
 				</dict>
@@ -6134,6 +6780,31 @@ resultString;</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>D9BEF747-2F04-476A-BF21-1107CB535D3E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>replaceAll</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>B71E6FE1-EA6D-45F5-82C6-C814A7B49427</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -6178,6 +6849,31 @@ resultString;</string>
 				<false/>
 				<key>variables</key>
 				<dict>
+					<key>chatAlt</key>
+					<string>List</string>
+					<key>kikiType</key>
+					<string>replaceAll</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>16D37EE0-2E47-4E8B-A342-E1C5082992C6</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
 					<key>repContext</key>
 					<string>{query}</string>
 				</dict>
@@ -6186,6 +6882,79 @@ resultString;</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>62DF37C0-6D64-4853-9BAC-1DFF9F931D2F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>kikiType</key>
+					<string>replaceAll</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>73824266-E873-4980-B994-77956D85D52E</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>List</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>8F4C6340-27CE-4AB8-86C8-3121FA2777F3</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>E26F0DBC-CD5C-4C02-95E9-1C09A96AA5FD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -6246,6 +7015,31 @@ resultString;</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>6041AF29-474B-4C8A-B0B3-44A321FBCC61</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>List</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>8D877AD6-A1D6-42A0-A669-C92DC8728CEC</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -6374,6 +7168,56 @@ echo "${audioFilePath}"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>EA483C0E-57D8-44E1-A3FB-694F31AAFE56</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatAlt</key>
+					<string>List</string>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>277A17E6-9CE8-40D4-982B-E6299159BB10</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
@@ -6461,6 +7305,31 @@ echo "${transcriptionList}"</string>
 			<string>D40F59D9-8FC8-4C8B-B546-5E8015AAB798</string>
 			<key>version</key>
 			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>chatContext</key>
+					<string>1</string>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2E8134A0-7BA3-4F5E-AB88-1D87352EDE35</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -6679,10 +7548,25 @@ echo "${transcriptionList}"</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>kikiType</key>
+					<string>dialogChat</string>
+					<key>theRequest</key>
+					<string>{query}
+{var:theText}</string>
+				</dict>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.junction</string>
+			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
-			<string>2C876DD7-C1DE-4EC8-BADB-6F081AFD9396</string>
+			<string>1B683016-A214-4757-9E7C-7BF06EF98C29</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -6711,6 +7595,14 @@ echo "${transcriptionList}"</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>B76ED5DB-4DAA-4843-8AC4-E96F067F8F4F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.junction</string>
+			<key>uid</key>
+			<string>2C876DD7-C1DE-4EC8-BADB-6F081AFD9396</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -6923,6 +7815,26 @@ end tell</string>
 			<string>alfred.workflow.trigger.universalaction</string>
 			<key>uid</key>
 			<string>3A9AD3D3-7BA3-4E6C-950A-1A58F65DE8D9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>kikiSplit2</key>
+					<string>incoming</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>E0537AE0-14CF-451B-B21B-B3C3E65C59CD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -7171,26 +8083,6 @@ resultString;</string>
 			<string>3131639D-2F5D-4863-BCDF-37EDEF4E67B3</string>
 			<key>version</key>
 			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string></string>
-				<key>passthroughargument</key>
-				<false/>
-				<key>variables</key>
-				<dict>
-					<key>kikiSplit2</key>
-					<string>incoming</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>E0537AE0-14CF-451B-B21B-B3C3E65C59CD</string>
-			<key>version</key>
-			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>type</key>
@@ -8129,18 +9021,18 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>007970E8-A732-4E75-9BB1-E18153161415</key>
 		<dict>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>965</real>
+			<real>1270</real>
 		</dict>
 		<key>00950F78-F08C-4BF6-9961-81EDF763B445</key>
 		<dict>
 			<key>note</key>
 			<string>Deselect Text</string>
 			<key>xpos</key>
-			<real>1605</real>
+			<real>1880</real>
 			<key>ypos</key>
-			<real>385</real>
+			<real>690</real>
 		</dict>
 		<key>014EFF09-EFA5-4D6E-B473-CCFD450D26BB</key>
 		<dict>
@@ -8149,95 +9041,88 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Whisper Shortcut</string>
 			<key>xpos</key>
-			<real>570</real>
+			<real>770</real>
 			<key>ypos</key>
-			<real>1200</real>
+			<real>1505</real>
 		</dict>
 		<key>015BBB4B-F62C-446E-B055-77E370370769</key>
 		<dict>
 			<key>xpos</key>
-			<real>945</real>
+			<real>1145</real>
 			<key>ypos</key>
-			<real>1000</real>
-		</dict>
-		<key>01C6CE02-FF81-4342-A539-170ADE777F3C</key>
-		<dict>
-			<key>xpos</key>
-			<real>1220</real>
-			<key>ypos</key>
-			<real>570</real>
+			<real>1305</real>
 		</dict>
 		<key>022853D0-ECBD-41A8-9F1D-9E014264BFC4</key>
 		<dict>
 			<key>xpos</key>
-			<real>1220</real>
+			<real>1420</real>
 			<key>ypos</key>
-			<real>995</real>
+			<real>1300</real>
 		</dict>
 		<key>03661FE1-5AAA-436E-A1B2-012C5D897CC6</key>
 		<dict>
 			<key>xpos</key>
-			<real>3140</real>
+			<real>3340</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>490</real>
 		</dict>
 		<key>0618E3A7-41AB-4D03-9AC5-0B4725C16ACF</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>2920</real>
+			<real>3225</real>
 		</dict>
 		<key>06314282-D2FB-44D1-9E39-52B996974135</key>
 		<dict>
 			<key>xpos</key>
-			<real>3000</real>
+			<real>3200</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>360</real>
 		</dict>
 		<key>06BE48D7-B2F3-4AAB-A060-44A98EAC6FEB</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>1520</real>
+			<real>1825</real>
 		</dict>
 		<key>070AD446-4757-4A23-9506-627E532A9474</key>
 		<dict>
 			<key>note</key>
 			<string>Restores clipboard to original</string>
 			<key>xpos</key>
-			<real>1285</real>
+			<real>1485</real>
 			<key>ypos</key>
-			<real>965</real>
+			<real>1270</real>
 		</dict>
 		<key>0791494D-980E-4BAE-A74D-54EE8D222BDF</key>
 		<dict>
 			<key>xpos</key>
-			<real>1050</real>
+			<real>1250</real>
 			<key>ypos</key>
-			<real>165</real>
+			<real>460</real>
 		</dict>
 		<key>07CC2FEA-51E8-4E4D-9FE8-9902EF8EAA68</key>
 		<dict>
 			<key>xpos</key>
-			<real>975</real>
+			<real>1175</real>
 			<key>ypos</key>
-			<real>165</real>
+			<real>460</real>
 		</dict>
 		<key>09CE2095-DF90-4565-AB5F-8DE4C8F13BF8</key>
 		<dict>
 			<key>xpos</key>
-			<real>3000</real>
+			<real>3200</real>
 			<key>ypos</key>
-			<real>335</real>
+			<real>640</real>
 		</dict>
 		<key>0CA4F91B-4723-44DB-BAB9-3EA76BC9DB67</key>
 		<dict>
 			<key>xpos</key>
-			<real>425</real>
+			<real>625</real>
 			<key>ypos</key>
-			<real>1845</real>
+			<real>2150</real>
 		</dict>
 		<key>0D4E73C7-5D5C-47C8-9614-8764D21C8E2B</key>
 		<dict>
@@ -8246,44 +9131,37 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Text Presets menu | Selected Text | Replace</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>1240</real>
-		</dict>
-		<key>0D7C5B64-31BD-4F86-9408-C14873E00DF0</key>
-		<dict>
-			<key>xpos</key>
-			<real>1295</real>
-			<key>ypos</key>
-			<real>600</real>
+			<real>1545</real>
 		</dict>
 		<key>112BF868-FFA3-49EC-8171-BA45081B7C86</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>810</real>
 			<key>ypos</key>
-			<real>850</real>
+			<real>215</real>
 		</dict>
 		<key>11794F68-E3E8-4214-8C54-D35FACAE02EF</key>
 		<dict>
 			<key>xpos</key>
-			<real>3355</real>
+			<real>3555</real>
 			<key>ypos</key>
-			<real>775</real>
+			<real>1080</real>
 		</dict>
 		<key>1636294C-0E15-42A7-B6B6-743C49761E13</key>
 		<dict>
 			<key>xpos</key>
-			<real>1960</real>
+			<real>2160</real>
 			<key>ypos</key>
-			<real>925</real>
+			<real>1230</real>
 		</dict>
 		<key>168B90F8-0307-4464-9CDD-77E7D65D74E0</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>2445</real>
+			<real>2750</real>
 		</dict>
 		<key>16C6755F-5127-42E7-8FE0-3F8EECAA1AEF</key>
 		<dict>
@@ -8292,127 +9170,141 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Text Presets menu | User's input | Dialog</string>
 			<key>xpos</key>
-			<real>770</real>
+			<real>970</real>
 			<key>ypos</key>
-			<real>820</real>
+			<real>1125</real>
+		</dict>
+		<key>16D37EE0-2E47-4E8B-A342-E1C5082992C6</key>
+		<dict>
+			<key>xpos</key>
+			<real>2900</real>
+			<key>ypos</key>
+			<real>1440</real>
 		</dict>
 		<key>187709E8-B220-490E-86F3-D5405003DF92</key>
 		<dict>
 			<key>xpos</key>
-			<real>1210</real>
+			<real>1410</real>
 			<key>ypos</key>
-			<real>850</real>
+			<real>1155</real>
 		</dict>
 		<key>19ADAE07-3793-48D6-94A3-05932D6D3602</key>
 		<dict>
 			<key>note</key>
 			<string>Restores clipboard to original</string>
 			<key>xpos</key>
-			<real>2120</real>
+			<real>2320</real>
 			<key>ypos</key>
-			<real>385</real>
+			<real>690</real>
 		</dict>
 		<key>1AF4F2F9-98D8-48D4-8A81-ED1FB858A3AE</key>
 		<dict>
 			<key>xpos</key>
-			<real>3280</real>
+			<real>3480</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>490</real>
 		</dict>
 		<key>1AF84B36-53C3-4820-8D7B-E0AFA4C31843</key>
 		<dict>
 			<key>xpos</key>
-			<real>425</real>
+			<real>625</real>
 			<key>ypos</key>
-			<real>1380</real>
+			<real>1685</real>
+		</dict>
+		<key>1B683016-A214-4757-9E7C-7BF06EF98C29</key>
+		<dict>
+			<key>xpos</key>
+			<real>2660</real>
+			<key>ypos</key>
+			<real>1570</real>
 		</dict>
 		<key>2075CD73-E714-461C-B845-7CA6014AC8A1</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>780</real>
 			<key>ypos</key>
-			<real>1410</real>
+			<real>1715</real>
 		</dict>
 		<key>20AB5D8A-46F2-4368-8711-54B75A895C32</key>
 		<dict>
 			<key>xpos</key>
-			<real>1120</real>
+			<real>1320</real>
 			<key>ypos</key>
-			<real>285</real>
+			<real>590</real>
 		</dict>
 		<key>20DC55D9-E0BE-4DA3-8BDE-25F93393647D</key>
 		<dict>
 			<key>xpos</key>
-			<real>940</real>
+			<real>1140</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>860</real>
 		</dict>
 		<key>20E1C0FD-DA8E-4735-A4F1-263FE3710A37</key>
 		<dict>
 			<key>xpos</key>
-			<real>1865</real>
+			<real>2065</real>
 			<key>ypos</key>
-			<real>895</real>
+			<real>1200</real>
 		</dict>
 		<key>21034540-4C82-41D3-A35E-8A9FD359C466</key>
 		<dict>
 			<key>xpos</key>
-			<real>1275</real>
+			<real>1475</real>
 			<key>ypos</key>
-			<real>75</real>
+			<real>370</real>
 		</dict>
 		<key>214F492E-6303-4C15-B533-84018AEC2FC3</key>
 		<dict>
 			<key>xpos</key>
-			<real>3390</real>
+			<real>3590</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>360</real>
 		</dict>
 		<key>22308D71-3B22-45F3-B3FA-7FBAA38FEFB2</key>
 		<dict>
 			<key>xpos</key>
-			<real>255</real>
+			<real>480</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>705</real>
 		</dict>
 		<key>232338CB-AD9D-4708-AE8B-41422799F634</key>
 		<dict>
 			<key>note</key>
 			<string>Select All | Copy All</string>
 			<key>xpos</key>
-			<real>940</real>
+			<real>1140</real>
 			<key>ypos</key>
-			<real>255</real>
+			<real>560</real>
 		</dict>
 		<key>2361D067-7E0A-4CFF-A3B9-9695EEA03BBA</key>
 		<dict>
 			<key>xpos</key>
-			<real>1175</real>
+			<real>1375</real>
 			<key>ypos</key>
-			<real>1205</real>
+			<real>1510</real>
 		</dict>
 		<key>24E42C45-88F7-452C-A297-981747B4A5A2</key>
 		<dict>
 			<key>xpos</key>
-			<real>480</real>
+			<real>410</real>
 			<key>ypos</key>
-			<real>320</real>
+			<real>40</real>
 		</dict>
 		<key>254FE174-6975-4BC3-8476-52793F7856A5</key>
 		<dict>
 			<key>xpos</key>
-			<real>1520</real>
+			<real>1760</real>
 			<key>ypos</key>
-			<real>1490</real>
+			<real>1795</real>
 		</dict>
 		<key>259589CF-5CDB-4924-9F37-BEAF0127BA0F</key>
 		<dict>
 			<key>note</key>
 			<string>Clears Context</string>
 			<key>xpos</key>
-			<real>1605</real>
+			<real>1880</real>
 			<key>ypos</key>
-			<real>240</real>
+			<real>545</real>
 		</dict>
 		<key>266174D8-7DAE-4568-89FC-2C66F344356F</key>
 		<dict>
@@ -8421,48 +9313,62 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Autoselect from previous line break and use in the actions menu</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>1490</real>
+			<real>1795</real>
 		</dict>
 		<key>275C42AA-02B5-44B7-B654-9AB59A192167</key>
 		<dict>
 			<key>xpos</key>
-			<real>1875</real>
+			<real>2085</real>
 			<key>ypos</key>
-			<real>545</real>
+			<real>860</real>
+		</dict>
+		<key>277A17E6-9CE8-40D4-982B-E6299159BB10</key>
+		<dict>
+			<key>xpos</key>
+			<real>2770</real>
+			<key>ypos</key>
+			<real>1520</real>
 		</dict>
 		<key>28BC2357-6861-48FB-9675-627D2EFB01CA</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>2760</real>
+			<real>2950</real>
 			<key>ypos</key>
-			<real>490</real>
+			<real>1035</real>
 		</dict>
 		<key>2C876DD7-C1DE-4EC8-BADB-6F081AFD9396</key>
 		<dict>
 			<key>xpos</key>
-			<real>1775</real>
+			<real>2030</real>
 			<key>ypos</key>
-			<real>1260</real>
+			<real>1595</real>
 		</dict>
 		<key>2DF1BA01-4619-42E4-84A8-3A43DFF71069</key>
 		<dict>
 			<key>note</key>
 			<string>Paste (In Note)</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>410</real>
 			<key>ypos</key>
-			<real>455</real>
+			<real>105</real>
+		</dict>
+		<key>2E8134A0-7BA3-4F5E-AB88-1D87352EDE35</key>
+		<dict>
+			<key>xpos</key>
+			<real>2525</real>
+			<key>ypos</key>
+			<real>1525</real>
 		</dict>
 		<key>2E81CF03-6E6D-4D4E-9B9C-3D94662B0354</key>
 		<dict>
 			<key>xpos</key>
-			<real>1955</real>
+			<real>2155</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>445</real>
 		</dict>
 		<key>303A2B90-0D25-465C-A30F-740989CE85D6</key>
 		<dict>
@@ -8471,79 +9377,72 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Trigger MD Chat | User Must Select All</string>
 			<key>xpos</key>
-			<real>940</real>
+			<real>1140</real>
 			<key>ypos</key>
-			<real>400</real>
+			<real>705</real>
 		</dict>
 		<key>30C90C13-8017-4122-B051-1C9602D67F39</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>2195</real>
+			<real>2500</real>
 		</dict>
 		<key>3131639D-2F5D-4863-BCDF-37EDEF4E67B3</key>
 		<dict>
 			<key>xpos</key>
-			<real>1670</real>
+			<real>1910</real>
 			<key>ypos</key>
-			<real>1550</real>
+			<real>1855</real>
 		</dict>
 		<key>31C4A61A-45C9-4D5C-9718-13024A322FC7</key>
 		<dict>
 			<key>xpos</key>
-			<real>2310</real>
+			<real>2510</real>
 			<key>ypos</key>
-			<real>620</real>
+			<real>925</real>
 		</dict>
 		<key>32F952DC-265C-49C3-B422-651EB61110CA</key>
 		<dict>
 			<key>xpos</key>
-			<real>455</real>
+			<real>650</real>
 			<key>ypos</key>
-			<real>80</real>
-		</dict>
-		<key>330D337A-096C-4E19-8059-D23A0AED244D</key>
-		<dict>
-			<key>xpos</key>
-			<real>1100</real>
-			<key>ypos</key>
-			<real>575</real>
+			<real>390</real>
 		</dict>
 		<key>37B50770-8825-49B1-A563-E9D66B5DAAF7</key>
 		<dict>
 			<key>xpos</key>
-			<real>3000</real>
+			<real>3200</real>
 			<key>ypos</key>
-			<real>485</real>
+			<real>790</real>
 		</dict>
 		<key>39389008-14FD-4A5C-A639-4AB2A86C4DD5</key>
 		<dict>
 			<key>xpos</key>
-			<real>3460</real>
+			<real>3660</real>
 			<key>ypos</key>
-			<real>830</real>
+			<real>1135</real>
 		</dict>
 		<key>39A34897-ADF8-48D3-BD30-8C116D3EA40F</key>
 		<dict>
 			<key>xpos</key>
-			<real>830</real>
+			<real>1030</real>
 			<key>ypos</key>
-			<real>135</real>
+			<real>430</real>
 		</dict>
 		<key>3A377141-651B-452F-9912-CBD1492F6DDD</key>
 		<dict>
 			<key>xpos</key>
-			<real>3290</real>
+			<real>3490</real>
 			<key>ypos</key>
-			<real>485</real>
+			<real>790</real>
 		</dict>
 		<key>3A9AD3D3-7BA3-4E6C-950A-1A58F65DE8D9</key>
 		<dict>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>1380</real>
+			<real>1685</real>
 		</dict>
 		<key>3B2ABCA9-677E-442A-8FE7-9FFD59C3010E</key>
 		<dict>
@@ -8552,46 +9451,53 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Fix Grammar</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>2630</real>
+			<real>2935</real>
+		</dict>
+		<key>3BE3C8C2-9715-4ED8-A69E-D30D7A9974B5</key>
+		<dict>
+			<key>xpos</key>
+			<real>2900</real>
+			<key>ypos</key>
+			<real>1330</real>
 		</dict>
 		<key>3D9E6F9D-CC19-4A9E-9E69-8CBFD615FE6E</key>
 		<dict>
 			<key>xpos</key>
-			<real>430</real>
+			<real>630</real>
 			<key>ypos</key>
-			<real>1220</real>
+			<real>1525</real>
 		</dict>
 		<key>3EACFFF3-05E8-43ED-9866-6B23B7E0D4D1</key>
 		<dict>
 			<key>xpos</key>
-			<real>1370</real>
+			<real>1610</real>
 			<key>ypos</key>
-			<real>1235</real>
+			<real>1540</real>
 		</dict>
 		<key>3FC0D1F2-17C9-43D7-9AB0-5E0201688381</key>
 		<dict>
 			<key>xpos</key>
-			<real>745</real>
+			<real>945</real>
 			<key>ypos</key>
-			<real>1670</real>
+			<real>1975</real>
 		</dict>
 		<key>4152401A-66B1-41AF-9CCE-2DB62A4FFCA7</key>
 		<dict>
 			<key>note</key>
 			<string>Query Cleaner</string>
 			<key>xpos</key>
-			<real>665</real>
+			<real>890</real>
 			<key>ypos</key>
-			<real>585</real>
+			<real>890</real>
 		</dict>
 		<key>427D83FC-EA31-4501-A233-F2E1F654CC4E</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>445</real>
 			<key>ypos</key>
-			<real>995</real>
+			<real>1300</real>
 		</dict>
 		<key>43CC9F67-E6A1-4A2F-90EC-C8927337EF07</key>
 		<dict>
@@ -8600,23 +9506,30 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Use selected text as prompt | Replace</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>2165</real>
+			<real>2470</real>
 		</dict>
 		<key>44052B6B-B618-43D8-98C5-6A95CDBB5F3E</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>780</real>
 			<key>ypos</key>
-			<real>1875</real>
+			<real>2180</real>
 		</dict>
 		<key>468A7053-29EE-4549-9386-1E396AF86D0F</key>
 		<dict>
 			<key>xpos</key>
-			<real>760</real>
+			<real>955</real>
 			<key>ypos</key>
-			<real>135</real>
+			<real>430</real>
+		</dict>
+		<key>47CBC521-5917-4B13-B17F-B5F08C10E5A2</key>
+		<dict>
+			<key>xpos</key>
+			<real>2660</real>
+			<key>ypos</key>
+			<real>1345</real>
 		</dict>
 		<key>4AD6351B-46B0-4F95-B1E4-34884BFFF028</key>
 		<dict>
@@ -8625,108 +9538,115 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Autoselect from previous line break and use as prompt</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>2415</real>
+			<real>2720</real>
 		</dict>
 		<key>4AE2B3A7-6A24-4CBE-BBAD-338CAB06F273</key>
 		<dict>
 			<key>xpos</key>
-			<real>3140</real>
+			<real>3340</real>
 			<key>ypos</key>
-			<real>335</real>
+			<real>640</real>
 		</dict>
 		<key>4C8E8C8F-B470-490F-89E8-F59AEF5A69F3</key>
 		<dict>
 			<key>xpos</key>
-			<real>1285</real>
+			<real>1485</real>
 			<key>ypos</key>
-			<real>855</real>
+			<real>1160</real>
 		</dict>
 		<key>4CA8B3FE-D991-4F39-9AB4-B6BB57932B13</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>1</integer>
 			<key>xpos</key>
-			<real>920</real>
+			<real>1120</real>
 			<key>ypos</key>
-			<real>1100</real>
+			<real>1405</real>
 		</dict>
 		<key>4CCE94C2-BE17-492B-82E0-6E201BF11295</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<real>765</real>
+			<real>965</real>
 			<key>ypos</key>
-			<real>555</real>
+			<real>860</real>
 		</dict>
 		<key>4D11F285-5E2D-45A5-A7B5-6EE620854E98</key>
 		<dict>
 			<key>xpos</key>
-			<real>3695</real>
+			<real>3895</real>
 			<key>ypos</key>
-			<real>680</real>
+			<real>985</real>
+		</dict>
+		<key>4D3B1C8A-EA1E-45E2-A71C-2F4AE467082F</key>
+		<dict>
+			<key>xpos</key>
+			<real>2770</real>
+			<key>ypos</key>
+			<real>1355</real>
 		</dict>
 		<key>4DB7A42A-393B-47B4-A79D-218E13606DBE</key>
 		<dict>
 			<key>xpos</key>
-			<real>3285</real>
+			<real>3485</real>
 			<key>ypos</key>
-			<real>650</real>
+			<real>955</real>
 		</dict>
 		<key>4F8D11A6-729D-4D2C-87FA-655D99654B24</key>
 		<dict>
 			<key>xpos</key>
-			<real>2925</real>
+			<real>3125</real>
 			<key>ypos</key>
-			<real>85</real>
+			<real>390</real>
 		</dict>
 		<key>4F917621-00DC-4625-ACA8-2FE163597E6B</key>
 		<dict>
 			<key>xpos</key>
-			<real>3550</real>
+			<real>3750</real>
 			<key>ypos</key>
-			<real>770</real>
+			<real>1075</real>
 		</dict>
 		<key>5135B3F0-4CCC-4B73-B3B2-3B63EC6778B8</key>
 		<dict>
 			<key>xpos</key>
-			<real>1330</real>
+			<real>1530</real>
 			<key>ypos</key>
-			<real>75</real>
+			<real>370</real>
 		</dict>
 		<key>529ED20B-9D65-4CC0-A14E-A7E03748A9DF</key>
 		<dict>
 			<key>xpos</key>
-			<real>1755</real>
+			<real>2030</real>
 			<key>ypos</key>
-			<real>240</real>
+			<real>545</real>
 		</dict>
 		<key>5306F205-BD66-4C58-AA01-148EF203EACF</key>
 		<dict>
 			<key>xpos</key>
-			<real>3000</real>
+			<real>3200</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>490</real>
 		</dict>
 		<key>5339101C-7E65-4F8F-AC85-F4E5B1A75A61</key>
 		<dict>
 			<key>note</key>
 			<string>Restores clipboard to original</string>
 			<key>xpos</key>
-			<real>280</real>
+			<real>880</real>
 			<key>ypos</key>
-			<real>85</real>
+			<real>185</real>
 		</dict>
 		<key>53B51182-6149-43E3-8E07-444894F98763</key>
 		<dict>
 			<key>note</key>
 			<string>Query Cleaner</string>
 			<key>xpos</key>
-			<real>665</real>
+			<real>865</real>
 			<key>ypos</key>
-			<real>850</real>
+			<real>1155</real>
 		</dict>
 		<key>56E3E834-AE7A-4356-9177-1A19FA7567D2</key>
 		<dict>
@@ -8735,88 +9655,88 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>AI Request - The Brain</string>
 			<key>xpos</key>
-			<real>2760</real>
+			<real>2950</real>
 			<key>ypos</key>
-			<real>600</real>
+			<real>890</real>
 		</dict>
 		<key>586A9E86-8AED-4E91-92AD-3A733E980DEC</key>
 		<dict>
 			<key>xpos</key>
-			<real>940</real>
+			<real>1140</real>
 			<key>ypos</key>
-			<real>855</real>
+			<real>1160</real>
 		</dict>
 		<key>59E30600-A0F4-4251-AC64-1B53B21BDBCD</key>
 		<dict>
 			<key>xpos</key>
-			<real>2405</real>
+			<real>2605</real>
 			<key>ypos</key>
-			<real>655</real>
+			<real>960</real>
 		</dict>
 		<key>5A404F0F-C155-4765-866F-8C41235391C4</key>
 		<dict>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>2305</real>
+			<real>2610</real>
 		</dict>
 		<key>5A98D195-7FB2-4995-A470-5160AB7CE3C4</key>
 		<dict>
 			<key>xpos</key>
-			<real>1330</real>
+			<real>1530</real>
 			<key>ypos</key>
-			<real>1200</real>
+			<real>1505</real>
 		</dict>
 		<key>6041AF29-474B-4C8A-B0B3-44A321FBCC61</key>
 		<dict>
 			<key>xpos</key>
-			<real>720</real>
+			<real>920</real>
 			<key>ypos</key>
-			<real>1190</real>
+			<real>1495</real>
 		</dict>
 		<key>6085AE97-A9D4-41B3-A592-3B14D207E768</key>
 		<dict>
 			<key>xpos</key>
-			<real>3000</real>
+			<real>3200</real>
 			<key>ypos</key>
-			<real>620</real>
+			<real>925</real>
 		</dict>
 		<key>60FB61D5-0954-4285-B206-7D0A568991FB</key>
 		<dict>
 			<key>xpos</key>
-			<real>255</real>
+			<real>455</real>
 			<key>ypos</key>
-			<real>1845</real>
+			<real>2150</real>
 		</dict>
 		<key>62DF37C0-6D64-4853-9BAC-1DFF9F931D2F</key>
 		<dict>
 			<key>xpos</key>
-			<real>3670</real>
+			<real>3870</real>
 			<key>ypos</key>
-			<real>1140</real>
+			<real>1445</real>
 		</dict>
 		<key>631E3F64-38D8-4165-88FD-1B7AA3F3D588</key>
 		<dict>
 			<key>xpos</key>
-			<real>1495</real>
+			<real>1695</real>
 			<key>ypos</key>
-			<real>140</real>
+			<real>435</real>
 		</dict>
 		<key>6575D9F6-4F5F-43B4-8F33-5C2BDBDDE800</key>
 		<dict>
 			<key>note</key>
 			<string>Restores clipboard to original</string>
 			<key>xpos</key>
-			<real>3480</real>
+			<real>3680</real>
 			<key>ypos</key>
-			<real>335</real>
+			<real>640</real>
 		</dict>
 		<key>675B6EC3-0B59-4EAB-A279-38B20725B078</key>
 		<dict>
 			<key>xpos</key>
-			<real>1735</real>
+			<real>1875</real>
 			<key>ypos</key>
-			<real>575</real>
+			<real>865</real>
 		</dict>
 		<key>6876A6B3-5A96-4F50-8E0B-F6F3D7B4F887</key>
 		<dict>
@@ -8825,23 +9745,23 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>ALL-IN-ONE TRIGGER | Must have arguments</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>650</real>
+			<real>955</real>
 		</dict>
 		<key>6ACAE7E6-7EA7-4EB7-9842-CF24F0DD9F9A</key>
 		<dict>
 			<key>xpos</key>
-			<real>3460</real>
+			<real>3660</real>
 			<key>ypos</key>
-			<real>515</real>
+			<real>820</real>
 		</dict>
 		<key>6BF80F5E-88DA-4A13-9AF4-63CD418D9EBA</key>
 		<dict>
 			<key>xpos</key>
-			<real>3145</real>
+			<real>3345</real>
 			<key>ypos</key>
-			<real>770</real>
+			<real>1075</real>
 		</dict>
 		<key>6F9906FE-8412-4386-B52E-E6EEF349AC7B</key>
 		<dict>
@@ -8850,18 +9770,18 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Trigger MD Chat | Auto Select All</string>
 			<key>xpos</key>
-			<real>765</real>
+			<real>965</real>
 			<key>ypos</key>
-			<real>400</real>
+			<real>705</real>
 		</dict>
 		<key>6FC107CB-68CD-46FC-A2E5-AFA5057E5314</key>
 		<dict>
 			<key>note</key>
 			<string>Delay. In case user is holding modifier.</string>
 			<key>xpos</key>
-			<real>1015</real>
+			<real>1190</real>
 			<key>ypos</key>
-			<real>75</real>
+			<real>370</real>
 		</dict>
 		<key>6FDBA534-FC44-465E-BD65-C742A5FC184C</key>
 		<dict>
@@ -8870,30 +9790,44 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Kiki Options Menu</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>385</real>
+			<real>815</real>
 		</dict>
 		<key>7183B044-9481-4D25-946C-4BA834EC9796</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>445</real>
 			<key>ypos</key>
-			<real>1100</real>
+			<real>1405</real>
 		</dict>
 		<key>72E77DC3-3E7B-451D-A1E2-C740195EB51B</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>445</real>
 			<key>ypos</key>
-			<real>870</real>
+			<real>1175</real>
 		</dict>
 		<key>72F6CCD0-950B-4644-9026-7B1DB7D96333</key>
 		<dict>
 			<key>xpos</key>
-			<real>3235</real>
+			<real>3435</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>360</real>
+		</dict>
+		<key>7302F5DC-10A0-45C7-9E22-1485C200C57E</key>
+		<dict>
+			<key>xpos</key>
+			<real>2660</real>
+			<key>ypos</key>
+			<real>1400</real>
+		</dict>
+		<key>73824266-E873-4980-B994-77956D85D52E</key>
+		<dict>
+			<key>xpos</key>
+			<real>2660</real>
+			<key>ypos</key>
+			<real>1455</real>
 		</dict>
 		<key>74122E8E-EF7C-431A-B2E9-B914801B67CF</key>
 		<dict>
@@ -8902,39 +9836,39 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Add custom prompt to selected text | Replace</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>1705</real>
+			<real>2010</real>
 		</dict>
 		<key>74696BAC-4BE4-42A3-A95E-8752564E2900</key>
 		<dict>
 			<key>xpos</key>
-			<real>255</real>
+			<real>455</real>
 			<key>ypos</key>
-			<real>2305</real>
+			<real>2610</real>
 		</dict>
 		<key>78B14BD1-B9B3-42C8-B725-CA17BD4EEEA6</key>
 		<dict>
 			<key>xpos</key>
-			<real>1615</real>
+			<real>1855</real>
 			<key>ypos</key>
-			<real>1230</real>
+			<real>1535</real>
 		</dict>
 		<key>78FA1CFC-373F-47C6-90B8-2AFD7F221D34</key>
 		<dict>
 			<key>xpos</key>
-			<real>1425</real>
+			<real>1625</real>
 			<key>ypos</key>
-			<real>165</real>
+			<real>460</real>
 		</dict>
 		<key>7C25D2AA-24DF-40FC-86E6-0DF72974F2A6</key>
 		<dict>
 			<key>note</key>
 			<string>Get Path to File</string>
 			<key>xpos</key>
-			<real>735</real>
+			<real>935</real>
 			<key>ypos</key>
-			<real>1360</real>
+			<real>1665</real>
 		</dict>
 		<key>7C2EA42A-C144-4289-B4DE-561A399C067B</key>
 		<dict>
@@ -8943,51 +9877,51 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Trigger MD Chat | Auto Select All | No Args</string>
 			<key>xpos</key>
-			<real>765</real>
+			<real>965</real>
 			<key>ypos</key>
-			<real>255</real>
+			<real>560</real>
 		</dict>
 		<key>7CA0A16E-82CD-4617-A59C-7221CBFECCD3</key>
 		<dict>
 			<key>xpos</key>
-			<real>1800</real>
+			<real>2000</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>415</real>
 		</dict>
 		<key>7D8CD940-0A20-4F8F-AFA9-ABF418732ED8</key>
 		<dict>
 			<key>xpos</key>
-			<real>3280</real>
+			<real>3480</real>
 			<key>ypos</key>
-			<real>335</real>
+			<real>640</real>
 		</dict>
 		<key>7DC3F2FE-1046-4186-B880-CBA228E7384E</key>
 		<dict>
 			<key>xpos</key>
-			<real>1115</real>
+			<real>1315</real>
 			<key>ypos</key>
-			<real>75</real>
+			<real>370</real>
 		</dict>
 		<key>7DDBFAD4-DE82-409B-ACF1-37DCB411D437</key>
 		<dict>
 			<key>xpos</key>
-			<real>2535</real>
+			<real>2735</real>
 			<key>ypos</key>
-			<real>685</real>
+			<real>990</real>
 		</dict>
 		<key>7DFD7B68-AC59-4B0C-BD95-B45A7E914F2E</key>
 		<dict>
 			<key>xpos</key>
-			<real>1575</real>
+			<real>1775</real>
 			<key>ypos</key>
-			<real>835</real>
+			<real>1140</real>
 		</dict>
 		<key>7EB89779-2DED-4305-81F1-6A7DE3817C23</key>
 		<dict>
 			<key>xpos</key>
-			<real>1720</real>
+			<real>1920</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>415</real>
 		</dict>
 		<key>811F26CA-5F39-4F72-A1C4-2694E7AD3980</key>
 		<dict>
@@ -8996,73 +9930,80 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Autoselect from previous line break and add custom prompt</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>1950</real>
+			<real>2255</real>
 		</dict>
 		<key>82D892DE-79B7-4E6E-89F2-6AA10D9C87CE</key>
 		<dict>
 			<key>note</key>
 			<string>Dialog</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>410</real>
 			<key>ypos</key>
-			<real>610</real>
+			<real>260</real>
 		</dict>
 		<key>8395D687-333C-4D75-A3AF-51B0CCD9A423</key>
 		<dict>
 			<key>xpos</key>
-			<real>1040</real>
+			<real>1240</real>
 			<key>ypos</key>
-			<real>820</real>
+			<real>1125</real>
 		</dict>
 		<key>840BA56A-D252-4822-9C5E-5C207C897B0C</key>
 		<dict>
 			<key>note</key>
 			<string>Restores clipboard to original</string>
 			<key>xpos</key>
-			<real>3480</real>
+			<real>3680</real>
 			<key>ypos</key>
-			<real>185</real>
+			<real>490</real>
 		</dict>
 		<key>84FB538D-9ED2-4620-BDE0-8086C7FEB5DF</key>
 		<dict>
 			<key>note</key>
 			<string>Paste to Frontmost App</string>
 			<key>xpos</key>
-			<real>1370</real>
+			<real>1610</real>
 			<key>ypos</key>
-			<real>1370</real>
+			<real>1675</real>
 		</dict>
 		<key>876549DB-6E3A-4B6C-9BAF-BBA27EF195E2</key>
 		<dict>
 			<key>xpos</key>
-			<real>870</real>
+			<real>1070</real>
 			<key>ypos</key>
-			<real>1130</real>
+			<real>1435</real>
 		</dict>
 		<key>88E5E97D-132E-4A76-B939-ED507F697A85</key>
 		<dict>
 			<key>note</key>
 			<string>Restores clipboard to original</string>
 			<key>xpos</key>
-			<real>1605</real>
+			<real>1845</real>
 			<key>ypos</key>
-			<real>1320</real>
+			<real>1625</real>
 		</dict>
 		<key>89B54202-BD1B-4AF9-BDED-26891B2606D8</key>
 		<dict>
 			<key>xpos</key>
-			<real>255</real>
+			<real>455</real>
 			<key>ypos</key>
-			<real>1380</real>
+			<real>1685</real>
 		</dict>
 		<key>8B9A729D-F783-47B4-A17F-2DD002A270C2</key>
 		<dict>
 			<key>xpos</key>
-			<real>1450</real>
+			<real>1685</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>580</real>
+		</dict>
+		<key>8D877AD6-A1D6-42A0-A669-C92DC8728CEC</key>
+		<dict>
+			<key>xpos</key>
+			<real>2900</real>
+			<key>ypos</key>
+			<real>1495</real>
 		</dict>
 		<key>8E7E9AEF-937E-42BE-9AD2-7E2E1036D675</key>
 		<dict>
@@ -9071,116 +10012,144 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Whisper AI - Paste</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>1070</real>
+			<real>1375</real>
 		</dict>
 		<key>8E807E2E-00BB-4B2C-84BC-D68ABA06DBE7</key>
 		<dict>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>1845</real>
+			<real>2150</real>
+		</dict>
+		<key>8F4C6340-27CE-4AB8-86C8-3121FA2777F3</key>
+		<dict>
+			<key>xpos</key>
+			<real>2770</real>
+			<key>ypos</key>
+			<real>1465</real>
 		</dict>
 		<key>90414C8D-1F16-43D4-A377-46E244B346ED</key>
 		<dict>
 			<key>xpos</key>
-			<real>2045</real>
+			<real>2245</real>
 			<key>ypos</key>
-			<real>415</real>
+			<real>720</real>
 		</dict>
 		<key>908A01FD-21AA-4F22-90E6-B6C589D0849C</key>
 		<dict>
 			<key>xpos</key>
-			<real>2640</real>
+			<real>2810</real>
 			<key>ypos</key>
-			<real>605</real>
+			<real>910</real>
+		</dict>
+		<key>92B27792-6E2F-4793-AD36-1A5FB4742504</key>
+		<dict>
+			<key>xpos</key>
+			<real>2525</real>
+			<key>ypos</key>
+			<real>1260</real>
 		</dict>
 		<key>92F8BFEE-4CD8-4FD4-9DB0-543BE71BAEC0</key>
 		<dict>
 			<key>xpos</key>
-			<real>3755</real>
+			<real>3955</real>
 			<key>ypos</key>
-			<real>650</real>
+			<real>955</real>
 		</dict>
 		<key>94900AA1-F15F-49FD-858A-A0BF97A1D1F7</key>
 		<dict>
 			<key>xpos</key>
-			<real>3155</real>
+			<real>3355</real>
 			<key>ypos</key>
-			<real>85</real>
+			<real>390</real>
 		</dict>
 		<key>95D755F9-FD48-4BD2-B82A-605304B56615</key>
 		<dict>
 			<key>xpos</key>
-			<real>100</real>
+			<real>60</real>
 			<key>ypos</key>
-			<real>540</real>
+			<real>190</real>
 		</dict>
 		<key>97B2E412-4D05-4058-AF1F-2EA536933C88</key>
 		<dict>
 			<key>xpos</key>
-			<real>1055</real>
+			<real>1255</real>
 			<key>ypos</key>
-			<real>1245</real>
+			<real>1550</real>
 		</dict>
 		<key>9B4973EC-C5DA-4471-9509-F2C1F47C9832</key>
 		<dict>
 			<key>xpos</key>
-			<real>1735</real>
+			<real>1935</real>
 			<key>ypos</key>
-			<real>900</real>
+			<real>1205</real>
 		</dict>
 		<key>9B664732-04E3-472C-96BE-782239D2C4CF</key>
 		<dict>
 			<key>xpos</key>
-			<real>2165</real>
+			<real>2365</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>415</real>
 		</dict>
 		<key>9E5079D2-496E-4E30-8593-6AA1CDA0ADDE</key>
 		<dict>
 			<key>xpos</key>
-			<real>1115</real>
+			<real>1315</real>
 			<key>ypos</key>
-			<real>1245</real>
+			<real>1550</real>
+		</dict>
+		<key>A0B9803F-F145-408D-A583-41F082FE29F5</key>
+		<dict>
+			<key>xpos</key>
+			<real>2770</real>
+			<key>ypos</key>
+			<real>1410</real>
 		</dict>
 		<key>A1FE0C88-CBF1-4F00-8B5B-7F291A31B6C6</key>
 		<dict>
 			<key>note</key>
 			<string>Prepare Variables</string>
 			<key>xpos</key>
-			<real>1305</real>
+			<real>1545</real>
 			<key>ypos</key>
-			<real>255</real>
+			<real>560</real>
 		</dict>
 		<key>A3037C87-225F-4DDD-AAFD-149996547B86</key>
 		<dict>
 			<key>xpos</key>
-			<real>480</real>
+			<real>540</real>
 			<key>ypos</key>
-			<real>410</real>
+			<real>435</real>
 		</dict>
 		<key>A30CE575-E84B-4EA5-92A0-1BB79E93148C</key>
 		<dict>
 			<key>xpos</key>
-			<real>3290</real>
+			<real>3490</real>
 			<key>ypos</key>
-			<real>750</real>
+			<real>1055</real>
+		</dict>
+		<key>A3C96976-E017-4753-A86A-2BE9194CB89D</key>
+		<dict>
+			<key>xpos</key>
+			<real>2300</real>
+			<key>ypos</key>
+			<real>1360</real>
 		</dict>
 		<key>A707B93B-8E57-4871-929C-7CC4A2FADBF4</key>
 		<dict>
 			<key>xpos</key>
-			<real>1180</real>
+			<real>1380</real>
 			<key>ypos</key>
-			<real>285</real>
+			<real>590</real>
 		</dict>
 		<key>A828EC91-6AE7-45D3-8705-3DE6500904D0</key>
 		<dict>
 			<key>xpos</key>
-			<real>480</real>
+			<real>405</real>
 			<key>ypos</key>
-			<real>365</real>
+			<real>425</real>
 		</dict>
 		<key>A9EE75C4-3DE0-4CBC-A42E-15C7343D8D7B</key>
 		<dict>
@@ -9189,92 +10158,113 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Emojify</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>2760</real>
+			<real>3065</real>
 		</dict>
 		<key>AA880F22-0716-4B97-B279-DEE3E8FEFDD3</key>
 		<dict>
 			<key>xpos</key>
-			<real>1525</real>
+			<real>1765</real>
 			<key>ypos</key>
-			<real>1350</real>
+			<real>1655</real>
 		</dict>
 		<key>AC64FAD4-0BA7-4B29-AB01-118E7FA525FF</key>
 		<dict>
 			<key>xpos</key>
-			<real>1875</real>
+			<real>2140</real>
 			<key>ypos</key>
-			<real>600</real>
+			<real>890</real>
 		</dict>
 		<key>AE2C898E-44C5-443C-8FA1-A24DC8274164</key>
 		<dict>
 			<key>xpos</key>
-			<real>865</real>
+			<real>1065</real>
 			<key>ypos</key>
-			<real>1390</real>
+			<real>1695</real>
+		</dict>
+		<key>AF226BFD-3A4C-4703-9017-C1AF4FEA6446</key>
+		<dict>
+			<key>xpos</key>
+			<real>2660</real>
+			<key>ypos</key>
+			<real>1240</real>
 		</dict>
 		<key>B2FC0E68-D9D9-47B0-A19D-4F9C54486BBE</key>
 		<dict>
 			<key>xpos</key>
-			<real>3350</real>
+			<real>3550</real>
 			<key>ypos</key>
-			<real>625</real>
+			<real>930</real>
 		</dict>
 		<key>B351D28A-EA21-44A3-8D97-B3196D35EFCA</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>2790</real>
+			<real>3095</real>
 		</dict>
 		<key>B4A77B92-7BCD-4783-A3ED-59E3A0E4DED7</key>
 		<dict>
 			<key>xpos</key>
-			<real>480</real>
+			<real>540</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>40</real>
 		</dict>
 		<key>B59FD173-ED80-424F-8E7F-9B418749850B</key>
 		<dict>
 			<key>xpos</key>
-			<real>1420</real>
+			<real>1620</real>
 			<key>ypos</key>
-			<real>850</real>
+			<real>1155</real>
 		</dict>
 		<key>B67F9E1E-EB3F-41BE-805D-BA0C60C78B91</key>
 		<dict>
 			<key>note</key>
 			<string>Next Action Dialog on Whisper Transcription</string>
 			<key>xpos</key>
-			<real>1370</real>
+			<real>1610</real>
 			<key>ypos</key>
-			<real>1510</real>
+			<real>1815</real>
+		</dict>
+		<key>B71E6FE1-EA6D-45F5-82C6-C814A7B49427</key>
+		<dict>
+			<key>xpos</key>
+			<real>2525</real>
+			<key>ypos</key>
+			<real>1415</real>
 		</dict>
 		<key>B76ED5DB-4DAA-4843-8AC4-E96F067F8F4F</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>1270</real>
+			<real>1575</real>
+		</dict>
+		<key>B7E656E2-7FBC-433C-B4A2-C8844921BFD9</key>
+		<dict>
+			<key>xpos</key>
+			<real>2770</real>
+			<key>ypos</key>
+			<real>1300</real>
 		</dict>
 		<key>B8D3C392-1B60-4AFC-BA0E-1DB38C1831D0</key>
 		<dict>
 			<key>note</key>
 			<string>Read File and Echo its Contents</string>
 			<key>xpos</key>
-			<real>920</real>
+			<real>1120</real>
 			<key>ypos</key>
-			<real>1360</real>
+			<real>1665</real>
 		</dict>
 		<key>B9EEF6D1-D0D0-40D4-AAE6-2B7359AA811D</key>
 		<dict>
 			<key>note</key>
 			<string>Dialog | Model from List</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>540</real>
 			<key>ypos</key>
-			<real>920</real>
+			<real>255</real>
 		</dict>
 		<key>BB7009C9-3FB8-4F10-B4F3-23AD698432DF</key>
 		<dict>
@@ -9283,30 +10273,30 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Simplify</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>2890</real>
+			<real>3195</real>
 		</dict>
 		<key>BCAF3A02-A6AB-424F-B399-E2708E38A450</key>
 		<dict>
 			<key>xpos</key>
-			<real>3140</real>
+			<real>3340</real>
 			<key>ypos</key>
-			<real>620</real>
+			<real>925</real>
 		</dict>
 		<key>BDE5B558-38B7-460E-A074-5544F5D0B91F</key>
 		<dict>
 			<key>xpos</key>
-			<real>1580</real>
+			<real>1820</real>
 			<key>ypos</key>
-			<real>1480</real>
+			<real>1785</real>
 		</dict>
 		<key>C0E00199-4ABA-4C95-80A6-9B66AE4F4F3C</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>1735</real>
+			<real>2040</real>
 		</dict>
 		<key>C3E06DEC-1B03-46CA-86AD-A71A5536EA5B</key>
 		<dict>
@@ -9315,64 +10305,64 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Whisper AI - Dialog</string>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>840</real>
+			<real>1145</real>
 		</dict>
 		<key>C44F1BEE-2AF7-41C1-9513-E19C5FF50877</key>
 		<dict>
 			<key>xpos</key>
-			<real>1635</real>
+			<real>1835</real>
 			<key>ypos</key>
-			<real>125</real>
+			<real>420</real>
 		</dict>
 		<key>C56FAB20-8F47-4C09-8A89-5E4CD6A07978</key>
 		<dict>
 			<key>xpos</key>
-			<real>3000</real>
+			<real>3200</real>
 			<key>ypos</key>
-			<real>770</real>
+			<real>1075</real>
 		</dict>
 		<key>C6C11907-46C0-4A6A-ACC5-8CF04E9F28EA</key>
 		<dict>
 			<key>note</key>
 			<string>Resume Context Options</string>
 			<key>xpos</key>
-			<real>620</real>
+			<real>820</real>
 			<key>ypos</key>
-			<real>80</real>
+			<real>375</real>
 		</dict>
 		<key>C75BEBA0-EAFB-4944-A38F-B14D6D707404</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>780</real>
 			<key>ypos</key>
-			<real>1360</real>
+			<real>1665</real>
 		</dict>
 		<key>C825FE67-151E-48DA-83AA-906C37FC0176</key>
 		<dict>
 			<key>xpos</key>
-			<real>1535</real>
+			<real>1775</real>
 			<key>ypos</key>
-			<real>1260</real>
+			<real>1565</real>
 		</dict>
 		<key>D08FFD97-E315-4486-B709-FCB4007380FB</key>
 		<dict>
 			<key>note</key>
 			<string>Restores clipboard to original</string>
 			<key>xpos</key>
-			<real>3525</real>
+			<real>3725</real>
 			<key>ypos</key>
-			<real>485</real>
+			<real>790</real>
 		</dict>
 		<key>D34D41F1-D8B3-417A-A098-D78D82EFA0DE</key>
 		<dict>
 			<key>note</key>
 			<string>Dialog | Replace Context | Model B</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>540</real>
 			<key>ypos</key>
-			<real>835</real>
+			<real>170</real>
 		</dict>
 		<key>D40F59D9-8FC8-4C8B-B546-5E8015AAB798</key>
 		<dict>
@@ -9381,127 +10371,141 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Whisper Request</string>
 			<key>xpos</key>
-			<real>920</real>
+			<real>1120</real>
 			<key>ypos</key>
-			<real>1215</real>
+			<real>1520</real>
 		</dict>
 		<key>D5B5CE40-6D20-4CFD-B5C5-996689F9A4A6</key>
 		<dict>
 			<key>xpos</key>
-			<real>3420</real>
+			<real>3620</real>
 			<key>ypos</key>
-			<real>215</real>
+			<real>520</real>
 		</dict>
 		<key>D7A9C667-0D4B-41A6-BE7A-1FA68D703098</key>
 		<dict>
 			<key>xpos</key>
-			<real>2710</real>
+			<real>2900</real>
 			<key>ypos</key>
-			<real>495</real>
+			<real>1040</real>
 		</dict>
 		<key>D9BEF747-2F04-476A-BF21-1107CB535D3E</key>
 		<dict>
 			<key>xpos</key>
-			<real>3785</real>
+			<real>3985</real>
 			<key>ypos</key>
-			<real>1105</real>
+			<real>1410</real>
+		</dict>
+		<key>D9F554D8-FFE2-4298-A2A6-A28813635474</key>
+		<dict>
+			<key>xpos</key>
+			<real>3070</real>
+			<key>ypos</key>
+			<real>1400</real>
 		</dict>
 		<key>DA582392-AA95-439D-A15C-5080CCC758AB</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>1980</real>
+			<real>2285</real>
 		</dict>
 		<key>DE221F78-A678-4DB4-A473-086A392C1BA6</key>
 		<dict>
 			<key>xpos</key>
-			<real>425</real>
+			<real>625</real>
 			<key>ypos</key>
-			<real>2305</real>
-		</dict>
-		<key>DED3761B-BB0B-47FC-91EE-346650C323AA</key>
-		<dict>
-			<key>xpos</key>
-			<real>1450</real>
-			<key>ypos</key>
-			<real>25</real>
+			<real>2610</real>
 		</dict>
 		<key>DF008D2F-FCB3-4528-BF93-CCD5EB55E4B9</key>
 		<dict>
 			<key>note</key>
 			<string>Dialog | Replace Context | Model B</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>540</real>
 			<key>ypos</key>
-			<real>1005</real>
+			<real>340</real>
 		</dict>
 		<key>DF604562-6E06-4CFF-AEF5-B42618D639A1</key>
 		<dict>
 			<key>xpos</key>
-			<real>3420</real>
+			<real>3620</real>
 			<key>ypos</key>
-			<real>365</real>
+			<real>670</real>
 		</dict>
 		<key>E0537AE0-14CF-451B-B21B-B3C3E65C59CD</key>
 		<dict>
 			<key>xpos</key>
-			<real>1055</real>
+			<real>1450</real>
 			<key>ypos</key>
-			<real>1590</real>
+			<real>1695</real>
 		</dict>
 		<key>E0B82036-BCE8-4B4E-A22A-0BBB88D297B1</key>
 		<dict>
 			<key>xpos</key>
-			<real>3550</real>
+			<real>3750</real>
 			<key>ypos</key>
-			<real>650</real>
+			<real>955</real>
+		</dict>
+		<key>E2494AC8-D31A-4384-8F1C-34919E263FBB</key>
+		<dict>
+			<key>xpos</key>
+			<real>2900</real>
+			<key>ypos</key>
+			<real>1385</real>
+		</dict>
+		<key>E26F0DBC-CD5C-4C02-95E9-1C09A96AA5FD</key>
+		<dict>
+			<key>xpos</key>
+			<real>2525</real>
+			<key>ypos</key>
+			<real>1470</real>
 		</dict>
 		<key>E29346ED-28C4-49B9-BBC3-BFB38C6E9FAA</key>
 		<dict>
 			<key>note</key>
 			<string>Dialog | Model B</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>540</real>
 			<key>ypos</key>
-			<real>765</real>
+			<real>100</real>
 		</dict>
 		<key>E2E01796-6694-49D1-813C-C880D1AD94D1</key>
 		<dict>
 			<key>xpos</key>
-			<real>770</real>
-			<key>ypos</key>
 			<real>970</real>
+			<key>ypos</key>
+			<real>1275</real>
 		</dict>
 		<key>E5784B88-3FE8-45B9-B870-925250AFF1E3</key>
 		<dict>
 			<key>note</key>
 			<string>Restores clipboard to original</string>
 			<key>xpos</key>
-			<real>1040</real>
+			<real>1240</real>
 			<key>ypos</key>
-			<real>970</real>
+			<real>1275</real>
 		</dict>
 		<key>E6B3F85B-4BCC-4591-881F-22DA58CBDE97</key>
 		<dict>
 			<key>xpos</key>
-			<real>1195</real>
+			<real>1395</real>
 			<key>ypos</key>
-			<real>1390</real>
+			<real>1695</real>
 		</dict>
 		<key>E769FA9B-B02A-4725-A6D1-3410DA4465F7</key>
 		<dict>
 			<key>xpos</key>
-			<real>1475</real>
+			<real>1675</real>
 			<key>ypos</key>
-			<real>880</real>
+			<real>1185</real>
 		</dict>
 		<key>E83D28E3-77F6-4688-948A-732EDF7EA09C</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>780</real>
 			<key>ypos</key>
-			<real>2335</real>
+			<real>2640</real>
 		</dict>
 		<key>EA07827B-D03B-4EE9-9B66-D15F60842B07</key>
 		<dict>
@@ -9510,83 +10514,97 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Quick Chat</string>
 			<key>xpos</key>
-			<real>765</real>
+			<real>965</real>
 			<key>ypos</key>
-			<real>675</real>
+			<real>980</real>
+		</dict>
+		<key>EA1AAA47-9103-4B6A-98A2-234FFF2F809D</key>
+		<dict>
+			<key>xpos</key>
+			<real>2660</real>
+			<key>ypos</key>
+			<real>1290</real>
+		</dict>
+		<key>EA483C0E-57D8-44E1-A3FB-694F31AAFE56</key>
+		<dict>
+			<key>xpos</key>
+			<real>2660</real>
+			<key>ypos</key>
+			<real>1515</real>
 		</dict>
 		<key>EAB0D362-B0F9-493E-B9B2-98AA53ED415F</key>
 		<dict>
 			<key>xpos</key>
-			<real>1670</real>
+			<real>1910</real>
 			<key>ypos</key>
-			<real>1475</real>
+			<real>1780</real>
 		</dict>
 		<key>EC965105-0EE4-4E14-9FFB-C374772B8722</key>
 		<dict>
 			<key>xpos</key>
-			<real>245</real>
+			<real>445</real>
 			<key>ypos</key>
-			<real>680</real>
-		</dict>
-		<key>ED9AEBDC-1C98-4F4D-AC03-3A97EB182650</key>
-		<dict>
-			<key>xpos</key>
-			<real>940</real>
-			<key>ypos</key>
-			<real>675</real>
+			<real>985</real>
 		</dict>
 		<key>EFAA2CFC-050A-4F9D-8EB7-1861A57FF404</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>780</real>
 			<key>ypos</key>
-			<real>2285</real>
+			<real>2590</real>
 		</dict>
 		<key>F05CD26D-7095-4A08-9F76-73CC39A3FE5F</key>
 		<dict>
 			<key>note</key>
 			<string>kikiType</string>
 			<key>xpos</key>
-			<real>1245</real>
+			<real>1460</real>
 			<key>ypos</key>
-			<real>285</real>
+			<real>590</real>
 		</dict>
 		<key>F0E56011-DBB5-417B-A880-6BB56A4467D7</key>
 		<dict>
 			<key>xpos</key>
-			<real>1060</real>
+			<real>1260</real>
 			<key>ypos</key>
-			<real>1360</real>
+			<real>1665</real>
 		</dict>
 		<key>F12D797F-41D4-48DC-829C-59C21809E481</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>2660</real>
+			<real>2965</real>
 		</dict>
 		<key>F1AE6676-EB38-4D46-A480-583B0F0BFCEC</key>
 		<dict>
 			<key>xpos</key>
-			<real>3140</real>
+			<real>3340</real>
 			<key>ypos</key>
-			<real>485</real>
+			<real>790</real>
 		</dict>
 		<key>F36BEC89-FDEB-4CB5-A85C-34E44126E00F</key>
 		<dict>
 			<key>colorindex</key>
 			<integer>8</integer>
 			<key>xpos</key>
-			<real>100</real>
+			<real>300</real>
 			<key>ypos</key>
-			<real>275</real>
+			<real>705</real>
+		</dict>
+		<key>F4CC0099-3D84-4EEC-BE16-BCAE27E70D3D</key>
+		<dict>
+			<key>xpos</key>
+			<real>2525</real>
+			<key>ypos</key>
+			<real>1310</real>
 		</dict>
 		<key>F5559850-B091-40EA-8FBE-4905BEDDCC90</key>
 		<dict>
 			<key>xpos</key>
-			<real>580</real>
+			<real>780</real>
 			<key>ypos</key>
-			<real>1825</real>
+			<real>2130</real>
 		</dict>
 		<key>F7D2B2DA-ECB8-47BE-9C86-F0076A7F8978</key>
 		<dict>
@@ -9595,41 +10613,48 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Must have arguments for file actions</string>
 			<key>xpos</key>
-			<real>2765</real>
+			<real>2965</real>
 			<key>ypos</key>
-			<real>55</real>
+			<real>360</real>
 		</dict>
 		<key>F85AD190-096D-4117-8FC3-7653A37CCBD5</key>
 		<dict>
 			<key>note</key>
 			<string>Paste (In Note) | Replace Context</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>410</real>
 			<key>ypos</key>
-			<real>525</real>
+			<real>175</real>
 		</dict>
 		<key>F98360CA-296D-4A99-BCA5-4C470A75454A</key>
 		<dict>
 			<key>xpos</key>
-			<real>3475</real>
+			<real>3675</real>
 			<key>ypos</key>
-			<real>680</real>
+			<real>985</real>
 		</dict>
 		<key>FA670416-C8C6-4552-9FDF-C9CBCE941792</key>
 		<dict>
 			<key>note</key>
 			<string>Dialog | Replace Context</string>
 			<key>xpos</key>
-			<real>480</real>
+			<real>410</real>
 			<key>ypos</key>
-			<real>680</real>
+			<real>330</real>
 		</dict>
 		<key>FF5C7CBC-FF90-45F7-9595-C156008B422E</key>
 		<dict>
 			<key>xpos</key>
-			<real>2010</real>
+			<real>2210</real>
 			<key>ypos</key>
-			<real>120</real>
+			<real>415</real>
+		</dict>
+		<key>FF967D99-C461-4253-BE64-5704141D8B52</key>
+		<dict>
+			<key>xpos</key>
+			<real>2525</real>
+			<key>ypos</key>
+			<real>1360</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
