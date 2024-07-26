@@ -552,6 +552,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2E81CF03-6E6D-4D4E-9B9C-3D94662B0354</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FF5C7CBC-FF90-45F7-9595-C156008B422E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>303A2B90-0D25-465C-A30F-740989CE85D6</key>
 		<array>
 			<dict>
@@ -1303,7 +1316,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>B81D1299-3E27-43DA-9D77-DE99B7EDE24A</string>
+				<string>C44F1BEE-2AF7-41C1-9513-E19C5FF50877</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1556,6 +1569,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>7CA0A16E-82CD-4617-A59C-7221CBFECCD3</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2E81CF03-6E6D-4D4E-9B9C-3D94662B0354</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>7D8CD940-0A20-4F8F-AFA9-ABF418732ED8</key>
 		<array>
 			<dict>
@@ -1602,6 +1628,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>9B4973EC-C5DA-4471-9509-F2C1F47C9832</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>7EB89779-2DED-4305-81F1-6A7DE3817C23</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7CA0A16E-82CD-4617-A59C-7221CBFECCD3</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -2146,19 +2185,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>B81D1299-3E27-43DA-9D77-DE99B7EDE24A</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>FF5C7CBC-FF90-45F7-9595-C156008B422E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>B8D3C392-1B60-4AFC-BA0E-1DB38C1831D0</key>
 		<array>
 			<dict>
@@ -2264,6 +2290,31 @@
 				<false/>
 			</dict>
 		</array>
+		<key>C44F1BEE-2AF7-41C1-9513-E19C5FF50877</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7EB89779-2DED-4305-81F1-6A7DE3817C23</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>66D7DE3B-35F2-4A5A-9324-A88944675D36</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7CA0A16E-82CD-4617-A59C-7221CBFECCD3</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>C56FAB20-8F47-4C09-8A89-5E4CD6A07978</key>
 		<array>
 			<dict>
@@ -2281,18 +2332,6 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>7DC3F2FE-1046-4186-B880-CBA228E7384E</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>sourceoutputuid</key>
-				<string>EB93DFE0-0F97-4FE5-BF9D-728625C3A458</string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-			<dict>
-				<key>destinationuid</key>
 				<string>6FC107CB-68CD-46FC-A2E5-AFA5057E5314</string>
 				<key>modifiers</key>
 				<integer>0</integer>
@@ -2300,6 +2339,18 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>546E9B86-C3E9-415D-8D57-6424AF7F4DA1</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>7DC3F2FE-1046-4186-B880-CBA228E7384E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>EB93DFE0-0F97-4FE5-BF9D-728625C3A458</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -2445,6 +2496,8 @@
 				<false/>
 			</dict>
 		</array>
+		<key>DED3761B-BB0B-47FC-91EE-346650C323AA</key>
+		<array/>
 		<key>DF008D2F-FCB3-4528-BF93-CCD5EB55E4B9</key>
 		<array>
 			<dict>
@@ -2797,6 +2850,71 @@
 				<key>concurrently</key>
 				<false/>
 				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>#!/bin/bash
+
+# The path to the JSON file is the first argument
+jsonFilePath="${repContext}"
+iconPath="$(pwd)/icon.png"
+
+# Use jq to extract the last "content" where role is "assistant"
+lastAssistantContent=$(jq -r '[.[] | select(.role == "assistant")][-1].content' "$jsonFilePath")
+
+# Create a temporary AppleScript file
+tempScript=$(mktemp /tmp/script.XXXXXX)
+
+# Prepare the escaped content to be shown in the dialog
+# Escape backslashes first, then escape double quotes and wrap the content in quotes for AppleScript
+
+# This seems to be working best, even though most simple
+escapedContent=$(echo "$lastAssistantContent" | sed 's/\\/\\\\/g' | sed 's/\"/\\"/g') 
+
+# Better, but not working on dialogs
+# escapedContent=$(echo "$lastAssistantContent" | sed 's/\\/\\\\/g; s/"/\\"/g; s/\//\\\//g; s/\n/\\n/g; s/\r/\\r/g; s/\t/\\t/g')
+
+# Write the AppleScript commands to the temporary file
+cat &gt; "$tempScript" &lt;&lt;EOF
+tell application "System Events"
+    set userResponse to display dialog "$escapedContent" buttons {"Close", "Continue"} with icon {"$iconPath"} default button 2 default answer "" cancel button "Close" with title "Continue Conversation"
+    if button returned of userResponse is "Continue" then
+		if text returned of userResponse is "" then
+			tell application id "com.runningwithcrayons.Alfred" to set configuration "theResponse" to value "$escapedContent" in workflow "com.kiki.ai" with exportable
+			set dialogInput to "-"
+		else
+    			set dialogInput to text returned of userResponse
+		end if
+    end if
+end tell
+EOF
+
+# Execute the temporary AppleScript
+osascript "$tempScript"
+
+# Remove the temporary file
+rm "$tempScript"
+
+echo "$dialogInput"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>DED3761B-BB0B-47FC-91EE-346650C323AA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
 				<string>#!/bin/bash
@@ -2950,49 +3068,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>#!/bin/bash
-
-# The path to the JSON file is the first argument
-jsonFilePath="${repContext}"
-iconPath="$(pwd)/icon.png"
-
-# Use jq to extract the last "content" where role is "assistant"
-lastAssistantContent=$(jq -r '[.[] | select(.role == "assistant")][-1].content' "$jsonFilePath")
-
-# Create a temporary AppleScript file
-tempScript=$(mktemp /tmp/script.XXXXXX)
-
-# Prepare the escaped content to be shown in the dialog
-# Escape backslashes first, then escape double quotes and wrap the content in quotes for AppleScript
-
-# This seems to be working best, even though most simple
-escapedContent=$(echo "$lastAssistantContent" | sed 's/\\/\\\\/g' | sed 's/\"/\\"/g') 
-
-# Better, but not working on dialogs
-# escapedContent=$(echo "$lastAssistantContent" | sed 's/\\/\\\\/g; s/"/\\"/g; s/\//\\\//g; s/\n/\\n/g; s/\r/\\r/g; s/\t/\\t/g')
-
-# Write the AppleScript commands to the temporary file
-cat &gt; "$tempScript" &lt;&lt;EOF
-tell application "System Events"
-    set userResponse to display dialog "$escapedContent" buttons {"Close", "Continue"} with icon {"$iconPath"} default button 2 default answer "" cancel button "Close" with title "Continue Conversation"
-    if button returned of userResponse is "Continue" then
-		if text returned of userResponse is "" then
-			tell application id "com.runningwithcrayons.Alfred" to set configuration "theResponse" to value "$escapedContent" in workflow "com.kiki.ai" with exportable
-			set dialogInput to "-"
-		else
-    			set dialogInput to text returned of userResponse
-		end if
-    end if
-end tell
-EOF
-
-# Execute the temporary AppleScript
-osascript "$tempScript"
-
-# Remove the temporary file
-rm "$tempScript"
-
-echo "$dialogInput"</string>
+				<string>/usr/bin/osascript scripts/resume-chat-replace.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -3239,10 +3315,53 @@ echo "$dialogInput"</string>
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>theContext</key>
+					<string>{var:repContext}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>7EB89779-2DED-4305-81F1-6A7DE3817C23</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/osascript scripts/read-last-response.js "$1"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7CA0A16E-82CD-4617-A59C-7221CBFECCD3</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>autopaste</key>
 				<false/>
 				<key>clipboardtext</key>
-				<string>{var:theResponse}</string>
+				<string>{query}</string>
 				<key>ignoredynamicplaceholders</key>
 				<false/>
 				<key>transient</key>
@@ -3279,13 +3398,32 @@ echo "$dialogInput"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>seconds</key>
-				<string>{var:_delayClipboard}</string>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{var:repContext}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>1</integer>
+						<key>matchstring</key>
+						<string></string>
+						<key>outputlabel</key>
+						<string>Replace</string>
+						<key>uid</key>
+						<string>66D7DE3B-35F2-4A5A-9324-A88944675D36</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>Normal</string>
+				<key>hideelse</key>
+				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.delay</string>
+			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
-			<string>B81D1299-3E27-43DA-9D77-DE99B7EDE24A</string>
+			<string>C44F1BEE-2AF7-41C1-9513-E19C5FF50877</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3317,55 +3455,7 @@ echo "$dialogInput"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>#!/bin/bash
-
-# The path to the JSON file is the first argument
-jsonFilePath="${theContext}"
-iconPath="$(pwd)/icon.png"
-
-# Use jq to extract the last "content" where role is "assistant"
-lastAssistantContent=$(jq -r '[.[] | select(.role == "assistant")][-1].content' "$jsonFilePath")
-lastAssistantContentFull=$(jq -r '[.[] | select(.role == "assistant")][-1].content' "$jsonFilePath")
-if [ ${#lastAssistantContent} -gt 1700 ]; then
-  lastAssistantContent="${lastAssistantContent:0:1700}...
-
-(Response truncated. Don't worry, your conversation is intact. You may reply back or copy.)"
-fi
-
-# Create a temporary AppleScript file
-tempScript=$(mktemp /tmp/script.XXXXXX)
-
-# This seems to be working best, even though most simple
-escapedContent=$(echo "$lastAssistantContent" | sed 's/\\/\\\\/g' | sed 's/\"/\\"/g')
-escapedContentFull=$(echo "$lastAssistantContentFull" | sed 's/\\/\\\\/g' | sed 's/\"/\\"/g')
-
-# Better, but not working on dialogs
-# escapedContent=$(echo "$lastAssistantContent" | sed 's/\\/\\\\/g; s/"/\\"/g; s/\//\\\//g; s/\n/\\n/g; s/\r/\\r/g; s/\t/\\t/g')
-
-# Write the AppleScript commands to the temporary file
-cat &gt; "$tempScript" &lt;&lt;EOF
-tell application "System Events"
-    set userResponse to display dialog "$escapedContent" buttons {"Close", "Copy &amp; Close", "Continue"} with icon {"$iconPath"} default button 3 default answer "" cancel button "Close" with title "Continue Conversation"
-    if button returned of userResponse is "Continue" then
-		if text returned of userResponse is "" then
-			tell application id "com.runningwithcrayons.Alfred" to set configuration "theResponse" to value "$escapedContentFull" in workflow "com.kiki.ai" with exportable
-			set dialogInput to "-"
-		else
-    			set dialogInput to text returned of userResponse
-		end if
-	else if button returned of userResponse is "Copy &amp; Close" then
-		set dialogInput to "-"
-    end if
-end tell
-EOF
-
-# Execute the temporary AppleScript
-osascript "$tempScript"
-
-# Remove the temporary file
-rm "$tempScript"
-
-echo "$dialogInput"</string>
+				<string>/usr/bin/osascript scripts/resume-chat.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -3423,6 +3513,19 @@ echo "$dialogInput"</string>
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>631E3F64-38D8-4165-88FD-1B7AA3F3D588</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>2E81CF03-6E6D-4D4E-9B9C-3D94662B0354</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -8111,14 +8214,14 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>0791494D-980E-4BAE-A74D-54EE8D222BDF</key>
 		<dict>
 			<key>xpos</key>
-			<real>1330</real>
+			<real>1050</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
 		<key>07CC2FEA-51E8-4E4D-9FE8-9902EF8EAA68</key>
 		<dict>
 			<key>xpos</key>
-			<real>1275</real>
+			<real>975</real>
 			<key>ypos</key>
 			<real>165</real>
 		</dict>
@@ -8354,6 +8457,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>455</real>
 		</dict>
+		<key>2E81CF03-6E6D-4D4E-9B9C-3D94662B0354</key>
+		<dict>
+			<key>xpos</key>
+			<real>1955</real>
+			<key>ypos</key>
+			<real>150</real>
+		</dict>
 		<key>303A2B90-0D25-465C-A30F-740989CE85D6</key>
 		<dict>
 			<key>colorindex</key>
@@ -8417,7 +8527,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>39A34897-ADF8-48D3-BD30-8C116D3EA40F</key>
 		<dict>
 			<key>xpos</key>
-			<real>885</real>
+			<real>830</real>
 			<key>ypos</key>
 			<real>135</real>
 		</dict>
@@ -8605,7 +8715,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Restores clipboard to original</string>
 			<key>xpos</key>
-			<real>260</real>
+			<real>280</real>
 			<key>ypos</key>
 			<real>85</real>
 		</dict>
@@ -8749,7 +8859,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Delay. In case user is holding modifier.</string>
 			<key>xpos</key>
-			<real>1035</real>
+			<real>1015</real>
 			<key>ypos</key>
 			<real>75</real>
 		</dict>
@@ -8837,6 +8947,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>255</real>
 		</dict>
+		<key>7CA0A16E-82CD-4617-A59C-7221CBFECCD3</key>
+		<dict>
+			<key>xpos</key>
+			<real>1800</real>
+			<key>ypos</key>
+			<real>120</real>
+		</dict>
 		<key>7D8CD940-0A20-4F8F-AFA9-ABF418732ED8</key>
 		<dict>
 			<key>xpos</key>
@@ -8847,7 +8964,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>7DC3F2FE-1046-4186-B880-CBA228E7384E</key>
 		<dict>
 			<key>xpos</key>
-			<real>1125</real>
+			<real>1115</real>
 			<key>ypos</key>
 			<real>75</real>
 		</dict>
@@ -8864,6 +8981,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<real>1575</real>
 			<key>ypos</key>
 			<real>835</real>
+		</dict>
+		<key>7EB89779-2DED-4305-81F1-6A7DE3817C23</key>
+		<dict>
+			<key>xpos</key>
+			<real>1720</real>
+			<key>ypos</key>
+			<real>120</real>
 		</dict>
 		<key>811F26CA-5F39-4F72-A1C4-2694E7AD3980</key>
 		<dict>
@@ -9010,9 +9134,9 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>9B664732-04E3-472C-96BE-782239D2C4CF</key>
 		<dict>
 			<key>xpos</key>
-			<real>1815</real>
+			<real>2165</real>
 			<key>ypos</key>
-			<real>105</real>
+			<real>120</real>
 		</dict>
 		<key>9E5079D2-496E-4E30-8593-6AA1CDA0ADDE</key>
 		<dict>
@@ -9026,7 +9150,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Prepare Variables</string>
 			<key>xpos</key>
-			<real>1300</real>
+			<real>1305</real>
 			<key>ypos</key>
 			<real>255</real>
 		</dict>
@@ -9134,13 +9258,6 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>1270</real>
 		</dict>
-		<key>B81D1299-3E27-43DA-9D77-DE99B7EDE24A</key>
-		<dict>
-			<key>xpos</key>
-			<real>1595</real>
-			<key>ypos</key>
-			<real>135</real>
-		</dict>
 		<key>B8D3C392-1B60-4AFC-BA0E-1DB38C1831D0</key>
 		<dict>
 			<key>note</key>
@@ -9201,6 +9318,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<real>100</real>
 			<key>ypos</key>
 			<real>840</real>
+		</dict>
+		<key>C44F1BEE-2AF7-41C1-9513-E19C5FF50877</key>
+		<dict>
+			<key>xpos</key>
+			<real>1635</real>
+			<key>ypos</key>
+			<real>125</real>
 		</dict>
 		<key>C56FAB20-8F47-4C09-8A89-5E4CD6A07978</key>
 		<dict>
@@ -9295,6 +9419,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<real>425</real>
 			<key>ypos</key>
 			<real>2305</real>
+		</dict>
+		<key>DED3761B-BB0B-47FC-91EE-346650C323AA</key>
+		<dict>
+			<key>xpos</key>
+			<real>1450</real>
+			<key>ypos</key>
+			<real>25</real>
 		</dict>
 		<key>DF008D2F-FCB3-4528-BF93-CCD5EB55E4B9</key>
 		<dict>
@@ -9496,9 +9627,9 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>FF5C7CBC-FF90-45F7-9595-C156008B422E</key>
 		<dict>
 			<key>xpos</key>
-			<real>1660</real>
+			<real>2010</real>
 			<key>ypos</key>
-			<real>105</real>
+			<real>120</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
@@ -10175,6 +10306,11 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<string>ph2txt</string>
 		</dict>
 	</array>
+	<key>variables</key>
+	<dict>
+		<key>theResponse</key>
+		<string>Bonjour ! Comment puis-je vous aider aujourd'hui ?</string>
+	</dict>
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
