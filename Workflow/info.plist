@@ -1059,19 +1059,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>4CCE94C2-BE17-492B-82E0-6E201BF11295</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>20DC55D9-E0BE-4DA3-8BDE-25F93393647D</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>4D11F285-5E2D-45A5-A7B5-6EE620854E98</key>
 		<array>
 			<dict>
@@ -4833,11 +4820,11 @@ end tell</string>
 						<key>matchcasesensitive</key>
 						<false/>
 						<key>matchmode</key>
-						<integer>0</integer>
+						<integer>1</integer>
 						<key>matchstring</key>
-						<string>actionResumeLast</string>
+						<string></string>
 						<key>outputlabel</key>
-						<string>Resume Chat</string>
+						<string>Direct</string>
 						<key>uid</key>
 						<string>39B6FB99-C0D9-4793-8792-73E411934461</string>
 					</dict>
@@ -5066,17 +5053,31 @@ echo -n "$(cat "${kiki_data}/lastresponse.txt")"</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>availableviaurlhandler</key>
+				<key>action</key>
+				<integer>0</integer>
+				<key>argument</key>
+				<integer>0</integer>
+				<key>focusedappvariable</key>
 				<false/>
-				<key>triggerid</key>
-				<string>kikiChat</string>
+				<key>focusedappvariablename</key>
+				<string></string>
+				<key>hotkey</key>
+				<integer>0</integer>
+				<key>hotmod</key>
+				<integer>0</integer>
+				<key>leftcursor</key>
+				<false/>
+				<key>modsmode</key>
+				<integer>0</integer>
+				<key>relatedAppsMode</key>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.trigger.external</string>
+			<string>alfred.workflow.trigger.hotkey</string>
 			<key>uid</key>
-			<string>4CCE94C2-BE17-492B-82E0-6E201BF11295</string>
+			<string>EA07827B-D03B-4EE9-9B66-D15F60842B07</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -5515,35 +5516,6 @@ resultString;</string>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
 			<string>59E30600-A0F4-4251-AC64-1B53B21BDBCD</string>
-			<key>version</key>
-			<integer>2</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>action</key>
-				<integer>0</integer>
-				<key>argument</key>
-				<integer>0</integer>
-				<key>focusedappvariable</key>
-				<false/>
-				<key>focusedappvariablename</key>
-				<string></string>
-				<key>hotkey</key>
-				<integer>0</integer>
-				<key>hotmod</key>
-				<integer>0</integer>
-				<key>leftcursor</key>
-				<false/>
-				<key>modsmode</key>
-				<integer>0</integer>
-				<key>relatedAppsMode</key>
-				<integer>0</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.trigger.hotkey</string>
-			<key>uid</key>
-			<string>EA07827B-D03B-4EE9-9B66-D15F60842B07</string>
 			<key>version</key>
 			<integer>2</integer>
 		</dict>
@@ -9588,7 +9560,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>note</key>
 			<string>Query Cleaner</string>
 			<key>xpos</key>
-			<real>890</real>
+			<real>875</real>
 			<key>ypos</key>
 			<real>890</real>
 		</dict>
@@ -9664,15 +9636,6 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<real>1120</real>
 			<key>ypos</key>
 			<real>1405</real>
-		</dict>
-		<key>4CCE94C2-BE17-492B-82E0-6E201BF11295</key>
-		<dict>
-			<key>colorindex</key>
-			<integer>8</integer>
-			<key>xpos</key>
-			<real>965</real>
-			<key>ypos</key>
-			<real>860</real>
 		</dict>
 		<key>4D11F285-5E2D-45A5-A7B5-6EE620854E98</key>
 		<dict>
@@ -10045,6 +10008,8 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		</dict>
 		<key>8395D687-333C-4D75-A3AF-51B0CCD9A423</key>
 		<dict>
+			<key>note</key>
+			<string>Presets Menu Script Filter</string>
 			<key>xpos</key>
 			<real>1240</real>
 			<key>ypos</key>
@@ -10351,7 +10316,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>B8D3C392-1B60-4AFC-BA0E-1DB38C1831D0</key>
 		<dict>
 			<key>note</key>
-			<string>Read File and Echo its Contents</string>
+			<string>Read File and Echo its Contents - for All in One</string>
 			<key>xpos</key>
 			<real>1120</real>
 			<key>ypos</key>
@@ -10623,7 +10588,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>xpos</key>
 			<real>965</real>
 			<key>ypos</key>
-			<real>980</real>
+			<real>860</real>
 		</dict>
 		<key>EA1AAA47-9103-4B6A-98A2-234FFF2F809D</key>
 		<dict>

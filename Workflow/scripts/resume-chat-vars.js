@@ -2,6 +2,7 @@ ObjC.import('stdlib');
 ObjC.import('Foundation');
 
 function run(argv) {
+    var query = argv[0];
     var theDir = $.getenv('kiki_data');
     let dataDir = theDir;
     let lastModel = "";
@@ -24,15 +25,14 @@ function run(argv) {
 		context = contextFilePath.js;
 	}
 
-    const scriptFilterItem = {
-        alfredworkflow: {
-            arg: "actionResumeLast",
-            variables: {
-                theContext: context,
-                chatModel: lastModel,
-            }
-        }
-    };
+    const scriptFilterItem = {};
+    if (query === 'actionResumeLast') {
+      scriptFilterItem.alfredworkflow = { arg: "actionResumeLast", variables: { theContext: context, chatModel: lastModel } };
+    } else if (query === 'actionPresets') {
+      scriptFilterItem.alfredworkflow = { arg: "actionPresets", variables: {} };
+    } else if (query === 'actionChat') {
+      scriptFilterItem.alfredworkflow = { arg: "actionChat", variables: {} };
+    }
 
     return JSON.stringify(scriptFilterItem);
 }
