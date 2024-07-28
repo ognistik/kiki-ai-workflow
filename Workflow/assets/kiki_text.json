@@ -2,7 +2,7 @@
   {
     "id": "fixGrammar",
     "theTitle": "Fix Grammar",
-    "thePrompt": "Fix the grammar and spelling of the following text. Do not include any comments on the task you performed, just give me the clean text without any additional commentary and without quotation marks:\n[[txt]]"
+    "thePrompt": "Fix the grammar and spelling of the following text. Do not remove any links or text formatting. Do not include any comments on the task you performed, just give me the clean text without any additional commentary:\n[[txt]]"
   },
   {
     "id": "emojify",
