@@ -3567,65 +3567,13 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>#!/bin/bash
-
-# Construct the full POSIX path to context.json
-kikiContextPath="${kiki_data}/context.json"
-newContextPath="${copyContextPath}"
-
-if [[ "$1" == "filesCopyResponse" || "$1" == "-" ]]; then
-    echo -n "$(cat "${kiki_data}/lastresponse.txt")"
-
-elif [[ "$1" == "filesCopyTranscription" ]]; then
-    echo -n "$(cat "${kiki_data}/lastTranscription.txt")"
-
-elif [[ "$1" == "filesCopyContext" ]]; then
-	# Extract filename
-	filename=$(basename -- "$kikiContextPath")
-	extension="${filename##*.}"
-	basename="${filename%.*}"
-
-	# Create a unique filename if file already exists
-	counter=1
-	newFilePath="$newContextPath/$filename"
-	while [ -f "$newFilePath" ]; do
-  	newFilePath="$newContextPath/${basename}_$counter.$extension"
-	let counter++
-	done
-
-	# Copy the file to the new unique path
-	cp "$kikiContextPath" "$newFilePath"
-
-elif [[ "$1" == "filesResetLogs" ]]; then
-	# Prompt for confirmation before deletion
-    osascript -e 'display dialog "Are you sure you want to reset your chat context and log files?" buttons {"Cancel", "Delete"} default button "Delete" cancel button "Cancel"' &gt;/dev/null 2&gt;&amp;1
-
-	# Check the user's choice
-	if [ $? -eq 0 ]; then
-    		# User chose to delete
-		find "${kiki_data}" -type f ! -regex "${kiki_data}/preset.*" -delete
-    		osascript -e 'display dialog "Everything has been cleared." buttons {"OK"} default button "OK"' &gt;/dev/null 2&gt;&amp;1
-	fi
-
-elif [[ "$1" == "filesOpenContext" ]]; then
-	open "$kikiContextPath"
-
-elif [[ "$1" == "filesRevealPath" ]]; then
-	open "${kiki_data}/"
-
-elif [[ "$1" == "filesRevealWorkflow" ]]; then
-	osascript -e 'tell application "Alfred" to reveal workflow "com.kiki.ai"'
-
-elif [[ "$1" == "filesOpenWFDir" ]]; then
-	open "$(pwd)"
-
-fi</string>
+				<string></string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string></string>
+				<string>scripts/file-actions.sh</string>
 				<key>type</key>
-				<integer>0</integer>
+				<integer>8</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -3708,7 +3656,7 @@ fi</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>/usr/bin/osascript scripts/resume-chat-replace.js "$1"</string>
+				<string>/usr/bin/osascript scripts/resume-chat.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -5337,50 +5285,13 @@ echo -n "$(cat "${kiki_data}/lastresponse.txt")"</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>ObjC.import('stdlib');
-var fromAlfred = $.getenv('kiki_data');
-const alfredWorkflowData = fromAlfred;
-const currentDir = $.NSFileManager.defaultManager.currentDirectoryPath.js
-const filePath = `${alfredWorkflowData}/lastresponse.txt`;
-const iconPath = `${currentDir}/icon.png`;
-
-// Read the file contents
-let fileContents = ObjC.unwrap($.NSString.stringWithContentsOfFileEncodingError(filePath, $.NSUTF8StringEncoding, null));
-
-if (fileContents.length &gt; 1800) {
-  fileContents = fileContents.substring(0, 1800) + "...\n\n(Response truncated. Don't worry, your conversation is intact. You may reply back or copy.)";
-}
-
-// Escape file contents for AppleScript
-let escapedFileContents = fileContents.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-
-const appleScript = `
-    set userResponse to display dialog "${escapedFileContents}" buttons {"Close", "Copy &amp; Close", "Continue"} with icon POSIX file "${iconPath}" default button 3 default answer "" cancel button "Close" with title "Continue Conversation"
-    if button returned of userResponse is "Continue" then
-        if text returned of userResponse is "" then
-            set dialogInput to "-"
-        else
-            set dialogInput to text returned of userResponse
-        end if
-	else if button returned of userResponse is "Copy &amp; Close" then
-		set dialogInput to "-"
-    else
-		set dialogInput to ""
-    end if
-	return dialogInput
-`;
-
-const script = $.NSAppleScript.alloc.initWithSource(appleScript);
-const executionResult = script.executeAndReturnError(null);
-const resultString = ObjC.unwrap(executionResult.stringValue);
-
-resultString;</string>
+				<string>/usr/bin/osascript scripts/dialog-chat.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>7</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -6021,50 +5932,13 @@ resultString;</string>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>ObjC.import('stdlib');
-var fromAlfred = $.getenv('kiki_data');
-const alfredWorkflowData = fromAlfred;
-const currentDir = $.NSFileManager.defaultManager.currentDirectoryPath.js
-const filePath = `${alfredWorkflowData}/lastresponse.txt`;
-const iconPath = `${currentDir}/icon.png`;
-
-// Read the file contents
-let fileContents = ObjC.unwrap($.NSString.stringWithContentsOfFileEncodingError(filePath, $.NSUTF8StringEncoding, null));
-
-if (fileContents.length &gt; 1800) {
-  fileContents = fileContents.substring(0, 1800) + "...\n\n(Response truncated. Don't worry, your conversation is intact. You may reply back or copy.)";
-}
-
-// Escape file contents for AppleScript
-let escapedFileContents = fileContents.replace(/\\/g, '\\\\').replace(/"/g, '\\"');
-
-const appleScript = `
-    set userResponse to display dialog "${escapedFileContents}" buttons {"Close", "Copy &amp; Close", "Continue"} with icon POSIX file "${iconPath}" default button 3 default answer "" cancel button "Close" with title "Continue Conversation"
-    if button returned of userResponse is "Continue" then
-        if text returned of userResponse is "" then
-            set dialogInput to "-"
-        else
-            set dialogInput to text returned of userResponse
-        end if
-	else if button returned of userResponse is "Copy &amp; Close" then
-		set dialogInput to "-"
-    else
-		set dialogInput to ""
-    end if
-	return dialogInput
-`;
-
-const script = $.NSAppleScript.alloc.initWithSource(appleScript);
-const executionResult = script.executeAndReturnError(null);
-const resultString = ObjC.unwrap(executionResult.stringValue);
-
-resultString;</string>
+				<string>/usr/bin/osascript scripts/dialog-chat.js "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>type</key>
-				<integer>7</integer>
+				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
@@ -6494,35 +6368,6 @@ resultString;</string>
 			<string>alfred.workflow.output.largetype</string>
 			<key>uid</key>
 			<string>4CA8B3FE-D991-4F39-9AB4-B6BB57932B13</string>
-			<key>version</key>
-			<integer>3</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alignment</key>
-				<integer>0</integer>
-				<key>backgroundcolor</key>
-				<string></string>
-				<key>fadespeed</key>
-				<integer>0</integer>
-				<key>fillmode</key>
-				<integer>0</integer>
-				<key>font</key>
-				<string></string>
-				<key>ignoredynamicplaceholders</key>
-				<false/>
-				<key>largetypetext</key>
-				<string>{query}</string>
-				<key>textcolor</key>
-				<string></string>
-				<key>wrapat</key>
-				<integer>50</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.largetype</string>
-			<key>uid</key>
-			<string>A08A125C-7057-4D9E-8579-27EE8AB96042</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -10057,16 +9902,9 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<key>9E5079D2-496E-4E30-8593-6AA1CDA0ADDE</key>
 		<dict>
 			<key>xpos</key>
-			<real>1165</real>
+			<real>1160</real>
 			<key>ypos</key>
 			<real>1440</real>
-		</dict>
-		<key>A08A125C-7057-4D9E-8579-27EE8AB96042</key>
-		<dict>
-			<key>xpos</key>
-			<real>1485</real>
-			<key>ypos</key>
-			<real>1300</real>
 		</dict>
 		<key>A0B9803F-F145-408D-A583-41F082FE29F5</key>
 		<dict>

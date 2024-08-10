@@ -1,8 +1,18 @@
+// Import required ObjC libraries
 ObjC.import('stdlib');
-const jsonFilePath = $.getenv('theContext');
+
+// Get environment variables and set paths
+let jsonFilePath;
 const currentDir = $.NSFileManager.defaultManager.currentDirectoryPath.js;
 const iconPath = `${currentDir}/icon.png`;
 
+try {
+    jsonFilePath = $.getenv('repContext');
+} catch (error) {
+    jsonFilePath = $.getenv('theContext');
+}
+
+// Function to read and parse JSON file
 function readJSONFile(filePath) {
     const fileManager = $.NSFileManager.defaultManager;
     const contents = fileManager.contentsAtPath(filePath);
@@ -10,29 +20,27 @@ function readJSONFile(filePath) {
     return JSON.parse(jsonString);
 }
 
+// Read JSON file and extract last assistant message
 const jsonData = readJSONFile(jsonFilePath);
 const assistantMessages = jsonData.filter(msg => msg.role === 'assistant');
-const lastAssistantContent = assistantMessages[assistantMessages.length - 1].content;
-const lastAssistantContentFull = lastAssistantContent;
+const lastAssistantContentFull = assistantMessages[assistantMessages.length - 1].content;
 
-let displayContent = lastAssistantContent;
-if (displayContent.length > 1700) {
-    displayContent = displayContent.substring(0, 1700) + '...\n\n(Response truncated. Don\'t worry, your conversation is intact. You may reply back or copy.)';
+// Truncate content if it's too long
+let lastAssistantContent = lastAssistantContentFull;
+if (lastAssistantContent.length > 1700) {
+    lastAssistantContent = lastAssistantContent.substring(0, 1700) + '...\n\n(Response truncated. Don\'t worry, your conversation is intact. You may reply back or copy.)';
 }
 
+// Function to escape special characters for AppleScript
 function escapeForAppleScript(str) {
     return str.replace(/\\/g, '\\\\').replace(/"/g, '\\"').replace(/\n/g, '\\n');
 }
 
-const escapedContent = escapeForAppleScript(displayContent);
+// Escape the content for AppleScript
+const escapedContent = escapeForAppleScript(lastAssistantContent);
 const escapedContentFull = escapeForAppleScript(lastAssistantContentFull);
 
-Application('com.runningwithcrayons.Alfred').setConfiguration('theResponse', {
-    toValue: 'Safari',
-    inWorkflow: 'com.kiki.ai',
-    exportable: true
-});
-
+// Construct the AppleScript
 const appleScript = `
     tell application "System Events"
         set userResponse to display dialog "${escapedContent}" buttons {"Close", "Copy & Close", "Continue"} with icon POSIX file "${iconPath}" default button 3 default answer "" cancel button "Close" with title "Continue Conversation"
@@ -51,8 +59,10 @@ const appleScript = `
     end tell
 `;
 
+// Execute the AppleScript
 const script = $.NSAppleScript.alloc.initWithSource(appleScript);
 const executionResult = script.executeAndReturnError(null);
 const resultString = ObjC.unwrap(executionResult.stringValue);
 
+// Return the result
 resultString;
