@@ -169,7 +169,7 @@ if [[ $API_ENDPOINT != $API_URL ]]; then
         "-H" "Authorization: Bearer $GROQ_API_KEY"
     )
 
-    if [[ "$MODEL" == gpt* ]]; then
+    if [[ "$MODEL" == gpt* || "$MODEL" == chatgpt* ]]; then
         API_URL="https://api.openai.com/v1/chat/completions"
         HEADERS=(
             "-H" "Content-Type: application/json"
