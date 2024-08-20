@@ -4894,7 +4894,7 @@ end tell</string>
 readonly remote_info_plist='https://raw.githubusercontent.com/ognistik/kiki-ai-workflow/main/Workflow/info.plist'
 readonly workflow_url='https://raw.githubusercontent.com/ognistik/kiki-ai-workflow/main/Kiki.alfredworkflow'
 readonly download_type='direct'
-readonly frequency_check='0'
+readonly frequency_check='4'
 
 
 
@@ -11287,7 +11287,7 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 		<string>Safari</string>
 	</dict>
 	<key>version</key>
-	<string>1.2.0</string>
+	<string>1.2.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/ognistik/kiki-ai-workflow</string>
 </dict>
