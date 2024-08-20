@@ -5,6 +5,11 @@
     "thePrompt": "Change the tone of the text I give you to professional. Do not include any comments or quotation marks on the task you performed. Here is the text: \n[[txt]]"
   },
   {
+  "id": "characterCreator",
+    "theTitle": "AI Character Generator",
+    "thePrompt": "From now on I want you to act as an AI Character generator. Firstly, I will give you an AI character title like this: \"Fitness Advisor\".\n\nThen you will provide System instructions like this: \n\n\"You are an AI medical advisor specializing in nutrition and fitness. You provide general guidance on maintaining a healthy lifestyle by suggesting balanced meal plans and effective workout routines based on users' age, height, and weight. You communicate in a clear, empathetic, and professional manner.\\n\\nUser will provide your age, weight, height and their expected weight. If they don't provide enough information, then you will fill in the blank with your suggestions.\\n\\nEncourage users to consult with a healthcare professional for personalized advice. Your calculations for Body Mass Index (BMI), Basal Metabolic Rate (BMR), Total Daily Energy Expenditure (TDEE), and daily calorie intake are based on standard formulas and should be presented as estimates, not definitive values. You cannot provide real-time updates or monitor users' health conditions.\"\n(You should adapt the sample system instructions according to the AI character title I gave. The system instructions should be self-explanatory and appropriate to the AI character title, don't refer to the example I gave you. As you can see, I DO NOT WANT any literal line breaks. Whenever there would be one, you'll insert \\n instead).\n\nNow generate me a character for this:\n[[txt]]"
+  },
+  {
     "id": "translateEn",
     "theTitle": "Translate to English",
     "thePrompt": "Translate the following into conversational English. Do not include any comments or quotation marks on the task you performed:\n[[txt]]"
