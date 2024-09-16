@@ -526,6 +526,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>2632BAB0-FE69-43E5-82B6-58C6DD5E4637</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>96A507F9-0F90-4429-98B8-DA451AB2ED92</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>266174D8-7DAE-4568-89FC-2C66F344356F</key>
 		<array>
 			<dict>
@@ -2107,6 +2120,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>96A507F9-0F90-4429-98B8-DA451AB2ED92</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>B7A1535F-100C-44D0-842E-54D0D48FE1DA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>97B2E412-4D05-4058-AF1F-2EA536933C88</key>
 		<array>
 			<dict>
@@ -3648,6 +3674,45 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>applescript="$1"
+osascript -e "$applescript"</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>B7A1535F-100C-44D0-842E-54D0D48FE1DA</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>availableviaurlhandler</key>
+				<false/>
+				<key>triggerid</key>
+				<string>mod23</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.trigger.external</string>
+			<key>uid</key>
+			<string>2632BAB0-FE69-43E5-82B6-58C6DD5E4637</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
@@ -3805,6 +3870,23 @@
 			<string>alfred.workflow.utility.conditional</string>
 			<key>uid</key>
 			<string>94900AA1-F15F-49FD-858A-A0BF97A1D1F7</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{var:mod23}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>96A507F9-0F90-4429-98B8-DA451AB2ED92</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -4894,7 +4976,7 @@ end tell</string>
 readonly remote_info_plist='https://raw.githubusercontent.com/ognistik/kiki-ai-workflow/main/Workflow/info.plist'
 readonly workflow_url='https://raw.githubusercontent.com/ognistik/kiki-ai-workflow/main/Kiki.alfredworkflow'
 readonly download_type='direct'
-readonly frequency_check='4'
+readonly frequency_check='0'
 
 
 
@@ -9260,6 +9342,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>545</real>
 		</dict>
+		<key>2632BAB0-FE69-43E5-82B6-58C6DD5E4637</key>
+		<dict>
+			<key>xpos</key>
+			<real>3840</real>
+			<key>ypos</key>
+			<real>360</real>
+		</dict>
 		<key>266174D8-7DAE-4568-89FC-2C66F344356F</key>
 		<dict>
 			<key>colorindex</key>
@@ -10026,6 +10115,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<key>ypos</key>
 			<real>405</real>
 		</dict>
+		<key>96A507F9-0F90-4429-98B8-DA451AB2ED92</key>
+		<dict>
+			<key>xpos</key>
+			<real>3975</real>
+			<key>ypos</key>
+			<real>390</real>
+		</dict>
 		<key>97B2E412-4D05-4058-AF1F-2EA536933C88</key>
 		<dict>
 			<key>xpos</key>
@@ -10194,6 +10290,13 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<real>210</real>
 			<key>ypos</key>
 			<real>1465</real>
+		</dict>
+		<key>B7A1535F-100C-44D0-842E-54D0D48FE1DA</key>
+		<dict>
+			<key>xpos</key>
+			<real>4035</real>
+			<key>ypos</key>
+			<real>360</real>
 		</dict>
 		<key>B7E656E2-7FBC-433C-B4A2-C8844921BFD9</key>
 		<dict>
@@ -11279,6 +11382,27 @@ The inspiration to create Kiki came from ToolVox AI. If you know about Shortcuts
 			<string>textarea</string>
 			<key>variable</key>
 			<string>ph2txt</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string></string>
+				<key>required</key>
+				<false/>
+				<key>trim</key>
+				<true/>
+				<key>verticalsize</key>
+				<integer>6</integer>
+			</dict>
+			<key>description</key>
+			<string>When running a preset externally, you can set an applescript to be run once the answer from the LLM has been received. Great for automation.</string>
+			<key>label</key>
+			<string>Mod 23 AppleScript</string>
+			<key>type</key>
+			<string>textarea</string>
+			<key>variable</key>
+			<string>mod23</string>
 		</dict>
 	</array>
 	<key>variables</key>

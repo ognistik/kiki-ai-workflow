@@ -131,6 +131,9 @@ function run(argv) {
 		kikiType = fnType;
         chatAlt = "List";
         contextProcess = "original";
+	} else if (kikiMods === 23) {
+		kikiType = "mod23";
+        contextProcess = "reset";
 	}
 
 Application('System Events').includeStandardAdditions = true; // Include to use 'delay'
